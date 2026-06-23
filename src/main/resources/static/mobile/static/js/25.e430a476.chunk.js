@@ -1,0 +1,1 @@
+(this["webpackJsonposp-react-mobile-app"]=this["webpackJsonposp-react-mobile-app"]||[]).push([[25],{1793:function(e,a,t){"use strict";t.r(a);var p=t(0),c=t.n(p),s=t(80);a.default=Object(s.j)((()=>c.a.createElement("div",{_nk:"".concat("max/","11")},"哈喽")))}}]);

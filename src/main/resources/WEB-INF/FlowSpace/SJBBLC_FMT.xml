@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:ospflow="http://www.solorsource.cn/ospflow" id="sample-diagram" targetNamespace="http://bpmn.io/schema/bpmn" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+  <bpmn2:process id="SJBBLC" name="商机报备流程" ospflow:BIMFlowType="0" ospflow:processForm="HLZB_tbXQXX" ospflow:modelID="HLZB_XQXX_MX">
+    <bpmn2:startEvent id="StartEvent_1r47rxd" ospflow:BIMId="start" ospflow:modelID="HLZB_XQXX_MX" ospflow:userRule="" ospflow:childFlowService="" ospflow:breakResetServiceKey="" ospflow:breakCancelServiceKey="" ospflow:breakEndServiceKey="" ospflow:htmlProcessForm="" ospflow:nodeType="" groupFlowID="">
+      <bpmn2:extensionElements>
+        <ospflow:addDataMap/>
+        <ospflow:billDataUpdateMap>
+          <ospflow:property name="HLZB_XQXX_HEAD_COLUMNS" value="XQXX_LCZT"/>
+          <ospflow:property name="HLZB_XQXX_HEAD_VALUES" value="0"/>
+          <ospflow:property name="HLZB_XQXX_HEAD_WHERE" value=""/>
+          <ospflow:property name="TABLES" value="HLZB_XQXX_HEAD"/>
+        </ospflow:billDataUpdateMap>
+        <ospflow:attriMap>
+          <ospflow:property name="submitTaskInDB" value=""/>
+          <ospflow:property name="NotAllowAutoSubmit" value=""/>
+        </ospflow:attriMap>
+      </bpmn2:extensionElements>
+      <bpmn2:outgoing>SequenceFlow_1chgxjr</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_0uuis3f</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:task id="Task_0lr7c22" ospflow:name="区域经理审核" ospflow:BIMId="S_1">
+      <bpmn2:incoming>SequenceFlow_1chgxjr</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_035z9ne</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="SequenceFlow_1chgxjr" ospflow:name="发起人非区域负责人" sourceRef="StartEvent_1r47rxd" targetRef="Task_0lr7c22" ospflow:BIMId="R_1" ospflow:modelID="HLZB_XQXX_MX" ospflow:retakeCompletedServiceKey="" ospflow:retakeServiceKey="" ospflow:rollbackCompletedServiceKey="" ospflow:rollbackServiceKey="" ospflow:submitCompletedServiceKey="FlowDataUpdate" ospflow:submitServiceKey="">
+      <bpmn2:extensionElements>
+        <ospflow:attriMap>
+          <ospflow:property name="allowIntoTargetNodeExpGuid" value="main@SJBBLC@R_1"/>
+        </ospflow:attriMap>
+        <ospflow:submitBillDataUpdateMap>
+          <ospflow:property name="HLZB_XQXX_HEAD_COLUMNS" value="XQXX_LCZT"/>
+          <ospflow:property name="HLZB_XQXX_HEAD_VALUES" value="1"/>
+          <ospflow:property name="HLZB_XQXX_HEAD_WRITEBACK_COLUMNS" value=""/>
+          <ospflow:property name="HLZB_XQXX_HEAD_TASKVALUE_FIELDS" value=""/>
+          <ospflow:property name="HLZB_XQXX_HEAD_WHERE" value=""/>
+          <ospflow:property name="TABLES" value="HLZB_XQXX_HEAD"/>
+        </ospflow:submitBillDataUpdateMap>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:task id="Activity_18db6cw" ospflow:name="营销公司经理审核" ospflow:BIMId="S_2">
+      <bpmn2:incoming>Flow_035z9ne</bpmn2:incoming>
+      <bpmn2:incoming>Flow_0uuis3f</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0axxwgn</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="Flow_035z9ne" sourceRef="Task_0lr7c22" targetRef="Activity_18db6cw" ospflow:BIMId="R_2"/>
+    <bpmn2:task id="Activity_1edxdgr" ospflow:name="分管领导报价" ospflow:BIMId="S_3">
+      <bpmn2:incoming>Flow_0axxwgn</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_14522v2</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="Flow_0axxwgn" sourceRef="Activity_18db6cw" targetRef="Activity_1edxdgr" ospflow:BIMId="R_3"/>
+    <bpmn2:sequenceFlow id="Flow_0uuis3f" ospflow:name="发起人为区域负责人" sourceRef="StartEvent_1r47rxd" targetRef="Activity_18db6cw" ospflow:BIMId="R_4" ospflow:modelID="HLZB_XQXX_MX" ospflow:retakeCompletedServiceKey="" ospflow:retakeServiceKey="" ospflow:rollbackCompletedServiceKey="" ospflow:rollbackServiceKey="" ospflow:submitCompletedServiceKey="FlowDataUpdate" ospflow:submitServiceKey="">
+      <bpmn2:extensionElements>
+        <ospflow:attriMap>
+          <ospflow:property name="allowIntoTargetNodeExpGuid" value="main@SJBBLC@R_4"/>
+        </ospflow:attriMap>
+        <ospflow:submitBillDataUpdateMap/>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:endEvent id="Event_0g87eqt" ospflow:BIMId="end">
+      <bpmn2:incoming>Flow_14522v2</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="Flow_14522v2" sourceRef="Activity_1edxdgr" targetRef="Event_0g87eqt" ospflow:BIMId="R_5" ospflow:modelID="HLZB_XQXX_MX" ospflow:retakeCompletedServiceKey="" ospflow:retakeServiceKey="" ospflow:rollbackCompletedServiceKey="" ospflow:rollbackServiceKey="" ospflow:submitCompletedServiceKey="" ospflow:submitServiceKey="">
+      <bpmn2:extensionElements>
+        <ospflow:attriMap/>
+        <ospflow:submitBillDataUpdateMap>
+          <ospflow:property name="HLZB_XQXX_HEAD_COLUMNS" value="XQXX_LCZT"/>
+          <ospflow:property name="HLZB_XQXX_HEAD_VALUES" value="4"/>
+          <ospflow:property name="HLZB_XQXX_HEAD_WRITEBACK_COLUMNS" value=""/>
+          <ospflow:property name="HLZB_XQXX_HEAD_TASKVALUE_FIELDS" value=""/>
+          <ospflow:property name="HLZB_XQXX_HEAD_WHERE" value=""/>
+          <ospflow:property name="TABLES" value="HLZB_XQXX_HEAD"/>
+        </ospflow:submitBillDataUpdateMap>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="SJBBLC">
+      <bpmndi:BPMNEdge id="Flow_14522v2_di" bpmnElement="Flow_14522v2">
+        <di:waypoint x="765" y="240"/>
+        <di:waypoint x="872" y="240"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0uuis3f_di" bpmnElement="Flow_0uuis3f">
+        <di:waypoint x="160" y="240"/>
+        <di:waypoint x="434" y="240"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="339" y="222" width="76" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0axxwgn_di" bpmnElement="Flow_0axxwgn">
+        <di:waypoint x="545" y="240"/>
+        <di:waypoint x="654" y="240"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_035z9ne_di" bpmnElement="Flow_035z9ne">
+        <di:waypoint x="490" y="105"/>
+        <di:waypoint x="490" y="214"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1chgxjr_di" bpmnElement="SequenceFlow_1chgxjr">
+        <di:waypoint x="160" y="240"/>
+        <di:waypoint x="260" y="240"/>
+        <di:waypoint x="260" y="80"/>
+        <di:waypoint x="434" y="80"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="243" y="159" width="76" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="StartEvent_1r47rxd_di" bpmnElement="StartEvent_1r47rxd">
+        <dc:Bounds x="120" y="220" width="40" height="40"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="129" y="260" width="23" height="14"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_0lr7c22_di" bpmnElement="Task_0lr7c22">
+        <dc:Bounds x="434" y="54" width="111" height="51"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_18db6cw_di" bpmnElement="Activity_18db6cw">
+        <dc:Bounds x="434" y="214" width="111" height="51"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1edxdgr_di" bpmnElement="Activity_1edxdgr">
+        <dc:Bounds x="654" y="214" width="111" height="51"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0g87eqt_di" bpmnElement="Event_0g87eqt">
+        <dc:Bounds x="872" y="222" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="878" y="261" width="23" height="14"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

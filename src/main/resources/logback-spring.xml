@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+
+    <!--property用于配置变量，可通过${LOG_PATH} 取对应的值-->
+    <!--定义日志文件的存储地址-->
+    <property name="LOG_PATH" value="./log"/>
+    <property name="PATTERN"
+              value="%d{yyyy-MM-dd HH:mm:ss.SSS}|%thread|%-5level|%class|%method|%line|%msg%n"/>
+    <property name="CONSOLE_LOG_PATTERN"
+              value="%d{yyyy-MM-dd HH:mm:ss.SSS}|%thread|%-5level|%class|%method|%line|%msg%n|%X{userid}"/>
+
+    <contextName>logback</contextName>
+
+    <!--输出到控制台，一个appender定义一种输出策略，可以定义多个-->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <!--filter中定义要输出的日志级别，例如：输出info级别以上的日志，默认是info-->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>debug</level>
+        </filter>
+        <!--日志输出编码格式化-->
+        <encoder>
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!-- 输出到文件info，日期滚动记录 -->
+    <appender name="logInfoFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <!--日志过滤级别: INFO级别的会被处理，非INFO级别的会被过滤掉-->
+            <level>info</level>
+            <!--符合条件的日志，立即处理，不再经过剩余的过滤器-->
+            <onMatch>ACCEPT</onMatch>
+            <!--不符合条件的日志，被抛弃不再经过其他过滤器-->
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <!--滚动策略，按照时间滚动 TimeBasedRollingPolicy 每天会生成一个日志文件-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--文件路径,定义了日志的切分方式——把每一天的日志归档到一个文件中,以防止日志填满整个磁盘空间-->
+            <fileNamePattern>${LOG_PATH}/ospdemo-info-desc-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!--只保留最近15天的日志-->
+            <maxHistory>15</maxHistory>
+            <!--用来指定日志文件的上限大小，那么到了这个值，就会删除旧的日志-->
+            <!--<totalSizeCap>1GB</totalSizeCap>-->
+        </rollingPolicy>
+        <!--如果是 true，日志被追加到文件结尾，如果是 false，清空现存文件，默认是true-->
+        <append>true</append>
+
+        <!--日志输出编码格式化-->
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>${PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!--输出到文件error，日期滚动记录 -->
+    <appender name="logErrorFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <!--日志过滤级别: error级别的会被处理，非error级别的会被过滤掉-->
+            <level>error</level>
+            <!--符合条件的日志，立即处理，不再经过剩余的过滤器-->
+            <onMatch>ACCEPT</onMatch>
+            <!--不符合条件的日志，被抛弃不再经过其他过滤器-->
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <!--滚动策略，按照时间滚动 TimeBasedRollingPolicy 每天会生成一个日志文件-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--文件路径,定义了日志的切分方式——把每一天的日志归档到一个文件中,以防止日志填满整个磁盘空间-->
+            <FileNamePattern>${LOG_PATH}/ospdemo-error-desc-%d{yyyy-MM-dd}.log</FileNamePattern>
+            <!--只保留最近15天的日志-->
+            <maxHistory>15</maxHistory>
+        </rollingPolicy>
+
+        <!--日志被追加到文件结尾-->
+        <append>true</append>
+
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>${PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!--异步输出 appender-->
+    <appender name="async" class="ch.qos.logback.classic.AsyncAppender">
+        <discardingThreshold>0</discardingThreshold>
+        <neverBlock>true</neverBlock>
+        <!-- 队列的最大容量,该值会影响性能.默认值为256 -->
+        <queueSize>1024</queueSize>
+        <!-- 队列剩余容量小于discardingThreshold,则会丢弃TRACT、DEBUG、INFO级别的日志;默认值-1,为queueSize的20%;0不丢失日志 -->
+        <discardingThreshold>0</discardingThreshold>
+
+        <!-- 队列满了，是否阻塞，默认为false；如果配置为true，则队列满了就丢弃日志； -->
+        <neverBlock>false</neverBlock>
+
+        <!-- 添加附加的appender,最多只能添加一个 -->
+        <appender-ref ref="console"/>
+        <!-- 异步日志中增加调用者信息（即实际调用的类，方法等），会对性能产生一些影响 -->
+        <includeCallerData>true</includeCallerData>
+    </appender>
+
+    <!--开发环境-->
+    <springProfile name="dev">
+        <!--必选节点，用来指定最基础的日志输出级别-->
+        <root level="INFO">
+            <appender-ref ref="async"/>
+        </root>
+    </springProfile>
+    <!--生产环境-->
+    <springProfile name="pro">
+        <!--必选节点，用来指定最基础的日志输出级别-->
+        <root level="ERROR">
+            <appender-ref ref="async"/>
+        </root>
+    </springProfile>
+
+    <!--配置logger，指向异步appender-->
+    <!--    <logger name="com.cybermax.manager.log.printer" additivity="false" level="info">-->
+    <!--        <appender-ref ref="ACTION_LOG_APPENDER_ASYNC"/>-->
+    <!--    </logger>-->
+</configuration>

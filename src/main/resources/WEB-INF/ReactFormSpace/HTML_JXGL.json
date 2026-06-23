@@ -1,0 +1,103 @@
+{
+  "key" : "RootPage",
+  "formName" : "网页报表_绩效管理",
+  "formID" : "HTML_JXGL",
+  "lastAuthor" : "",
+  "lastChanged" : "2025-12-01 10:22:15",
+  "version" : "React",
+  "compName" : "表单画布",
+  "rootProps" : {
+    "scriptsCode" : {
+      "componentDidMount" : "var po = new JParamObject();\nvar name = po.getEnv(\"UserName\");\nFormIFrame1.setUrl(\"http://60.213.146.71:8075/webroot/decision/view/report?viewlet=%25E5%258D%258E%25E9%25B2%2581%25E8%25A3%2585%25E5%25A4%2587%252F%25E7%25BB%25A9%25E6%2595%2588%25E7%25AE%25A1%25E7%2590%2586%25E6%25A8%25A1%25E5%259D%2597.cpt&ref_t=design&op=view&ref_c=536c3c0e-6535-42f8-a07d-ff3d2bdc706b\");\n"
+    },
+    "style" : {
+      "flexDirection" : "column",
+      "flexWrap" : "nowrap",
+      "justifyContent" : "flex-start",
+      "alignItems" : "flex-start",
+      "overflow" : "auto",
+      "backgroundColor" : "",
+      "padding" : ""
+    }
+  },
+  "components" : [ {
+    "key" : "FormBoxContainer1",
+    "type" : "FormBoxContainer",
+    "props" : {
+      "floatPositionOrigin" : "rb",
+      "floatX" : "0",
+      "floatY" : "0",
+      "resizeDirection" : "both",
+      "scriptsCode" : {
+        "onClickHandler" : "",
+        "afterCloseFullScreen" : "",
+        "onMouseEnter" : "",
+        "onMouseLeave" : "",
+        "onMouseWheel" : ""
+      },
+      "style" : {
+        "height" : "100%",
+        "flexDirection" : "column",
+        "flexWrap" : "nowrap",
+        "justifyContent" : "flex-start",
+        "alignItems" : "flex-start",
+        "overflow" : "hidden",
+        "backgroundRepeat" : "tensile",
+        "backgroundPosition" : "left top",
+        "display" : "flex",
+        "gap" : "16px",
+        "cursor" : "default",
+        "backgroundColor" : "var(--osp-box-container-background-color)",
+        "borderRadius" : "var(--osp-box-container-border-radius)",
+        "boxShadow" : "var(--osp-custom-shadow)",
+        "minHeight" : "var(--osp-box-container-min-height)",
+        "width" : "var(--osp-box-container-width, 100%)",
+        "minWidth" : "var(--osp-box-container-min-width)",
+        "opacity" : "var(--osp-box-container-opacity)",
+        "borderStyle" : "var(--osp-box-container-border-style)",
+        "borderColor" : "var(--osp-box-container-border-color)",
+        "borderLeftWidth" : "var(--osp-box-container-border-left-width)",
+        "borderRightWidth" : "var(--osp-box-container-border-right-width)",
+        "borderTopWidth" : "var(--osp-box-container-border-top-width)",
+        "borderBottomWidth" : "var(--osp-box-container-border-bottom-width)",
+        "marginLeft" : "var(--osp-box-container-margin-left)",
+        "marginRight" : "var(--osp-box-container-margin-right)",
+        "marginTop" : "var(--osp-box-container-margin-top)",
+        "marginBottom" : "var(--osp-box-container-margin-bottom)",
+        "paddingLeft" : "var(--osp-box-container-padding-left)",
+        "paddingRight" : "var(--osp-box-container-padding-right)",
+        "paddingTop" : "var(--osp-box-container-padding-top)",
+        "paddingBottom" : "var(--osp-box-container-padding-bottom)"
+      },
+      "isFloat" : false,
+      "isDraggable" : false,
+      "isResizable" : false
+    },
+    "compName" : "通用布局",
+    "children" : [ {
+      "key" : "FormIFrame1",
+      "type" : "FormIFrame",
+      "props" : {
+        "scriptsCode" : {
+          "endLoad" : ""
+        },
+        "style" : {
+          "height" : "100%",
+          "width" : "100%",
+          "display" : "block",
+          "marginLeft" : "var(--osp-form-iframe-margin-left)",
+          "marginRight" : "var(--osp-form-iframe-margin-right)",
+          "marginTop" : "var(--osp-form-iframe-margin-top)",
+          "marginBottom" : "var(--osp-form-iframe-margin-bottom)"
+        },
+        "url" : "http://60.213.146.71:8075//webroot/decision/view/report?viewlet=%25E5%258D%258E%25E9%25B2%2581%25E8%25A3%2585%25E5%25A4%2587%252F%25E6%25B5%258B%25E8%25AF%2595.cpt&ref_t=design&ref_c=3ebf71fd-3c16-486c-a273-1a8fbfd307e5"
+      },
+      "compName" : "网页",
+      "children" : [ ]
+    } ]
+  } ],
+  "dataModels" : [ ],
+  "actionComps" : [ ],
+  "serverJsComps" : [ ],
+  "tableSource" : [ ]
+}

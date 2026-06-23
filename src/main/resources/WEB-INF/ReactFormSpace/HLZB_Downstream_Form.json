@@ -1,0 +1,1072 @@
+{
+  "key" : "RootPage",
+  "formName" : "下游行业信息表单",
+  "formID" : "HLZB_Downstream_Form",
+  "lastAuthor" : "",
+  "lastChanged" : "2025-09-04 15:48:31",
+  "version" : "React",
+  "compName" : "表单画布",
+  "rootProps" : {
+    "scriptsCode" : {
+      "componentDidMount" : "debugger;\nlet Row =modelContainer.getValue(\"Row\",null)\nvar config = modelContainer.getValue(\"config\",null);\nvar shbh = modelContainer.getValue(\"shbh\",null);\nconsole.log(\"获取到的config：\", config);\nconsole.log(\"获取到的Row：\", config.Row);\n\nlet addRow = config.Row;\nlet type=config.type;\nlet AGGrid1 = config.AGGrid1;\nvar po = new JParamObject();\nvar user =po.getEnv(\"UserName\")\nconsole.log(\"获取到的user：\", user);\n\n//var name = addRow.getString(\"AUDIT_BY\")\n// DataSetFieldComboBox1.setValue(name)\n// DataSetFieldComboBox1.forceUpdate()\nif(type=='create'){\n    FormComboBox1.stopEdit();\n    \n}\nif(type=='edit'){\n    FormComboBox1.stopEdit();\n    \n}\nif(type=='show'){\n    MDModel1.stopEdit();\n   FormButton2.setVisible(false);\n   FormButton1.setVisible(false);\n}\nif(type=='shenhe'&& user==shbh ){\n   FormComboBox1.setDisabled(false);\n   FormTextInput2.setDisabled(true);\n   FormTextArea1.setDisabled(true);\n   DataSetFieldComboBox1.setDisabled(true);\n}\nif(type=='shenhe'&& user!=shbh ){\n   MDModel1.stopEdit();\n}\n\nif(addRow != null && addRow != \"\"){\n   \n        let dataset = new EFDataSet();\n        dataset.setTableName(\"HLZB_tbDownstreamIndustry\");\n        dataset.insertRowSet(addRow);\n        let mdmDataModel = new EFMDMDataModel();\n        mdmDataModel.setDCT_ID(\"HLZB_tbDownstreamIndustry\");\n        mdmDataModel.setDataSet(\"HLZB_tbDownstreamIndustry\",dataset);\n        MDModel1.setMdmDataModel(mdmDataModel);\n    \n    \n\n    \n}\n\n\n\n\n\n"
+    },
+    "style" : {
+      "flexDirection" : "column",
+      "flexWrap" : "nowrap",
+      "justifyContent" : "flex-start",
+      "alignItems" : "flex-start",
+      "overflow" : "auto"
+    }
+  },
+  "components" : [ {
+    "key" : "FormBoxContainer1",
+    "type" : "FormBoxContainer",
+    "props" : {
+      "floatPositionOrigin" : "rb",
+      "floatX" : "0",
+      "floatY" : "0",
+      "resizeDirection" : "both",
+      "scriptsCode" : {
+        "onClickHandler" : "",
+        "afterCloseFullScreen" : "",
+        "onMouseEnter" : "",
+        "onMouseLeave" : "",
+        "onMouseWheel" : ""
+      },
+      "style" : {
+        "height" : "100%",
+        "flexDirection" : "column",
+        "flexWrap" : "nowrap",
+        "justifyContent" : "flex-start",
+        "alignItems" : "flex-start",
+        "overflow" : "hidden",
+        "backgroundRepeat" : "tensile",
+        "backgroundPosition" : "left top",
+        "display" : "flex",
+        "gap" : "16px",
+        "cursor" : "default"
+      },
+      "isFloat" : false,
+      "isDraggable" : false,
+      "isResizable" : false
+    },
+    "compName" : "通用布局",
+    "children" : [ {
+      "key" : "FormBoxContainer2",
+      "type" : "FormBoxContainer",
+      "props" : {
+        "floatPositionOrigin" : "rb",
+        "floatX" : "0",
+        "floatY" : "0",
+        "resizeDirection" : "both",
+        "scriptsCode" : {
+          "onClickHandler" : "",
+          "afterCloseFullScreen" : "",
+          "onMouseEnter" : "",
+          "onMouseLeave" : "",
+          "onMouseWheel" : ""
+        },
+        "style" : {
+          "height" : "90%",
+          "flexDirection" : "column",
+          "flexWrap" : "nowrap",
+          "justifyContent" : "flex-start",
+          "alignItems" : "flex-start",
+          "overflow" : "hidden",
+          "backgroundRepeat" : "tensile",
+          "backgroundPosition" : "left top",
+          "display" : "flex",
+          "gap" : "16px",
+          "cursor" : "default"
+        },
+        "isFloat" : false,
+        "isDraggable" : false,
+        "isResizable" : false
+      },
+      "compName" : "通用布局",
+      "children" : [ {
+        "key" : "FormBoxContainer3",
+        "type" : "FormBoxContainer",
+        "props" : {
+          "floatPositionOrigin" : "rb",
+          "floatX" : "0",
+          "floatY" : "0",
+          "resizeDirection" : "both",
+          "scriptsCode" : {
+            "onClickHandler" : "",
+            "afterCloseFullScreen" : "",
+            "onMouseEnter" : "",
+            "onMouseLeave" : "",
+            "onMouseWheel" : ""
+          },
+          "style" : {
+            "flexDirection" : "row",
+            "flexWrap" : "nowrap",
+            "justifyContent" : "flex-start",
+            "alignItems" : "center",
+            "overflow" : "hidden",
+            "backgroundRepeat" : "tensile",
+            "backgroundPosition" : "left top",
+            "display" : "flex",
+            "gap" : "16px",
+            "cursor" : "default",
+            "height" : "40px"
+          },
+          "isFloat" : false,
+          "isDraggable" : false,
+          "isResizable" : false
+        },
+        "compName" : "通用布局",
+        "children" : [ {
+          "key" : "FormImage2",
+          "type" : "FormImage",
+          "props" : {
+            "objectFit" : "fill",
+            "titleToolTipLocation" : "top",
+            "scriptsCode" : {
+              "onClick" : ""
+            },
+            "style" : {
+              "borderStyle" : "none",
+              "cursor" : "pointer",
+              "marginLeft" : "10px",
+              "height" : "29px",
+              "width" : "29px"
+            },
+            "imageUrl" : "./images/formimages/376ffea3219648e6879869c7df7908b3_jib.png",
+            "defaultIcon" : "",
+            "preview" : false,
+            "isShowTitle" : false,
+            "titleToolTipCustomText" : "",
+            "titleToolTipFontColor" : "",
+            "titleToolTipBackgroundColor" : "",
+            "titleToolTipExceedingWord" : false,
+            "titleToolTipExceedingWordCount" : 0,
+            "dataModel" : "",
+            "dataSetID" : "",
+            "dataSetColID" : ""
+          },
+          "compName" : "图片",
+          "children" : [ ]
+        }, {
+          "key" : "FormLabel1",
+          "type" : "FormLabel",
+          "props" : {
+            "textVal" : "下游行业信息表单",
+            "titleToolTipLocation" : "top",
+            "editMask" : [ ],
+            "asteriskRed" : true,
+            "lineClampNumber" : 1,
+            "badgeShowZero" : true,
+            "topOffset" : -28,
+            "scriptsCode" : {
+              "onClick" : "",
+              "onMouseEnter" : "",
+              "onMouseLeave" : ""
+            },
+            "style" : {
+              "width" : "152px",
+              "justifyContent" : "flex-end",
+              "alignItems" : "center",
+              "color" : "#409eff",
+              "fontFamily" : "Microsoft YaHei",
+              "fontSize" : "15px",
+              "fontWeight" : "bold",
+              "fontStyle" : "normal",
+              "textDecoration" : "none",
+              "cursor" : "default",
+              "marginLeft" : "-25px"
+            },
+            "isShowTitle" : false,
+            "titleToolTipCustomText" : "",
+            "titleToolTipFontColor" : "",
+            "titleToolTipBackgroundColor" : "",
+            "titleToolTipExceedingWord" : false,
+            "titleToolTipExceedingWordCount" : 0,
+            "showEllipsis" : false,
+            "isShowBadge" : false,
+            "leftOffset" : 0,
+            "dataModel" : "",
+            "dataSetID" : "",
+            "dataSetColID" : ""
+          },
+          "compName" : "简单文本",
+          "children" : [ ]
+        } ]
+      }, {
+        "key" : "FormBoxContainer11",
+        "type" : "FormBoxContainer",
+        "props" : {
+          "floatPositionOrigin" : "rb",
+          "floatX" : "0",
+          "floatY" : "0",
+          "resizeDirection" : "both",
+          "scriptsCode" : {
+            "onClickHandler" : "",
+            "afterCloseFullScreen" : "",
+            "onMouseEnter" : "",
+            "onMouseLeave" : "",
+            "onMouseWheel" : ""
+          },
+          "style" : {
+            "flexDirection" : "row",
+            "flexWrap" : "nowrap",
+            "justifyContent" : "flex-start",
+            "alignItems" : "flex-start",
+            "overflow" : "hidden",
+            "backgroundRepeat" : "tensile",
+            "backgroundPosition" : "left top",
+            "display" : "flex",
+            "gap" : "16px",
+            "cursor" : "default",
+            "height" : "40px"
+          },
+          "isFloat" : false,
+          "isDraggable" : false,
+          "isResizable" : false
+        },
+        "compName" : "通用布局",
+        "children" : [ {
+          "key" : "FormBoxContainer12",
+          "type" : "FormBoxContainer",
+          "props" : {
+            "floatPositionOrigin" : "rb",
+            "floatX" : "0",
+            "floatY" : "0",
+            "resizeDirection" : "both",
+            "scriptsCode" : {
+              "onClickHandler" : "",
+              "afterCloseFullScreen" : "",
+              "onMouseEnter" : "",
+              "onMouseLeave" : "",
+              "onMouseWheel" : ""
+            },
+            "style" : {
+              "height" : "auto",
+              "width" : "100%",
+              "flexDirection" : "row",
+              "flexWrap" : "nowrap",
+              "justifyContent" : "flex-start",
+              "alignItems" : "center",
+              "overflow" : "hidden",
+              "backgroundRepeat" : "tensile",
+              "backgroundPosition" : "left top",
+              "display" : "flex",
+              "gap" : 0,
+              "cursor" : "default"
+            },
+            "isFloat" : false,
+            "isDraggable" : false,
+            "isResizable" : false
+          },
+          "compName" : "通用布局",
+          "children" : [ {
+            "key" : "FormLabel5",
+            "type" : "FormLabel",
+            "props" : {
+              "textVal" : "*信息名称：",
+              "titleToolTipLocation" : "top",
+              "editMask" : [ ],
+              "asteriskRed" : true,
+              "lineClampNumber" : 1,
+              "badgeShowZero" : true,
+              "topOffset" : -28,
+              "scriptsCode" : {
+                "onClick" : ""
+              },
+              "isShowTitle" : false,
+              "titleToolTipCustomText" : "",
+              "titleToolTipFontColor" : "#000000",
+              "titleToolTipBackgroundColor" : "#FFFFFF",
+              "showEllipsis" : false,
+              "style" : {
+                "height" : "32px",
+                "width" : "100px",
+                "justifyContent" : "center",
+                "alignItems" : "center",
+                "opacity" : 1,
+                "color" : "#000",
+                "fontFamily" : "Microsoft YaHei",
+                "fontSize" : "14px",
+                "fontWeight" : 400,
+                "fontStyle" : "normal",
+                "textDecoration" : "none",
+                "cursor" : "default",
+                "flexShrink" : 0,
+                "paddingTop" : "0px",
+                "paddingRight" : "0px",
+                "paddingBottom" : "0px",
+                "paddingLeft" : "0px"
+              },
+              "titleToolTipExceedingWord" : false,
+              "titleToolTipExceedingWordCount" : 0,
+              "isShowBadge" : false,
+              "leftOffset" : 0,
+              "dataModel" : "",
+              "dataSetID" : "",
+              "dataSetColID" : ""
+            },
+            "compName" : "简单文本",
+            "children" : [ ]
+          }, {
+            "key" : "FormTextInput2",
+            "type" : "FormTextInput",
+            "props" : {
+              "placeholder" : "请输入信息名称",
+              "edit" : true,
+              "addonBeforeMask" : [ ],
+              "addonAfterMask" : [ ],
+              "enableNotNullCheck" : true,
+              "enableNotNullTip" : "此项为必填项！",
+              "notNullToolTipLocation" : "bottomLeft",
+              "notNullToolTipFontColor" : "#FF3333",
+              "notNullToolTipBackgroundColor" : "#FFFFFF",
+              "titleToolTipLocation" : "top",
+              "scriptsCode" : {
+                "onEnter" : "",
+                "onChange" : "",
+                "onKeyboardUp" : "",
+                "onFocusIn" : "",
+                "onLostFocus" : "",
+                "onClickPrefixOrSuffix" : ""
+              },
+              "style" : {
+                "textAlign" : "left",
+                "fontWeight" : "normal",
+                "fontStyle" : "normal",
+                "textDecoration" : "none",
+                "cursor" : "default"
+              },
+              "placeholderCompHAlign" : "left",
+              "compSize" : "",
+              "showClearIcon" : false,
+              "format" : "",
+              "prefixImg" : "",
+              "suffixImg" : "",
+              "addonBefore" : "",
+              "addonAfter" : "",
+              "enableNotNull" : false,
+              "isShowTitle" : false,
+              "titleToolTipCustomText" : "",
+              "titleToolTipFontColor" : "",
+              "titleToolTipBackgroundColor" : "",
+              "titleToolTipExceedingWord" : false,
+              "titleToolTipExceedingWordCount" : 0,
+              "dataModel" : "MDModel1",
+              "dataSetID" : "HLZB_tbDownstreamIndustry",
+              "dataSetColID" : "infoName",
+              "addonBeforeColID" : "",
+              "addonAfterColID" : ""
+            },
+            "compName" : "文本框",
+            "children" : [ ]
+          } ]
+        } ]
+      }, {
+        "key" : "FormBoxContainer13",
+        "type" : "FormBoxContainer",
+        "props" : {
+          "floatPositionOrigin" : "rb",
+          "floatX" : "0",
+          "floatY" : "0",
+          "resizeDirection" : "both",
+          "scriptsCode" : {
+            "onClickHandler" : "",
+            "afterCloseFullScreen" : "",
+            "onMouseEnter" : "",
+            "onMouseLeave" : "",
+            "onMouseWheel" : ""
+          },
+          "style" : {
+            "flexDirection" : "row",
+            "flexWrap" : "nowrap",
+            "justifyContent" : "flex-start",
+            "alignItems" : "flex-start",
+            "overflow" : "hidden",
+            "backgroundRepeat" : "tensile",
+            "backgroundPosition" : "left top",
+            "display" : "flex",
+            "gap" : "16px",
+            "cursor" : "default",
+            "height" : "auto"
+          },
+          "isFloat" : false,
+          "isDraggable" : false,
+          "isResizable" : false
+        },
+        "compName" : "通用布局",
+        "children" : [ {
+          "key" : "FormBoxContainer14",
+          "type" : "FormBoxContainer",
+          "props" : {
+            "floatPositionOrigin" : "rb",
+            "floatX" : "0",
+            "floatY" : "0",
+            "resizeDirection" : "both",
+            "scriptsCode" : {
+              "onClickHandler" : "",
+              "afterCloseFullScreen" : "",
+              "onMouseEnter" : "",
+              "onMouseLeave" : "",
+              "onMouseWheel" : ""
+            },
+            "style" : {
+              "height" : "auto",
+              "width" : "100%",
+              "flexDirection" : "row",
+              "flexWrap" : "nowrap",
+              "justifyContent" : "flex-start",
+              "alignItems" : "flex-start",
+              "overflow" : "hidden",
+              "backgroundRepeat" : "tensile",
+              "backgroundPosition" : "left top",
+              "display" : "flex",
+              "gap" : 0,
+              "cursor" : "default"
+            },
+            "isFloat" : false,
+            "isDraggable" : false,
+            "isResizable" : false
+          },
+          "compName" : "通用布局",
+          "children" : [ {
+            "key" : "FormLabel6",
+            "type" : "FormLabel",
+            "props" : {
+              "textVal" : "*信息内容：",
+              "titleToolTipLocation" : "top",
+              "editMask" : [ ],
+              "asteriskRed" : true,
+              "lineClampNumber" : 1,
+              "badgeShowZero" : true,
+              "topOffset" : -28,
+              "scriptsCode" : {
+                "onClick" : ""
+              },
+              "isShowTitle" : false,
+              "titleToolTipCustomText" : "",
+              "titleToolTipFontColor" : "#000000",
+              "titleToolTipBackgroundColor" : "#FFFFFF",
+              "showEllipsis" : false,
+              "style" : {
+                "height" : "32px",
+                "width" : "100px",
+                "justifyContent" : "center",
+                "alignItems" : "center",
+                "opacity" : 1,
+                "color" : "#000",
+                "fontFamily" : "Microsoft YaHei",
+                "fontSize" : "14px",
+                "fontWeight" : 400,
+                "fontStyle" : "normal",
+                "textDecoration" : "none",
+                "cursor" : "default",
+                "flexShrink" : 0,
+                "paddingTop" : "0px",
+                "paddingRight" : "0px",
+                "paddingBottom" : "0px",
+                "paddingLeft" : "0px"
+              },
+              "titleToolTipExceedingWord" : false,
+              "titleToolTipExceedingWordCount" : 0,
+              "isShowBadge" : false,
+              "leftOffset" : 0,
+              "dataModel" : "",
+              "dataSetID" : "",
+              "dataSetColID" : ""
+            },
+            "compName" : "简单文本",
+            "children" : [ ]
+          }, {
+            "key" : "FormTextArea1",
+            "type" : "FormTextArea",
+            "props" : {
+              "placeholder" : "请输入信息内容",
+              "edit" : true,
+              "resize" : "none",
+              "enableNotNullCheck" : true,
+              "enableNotNullTip" : "此项为必填项！",
+              "notNullToolTipLocation" : "bottomLeft",
+              "notNullToolTipFontColor" : "#FF3333",
+              "notNullToolTipBackgroundColor" : "#FFFFFF",
+              "titleToolTipLocation" : "top",
+              "scriptsCode" : {
+                "onValueChangedHandler" : "",
+                "onKeyPress" : "",
+                "onKeyUp" : "",
+                "onFocusIn" : "",
+                "onLostFocus" : ""
+              },
+              "style" : {
+                "height" : "200px",
+                "textAlign" : "left",
+                "fontWeight" : "normal",
+                "fontStyle" : "normal",
+                "textDecoration" : "none",
+                "cursor" : "default"
+              },
+              "showCount" : true,
+              "maxLength" : "1000",
+              "enableNotNull" : true,
+              "isShowTitle" : false,
+              "titleToolTipCustomText" : "",
+              "titleToolTipFontColor" : "",
+              "titleToolTipBackgroundColor" : "",
+              "titleToolTipExceedingWord" : false,
+              "titleToolTipExceedingWordCount" : 0,
+              "dataModel" : "MDModel1",
+              "dataSetID" : "HLZB_tbDownstreamIndustry",
+              "dataSetColID" : "infoContent"
+            },
+            "compName" : "文本域",
+            "children" : [ ]
+          } ]
+        } ]
+      }, {
+        "key" : "FormBoxContainer17",
+        "type" : "FormBoxContainer",
+        "props" : {
+          "floatPositionOrigin" : "rb",
+          "floatX" : "0",
+          "floatY" : "0",
+          "resizeDirection" : "both",
+          "scriptsCode" : {
+            "onClickHandler" : "",
+            "afterCloseFullScreen" : "",
+            "onMouseEnter" : "",
+            "onMouseLeave" : "",
+            "onMouseWheel" : ""
+          },
+          "style" : {
+            "height" : "40px",
+            "flexDirection" : "row",
+            "flexWrap" : "nowrap",
+            "justifyContent" : "center",
+            "alignItems" : "flex-start",
+            "overflow" : "hidden",
+            "backgroundRepeat" : "tensile",
+            "backgroundPosition" : "left top",
+            "display" : "flex",
+            "gap" : "16px",
+            "cursor" : "default"
+          },
+          "isFloat" : false,
+          "isDraggable" : false,
+          "isResizable" : false
+        },
+        "compName" : "通用布局",
+        "children" : [ {
+          "key" : "FormLabel8",
+          "type" : "FormLabel",
+          "props" : {
+            "textVal" : "*审核人：",
+            "titleToolTipLocation" : "top",
+            "editMask" : [ ],
+            "asteriskRed" : true,
+            "lineClampNumber" : 1,
+            "badgeShowZero" : true,
+            "topOffset" : -28,
+            "scriptsCode" : {
+              "onClick" : ""
+            },
+            "isShowTitle" : false,
+            "titleToolTipCustomText" : "",
+            "titleToolTipFontColor" : "#000000",
+            "titleToolTipBackgroundColor" : "#FFFFFF",
+            "showEllipsis" : false,
+            "style" : {
+              "height" : "32px",
+              "width" : "100px",
+              "justifyContent" : "center",
+              "alignItems" : "center",
+              "opacity" : 1,
+              "color" : "#000",
+              "fontFamily" : "Microsoft YaHei",
+              "fontSize" : "14px",
+              "fontWeight" : 400,
+              "fontStyle" : "normal",
+              "textDecoration" : "none",
+              "cursor" : "default",
+              "flexShrink" : 0,
+              "paddingTop" : "0px",
+              "paddingRight" : "0px",
+              "paddingBottom" : "0px",
+              "paddingLeft" : "0px"
+            },
+            "titleToolTipExceedingWord" : false,
+            "titleToolTipExceedingWordCount" : 0,
+            "isShowBadge" : false,
+            "leftOffset" : 0,
+            "dataSetID" : "",
+            "dataSetColID" : "",
+            "dataModel" : ""
+          },
+          "compName" : "简单文本",
+          "children" : [ ]
+        }, {
+          "key" : "DataSetFieldComboBox1",
+          "type" : "DataSetFieldComboBox",
+          "props" : {
+            "placeholder" : "请选择",
+            "edit" : true,
+            "modalTitle" : "字典帮助",
+            "searchPlaceholder" : "请输入关键字搜索",
+            "helpWinWidth" : "720px",
+            "helpWinHeight" : "600px",
+            "pagingShowNum" : 10,
+            "minimumJS" : 1,
+            "parentNodeName" : "root",
+            "checkStrictly" : true,
+            "checkBoxStyle" : "0",
+            "showType" : "1",
+            "showClearButton" : true,
+            "showClearIcon" : true,
+            "disableShowIcon" : true,
+            "enableNotNullCheck" : true,
+            "enableNotNullTip" : "此项为必填项！",
+            "notNullToolTipLocation" : "bottomLeft",
+            "notNullToolTipFontColor" : "#FF3333",
+            "notNullToolTipBackgroundColor" : "#FFFFFF",
+            "titleToolTipLocation" : "top",
+            "scriptsCode" : {
+              "beforeOpenWindow" : "",
+              "afterSelectedDict" : "// (字典帮助)DataSetFieldComboBox1.afterSelectedDict\ndebugger\nvar name = selectValueRowSet._dataMap.get(\"F_NAME\");\nDataSetFieldComboBox1.setValue(name);\nMDModel1.getMdmDataModel().getDataSet(\"HLZB_tbDownstreamIndustry\").getRowSetArray()[0].putString(\"AUDIT_BY_NAME\",name);",
+              "onFocus" : "",
+              "onLostFocus" : "",
+              "onClearBtnClicked" : "",
+              "onWindowHide" : "",
+              "onChange" : ""
+            },
+            "viewDataSetInfos" : [ ],
+            "helpCols" : [ "F_NAME" ],
+            "autoSetCols" : [ ],
+            "style" : {
+              "textDecoration" : "none"
+            },
+            "showLabelInFocus" : false,
+            "paging" : false,
+            "level" : false,
+            "parentSonLevel" : false,
+            "disableExpression" : "",
+            "isLoadMX" : false,
+            "onlyChooseMX" : false,
+            "promptChooseNotMX" : false,
+            "isCheckBox" : false,
+            "showCode" : false,
+            "isAllowEnterCode" : false,
+            "isCheckFKey" : false,
+            "isShowFKeyName" : false,
+            "clickInputEject" : false,
+            "caseSensitive" : false,
+            "reloadData" : false,
+            "showHistory" : false,
+            "showFavorite" : false,
+            "showFullscreen" : false,
+            "expandChildrenOnDoubleClick" : false,
+            "plusConditionList" : "",
+            "checkLimitOnselect" : false,
+            "dataPermissionLoadMode" : "",
+            "checkLimitBzw" : "",
+            "enableNotNull" : true,
+            "isShowTitle" : false,
+            "titleToolTipCustomText" : "",
+            "titleToolTipFontColor" : "",
+            "titleToolTipBackgroundColor" : "",
+            "titleToolTipExceedingWord" : false,
+            "titleToolTipExceedingWordCount" : 0,
+            "dataModel" : "MDModel1",
+            "dataSetID" : "HLZB_tbDownstreamIndustry",
+            "dataSetColID" : "AUDIT_BY",
+            "dataSetNameColID" : "",
+            "mdModel" : "MDModel2",
+            "viewDataSetID" : "BSUSER",
+            "filterDCTCond" : "",
+            "customOrderBy" : ""
+          },
+          "compName" : "字典帮助",
+          "children" : [ ]
+        } ]
+      }, {
+        "key" : "FormBoxContainer15",
+        "type" : "FormBoxContainer",
+        "props" : {
+          "floatPositionOrigin" : "rb",
+          "floatX" : "0",
+          "floatY" : "0",
+          "resizeDirection" : "both",
+          "scriptsCode" : {
+            "onClickHandler" : "",
+            "afterCloseFullScreen" : "",
+            "onMouseEnter" : "",
+            "onMouseLeave" : "",
+            "onMouseWheel" : ""
+          },
+          "style" : {
+            "flexDirection" : "row",
+            "flexWrap" : "nowrap",
+            "justifyContent" : "flex-start",
+            "alignItems" : "flex-start",
+            "overflow" : "hidden",
+            "backgroundRepeat" : "tensile",
+            "backgroundPosition" : "left top",
+            "display" : "flex",
+            "gap" : "16px",
+            "cursor" : "default",
+            "height" : "40px"
+          },
+          "isFloat" : false,
+          "isDraggable" : false,
+          "isResizable" : false
+        },
+        "compName" : "通用布局",
+        "children" : [ {
+          "key" : "FormBoxContainer16",
+          "type" : "FormBoxContainer",
+          "props" : {
+            "floatPositionOrigin" : "rb",
+            "floatX" : "0",
+            "floatY" : "0",
+            "resizeDirection" : "both",
+            "scriptsCode" : {
+              "onClickHandler" : "",
+              "afterCloseFullScreen" : "",
+              "onMouseEnter" : "",
+              "onMouseLeave" : "",
+              "onMouseWheel" : ""
+            },
+            "style" : {
+              "height" : "auto",
+              "width" : "100%",
+              "flexDirection" : "row",
+              "flexWrap" : "nowrap",
+              "justifyContent" : "flex-start",
+              "alignItems" : "center",
+              "overflow" : "hidden",
+              "backgroundRepeat" : "tensile",
+              "backgroundPosition" : "left top",
+              "display" : "flex",
+              "gap" : 0,
+              "cursor" : "default"
+            },
+            "isFloat" : false,
+            "isDraggable" : false,
+            "isResizable" : false
+          },
+          "compName" : "通用布局",
+          "children" : [ {
+            "key" : "FormLabel7",
+            "type" : "FormLabel",
+            "props" : {
+              "textVal" : "审核状态：",
+              "titleToolTipLocation" : "top",
+              "editMask" : [ ],
+              "asteriskRed" : true,
+              "lineClampNumber" : 1,
+              "badgeShowZero" : true,
+              "topOffset" : -28,
+              "scriptsCode" : {
+                "onClick" : ""
+              },
+              "isShowTitle" : false,
+              "titleToolTipCustomText" : "",
+              "titleToolTipFontColor" : "#000000",
+              "titleToolTipBackgroundColor" : "#FFFFFF",
+              "showEllipsis" : false,
+              "style" : {
+                "height" : "32px",
+                "width" : "100px",
+                "justifyContent" : "center",
+                "alignItems" : "center",
+                "opacity" : 1,
+                "color" : "#000",
+                "fontFamily" : "Microsoft YaHei",
+                "fontSize" : "14px",
+                "fontWeight" : 400,
+                "fontStyle" : "normal",
+                "textDecoration" : "none",
+                "cursor" : "default",
+                "flexShrink" : 0,
+                "paddingTop" : "0px",
+                "paddingRight" : "0px",
+                "paddingBottom" : "0px",
+                "paddingLeft" : "0px"
+              },
+              "titleToolTipExceedingWord" : false,
+              "titleToolTipExceedingWordCount" : 0,
+              "isShowBadge" : false,
+              "leftOffset" : 0,
+              "dataModel" : "",
+              "dataSetID" : "",
+              "dataSetColID" : ""
+            },
+            "compName" : "简单文本",
+            "children" : [ ]
+          }, {
+            "key" : "FormComboBox1",
+            "type" : "FormComboBox",
+            "props" : {
+              "placeholder" : "请选择",
+              "edit" : true,
+              "editMask" : [ {
+                "value" : "1",
+                "label" : "审核通过"
+              }, {
+                "value" : "2",
+                "label" : "审核不通过"
+              } ],
+              "highlightColor" : "rgba(127, 0, 85,1)",
+              "showArrow" : true,
+              "allowClear" : true,
+              "enableNotNullCheck" : true,
+              "enableNotNullTip" : "此项为必填项！",
+              "notNullToolTipLocation" : "bottomLeft",
+              "notNullToolTipFontColor" : "#FF3333",
+              "notNullToolTipBackgroundColor" : "#FFFFFF",
+              "titleToolTipLocation" : "top",
+              "scriptsCode" : {
+                "beforeOpenList" : "",
+                "beforeSelectedChange" : "",
+                "selectedChange" : "// (下拉掩码)FormComboBox1.selectedChange\n debugger\n const now = new Date();\n        const year = now.getFullYear();\n        const month = String(now.getMonth() + 1).padStart(2, '0'); // 月份从0开始，补0\n        const day = String(now.getDate()).padStart(2, '0');\n        const hours = String(now.getHours()).padStart(2, '0');\n        const minutes = String(now.getMinutes()).padStart(2, '0');\n        const seconds = String(now.getSeconds()).padStart(2, '0');\n        \n        // 拼接为完整时间字符串\n        const sj = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n        \n        console.log(\"时间为：\" + sj);\n        //Rows.putString(\"AUDIT_TIME\",sj)\n        MDModel1.getMdmDataModel().getDataSet(\"HLZB_tbDownstreamIndustry\").getRowSetArray()[0].putString(\"AUDIT_TIME\",sj)",
+                "selectedHandler" : "",
+                "getCustomOptions" : "",
+                "onLostFocus" : ""
+              },
+              "style" : {
+                "fontFamily" : " Microsoft YaHei",
+                "textAlign" : "left",
+                "fontWeight" : "normal",
+                "fontStyle" : "normal",
+                "textDecoration" : "none",
+                "cursor" : "default"
+              },
+              "compSize" : "",
+              "allowSearch" : false,
+              "disableExp" : "",
+              "showLabelInFocus" : false,
+              "showBhAndMc" : false,
+              "optionScroll" : false,
+              "enableNotNull" : false,
+              "isShowTitle" : false,
+              "titleToolTipCustomText" : "",
+              "titleToolTipFontColor" : "",
+              "titleToolTipBackgroundColor" : "",
+              "titleToolTipExceedingWord" : false,
+              "titleToolTipExceedingWordCount" : 0,
+              "dataModel" : "MDModel1",
+              "dataSetID" : "HLZB_tbDownstreamIndustry",
+              "dataSetColID" : "shStatus"
+            },
+            "compName" : "下拉掩码",
+            "children" : [ ]
+          } ]
+        } ]
+      } ]
+    }, {
+      "key" : "FormBoxContainer25",
+      "type" : "FormBoxContainer",
+      "props" : {
+        "floatPositionOrigin" : "rb",
+        "floatX" : "0",
+        "floatY" : "0",
+        "resizeDirection" : "both",
+        "scriptsCode" : {
+          "onClickHandler" : "",
+          "afterCloseFullScreen" : "",
+          "onMouseEnter" : "",
+          "onMouseLeave" : "",
+          "onMouseWheel" : ""
+        },
+        "style" : {
+          "flexDirection" : "row",
+          "flexWrap" : "nowrap",
+          "justifyContent" : "center",
+          "alignItems" : "center",
+          "overflow" : "hidden",
+          "backgroundRepeat" : "tensile",
+          "backgroundPosition" : "left top",
+          "display" : "flex",
+          "gap" : "16px",
+          "cursor" : "default",
+          "height" : "50px"
+        },
+        "isFloat" : false,
+        "isDraggable" : false,
+        "isResizable" : false
+      },
+      "compName" : "通用布局",
+      "children" : [ {
+        "key" : "FormButton2",
+        "type" : "FormButton",
+        "props" : {
+          "labelText" : "保存",
+          "badgeShowZero" : true,
+          "topOffset" : -28,
+          "debounce" : true,
+          "scriptsCode" : {
+            "onClick" : "// (按钮)FormButton2.onClick\n// (确定)FormButton1.onClick\ndebugger;\nlet flag = MDModel1.checkCompNotNull();\n//校验非空\nif(!flag){\n    let Row = modelContainer.getValue('Row',null);\n    var config = modelContainer.getValue('config',null);\n    var shij = modelContainer.getValue('shij',null);\n    var  shzt= modelContainer.getValue('shzt',null);\n    let Rows = config.Row;\n    let type = config.type;\n   \n    var infoName = Rows.getString(\"infoName\",\"\");\n    var infocon = Rows.getString(\"infoContent\",\"\");\n     var shr = Rows.getString(\"AUDIT_BY_NAME\",\"\");\n    if(infoName == null || infoName == \"\"||infoName.trim()==\"\"){\n        window.showAlertMsg('系统提示', '信息名称不能为空！', '1', '确定', null);\n        return \"0\";\n    }\n     if(infocon == null || infocon == \"\"||infocon.trim()==\"\"){\n        window.showAlertMsg('系统提示', '信息内容不能为空！', '1', '确定', null);\n        return \"0\";\n    }\n     if(shr == null || shr == \"\"||shr.trim()==\"\"){\n        window.showAlertMsg('系统提示', '审核人不能为空！', '1', '确定', null);\n        return \"0\";\n    }\n    \n   \n    if(type==\"shenhe\" && shzt==\"1\"){\n       \n       \n        let save = modelContainer.getValue('config',null).saveAction;\n        save.setSaveTip('审核成功!'); \n        save.doAction();\n        return;\n    }\n    let save = modelContainer.getValue('config',null).saveAction;\n    save.setSaveTip('保存成功!');\n    save.doAction();\n    // let ym = FormExtendPropertiesField1.getValue();\n    // Row.putObject(\"COL_VIEW\",ym);\n\n    WindowExitAction1.doAction();\n \n}\n",
+            "onMouseEnter" : "",
+            "onMouseLeave" : "",
+            "onMouseOver" : ""
+          },
+          "style" : {
+            "backgroundColor" : "#409eff",
+            "color" : "rgba(255,255,255,1)",
+            "textAlign" : "center",
+            "fontWeight" : "normal",
+            "fontStyle" : "normal",
+            "textDecoration" : "none",
+            "cursor" : "pointer",
+            "borderRadius" : "4px",
+            "borderStyle" : "none",
+            "height" : "40px",
+            "width" : "90px",
+            "fontSize" : "14px"
+          },
+          "isShowTitle" : false,
+          "titleToolTipCustomText" : "",
+          "compSize" : "",
+          "isShowBadge" : false,
+          "leftOffset" : 0,
+          "action" : ""
+        },
+        "compName" : "按钮",
+        "children" : [ ]
+      } ]
+    } ]
+  } ],
+  "dataModels" : [ {
+    "key" : "MDModel1",
+    "type" : "MDModel",
+    "props" : {
+      "providerService" : "SYS_DICT_LARGELOAD",
+      "resolverService" : "SYS_MDM_RESOLVER",
+      "DCT_ID" : "HLZB_tbDownstreamIndustry",
+      "dataChecker" : "",
+      "valueManager" : "",
+      "dataBase" : "",
+      "paramConverter" : "",
+      "convert_null_to_space" : true,
+      "convert_null_to_zero" : true,
+      "scriptsCode" : {
+        "setParamObject" : "",
+        "endLoad" : "",
+        "beforeSave" : "",
+        "dataSetUpdated" : "",
+        "onFail" : "",
+        "afterSave" : "",
+        "finishEdit" : ""
+      },
+      "MDL_ID" : "",
+      "FKEY_ID" : "",
+      "RLGL_ID" : "",
+      "afterLoadStartEdit" : true,
+      "showBusyWindow" : true,
+      "useDictLimit" : false,
+      "defaultValueAddBlank" : false,
+      "maxBmIOMQuery" : false,
+      "enableLoadMetaData" : true,
+      "treeCardMaintain" : false,
+      "isLoadFKey" : "1",
+      "serverCors" : "",
+      "DCT_BMCOLID" : "",
+      "DCT_MCCOLID" : "",
+      "DCT_JSCOLID" : "",
+      "DCT_MXCOLID" : "",
+      "DCT_PTCOLID" : "",
+      "DCT_BMSTRU" : "",
+      "DCT_FIXLEN" : "0",
+      "DCT_STEP" : "",
+      "CodeRule" : "",
+      "LEVEL_TYPE" : "",
+      "style" : { }
+    },
+    "compName" : "字典模型",
+    "children" : [ ]
+  }, {
+    "key" : "MDModel2",
+    "type" : "MDModel",
+    "props" : {
+      "providerService" : "SYS_DICT_LARGELOAD",
+      "resolverService" : "SYS_MDM_RESOLVER",
+      "DCT_ID" : "BSUSER",
+      "dataChecker" : "",
+      "valueManager" : "",
+      "dataBase" : "",
+      "paramConverter" : "",
+      "convert_null_to_space" : true,
+      "convert_null_to_zero" : true,
+      "scriptsCode" : {
+        "setParamObject" : "",
+        "endLoad" : "",
+        "beforeSave" : "",
+        "dataSetUpdated" : "",
+        "onFail" : "",
+        "afterSave" : "",
+        "finishEdit" : ""
+      },
+      "MDL_ID" : "",
+      "FKEY_ID" : "",
+      "RLGL_ID" : "",
+      "afterLoadStartEdit" : false,
+      "showBusyWindow" : true,
+      "useDictLimit" : false,
+      "defaultValueAddBlank" : false,
+      "maxBmIOMQuery" : false,
+      "enableLoadMetaData" : false,
+      "treeCardMaintain" : false,
+      "isLoadFKey" : "1",
+      "serverCors" : "",
+      "DCT_BMCOLID" : "",
+      "DCT_MCCOLID" : "",
+      "DCT_JSCOLID" : "",
+      "DCT_MXCOLID" : "",
+      "DCT_PTCOLID" : "",
+      "DCT_BMSTRU" : "",
+      "DCT_FIXLEN" : "0",
+      "DCT_STEP" : "",
+      "CodeRule" : "",
+      "LEVEL_TYPE" : "",
+      "style" : { }
+    },
+    "compName" : "字典模型",
+    "children" : [ ]
+  } ],
+  "actionComps" : [ {
+    "key" : "WindowExitAction1",
+    "type" : "WindowExitAction",
+    "props" : {
+      "actionText" : "关闭窗口",
+      "width" : "70px",
+      "height" : "30px",
+      "visible" : true,
+      "icon" : "",
+      "activeIcon" : "",
+      "hoverIcon" : "",
+      "visibleExpression" : "",
+      "enableExpression" : "",
+      "GNBH" : "",
+      "isOperateLog" : false,
+      "operateLog" : "",
+      "callbackFnc" : false,
+      "style" : { }
+    },
+    "compName" : "关闭弹窗"
+  } ],
+  "serverJsComps" : [ ],
+  "tableSource" : [ {
+    "tableName" : "机床行业信息",
+    "tableID" : "HLZB_machine"
+  }, {
+    "tableName" : "组织机构",
+    "tableID" : "SYS_ORG"
+  }, {
+    "tableName" : "用户字典",
+    "tableID" : "BSUSER"
+  }, {
+    "tableName" : "在线用户列表",
+    "tableID" : "SYS_ONLINE_USER"
+  }, {
+    "tableName" : "下游行业信息表",
+    "tableID" : "HLZB_tbDownstreamIndustry"
+  } ]
+}

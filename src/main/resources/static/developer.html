@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <meta name="theme-color" content="#000000"/>
+        <meta name="description" content=""/>
+        <title></title>
+        <script type="text/javascript" src="./react/base.min.js?1749789413837"></script>
+        <script type="text/javascript" src="./react/application.js?1749789413837"></script>
+        <script type="text/javascript" src="./react/theme/index.js?1749789413837"></script>
+        <link rel="stylesheet" href="./react/css/application.css?1749789413837"/>
+        <link rel="stylesheet" href="./react/theme/index.css?1749789413837"/>
+        <!-- <script type="text/javascript" th:inline="javascript">
+            // xmlns:th="http://www.thymeleaf.org"
+            // 取出Thymeleaf传过来的配置
+            var thymeleafConfig = /*[[${reactEnv}]]*/ {};
+            for (let key in thymeleafConfig) {
+                window.reactEnv[key] = thymeleafConfig[key];
+            }
+        </script> -->
+        <script type="text/javascript">
+            window.disableJSRunning = 'true';
+            window.reactEnv.appManageAllow = true;
+            // 记录前台包版本号
+            window.codeVersion =
+                '20250613';
+            // 设置title
+            document.title = window.reactEnv.TITLE;
+            if (!window.reactEnv.SERVER_ADDR) {
+                window.reactEnv.SERVER_ADDR = '.';
+            }
+            if (!window.reactEnv.STATIC_BASE) {
+                window.reactEnv.STATIC_BASE = '.';
+            }
+            // 设置icon
+            (function () {
+                var link = document.createElement('link');
+                link.type = 'image/x-icon';
+                link.rel = 'shortcut icon';
+                link.href = window.reactEnv.ICON;
+                document.getElementsByTagName('head')[0].appendChild(link);
+            })();
+        </script>
+    <link href="./react/static/css/reactVendor.bb7780d1.chunk.css" rel="stylesheet"><link href="./react/static/css/antdui.eb1a47d9.chunk.css" rel="stylesheet"><link href="./react/static/css/vendor.520fdf74.chunk.css" rel="stylesheet"><link href="./react/static/css/main.70fafaad.chunk.css" rel="stylesheet"></head>
+    <body>
+        <div id="root"></div>
+        <script>
+            // 设置waitingImg
+            var str =
+                '<div style="height: 100vh; width: 100%; position: relative">' +
+                '<img id="waitImg" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%)" src="' +
+                window.reactEnv.waitingImg +
+                '" />' +
+                '</div>';
+            document.getElementById('root').innerHTML = str;
+        </script>
+    <script>!function(e){function f(f){for(var d,a,b=f[0],n=f[1],o=f[2],u=0,l=[];u<b.length;u++)a=b[u],Object.prototype.hasOwnProperty.call(t,a)&&t[a]&&l.push(t[a][0]),t[a]=0;for(d in n)Object.prototype.hasOwnProperty.call(n,d)&&(e[d]=n[d]);for(i&&i(f);l.length;)l.shift()();return r.push.apply(r,o||[]),c()}function c(){for(var e,f=0;f<r.length;f++){for(var c=r[f],d=!0,a=1;a<c.length;a++){var n=c[a];0!==t[n]&&(d=!1)}d&&(r.splice(f--,1),e=b(b.s=c[0]))}return e}var d={},a={36:0},t={36:0},r=[];function b(f){if(d[f])return d[f].exports;var c=d[f]={i:f,l:!1,exports:{}};return e[f].call(c.exports,c,c.exports,b),c.l=!0,c.exports}b.e=function(e){var f=[];a[e]?f.push(a[e]):0!==a[e]&&{3:1,5:1,6:1,7:1,8:1,10:1,11:1,12:1,15:1,16:1,19:1,20:1,21:1,22:1,23:1,24:1,25:1,26:1,27:1,38:1,39:1,40:1,41:1,42:1,43:1,44:1,45:1,46:1,47:1,48:1,49:1,50:1,51:1,52:1,53:1,54:1,56:1,57:1,58:1,59:1,60:1,61:1,62:1,63:1,64:1,65:1,66:1,67:1}[e]&&f.push(a[e]=new Promise((function(f,c){for(var d="react/static/css/"+({}[e]||e)+"."+{0:"31d6cfe0",2:"31d6cfe0",3:"7222270e",4:"31d6cfe0",5:"47c01756",6:"f74fb606",7:"fc9c4d21",8:"70341097",9:"31d6cfe0",10:"5f324754",11:"e225a45b",12:"2e5092ee",13:"31d6cfe0",14:"31d6cfe0",15:"bc5fcc6a",16:"efe9eab9",17:"31d6cfe0",18:"31d6cfe0",19:"210cbff0",20:"52b503c6",21:"e8093e59",22:"38c5c271",23:"ed9f19cf",24:"8f00de78",25:"5055d974",26:"9c7da03b",27:"8e7e90b0",28:"31d6cfe0",29:"31d6cfe0",30:"31d6cfe0",31:"31d6cfe0",32:"31d6cfe0",38:"7e2f39b1",39:"b15a5489",40:"705affb4",41:"c8b11153",42:"d68beeba",43:"003016fc",44:"cc8daede",45:"db0d659c",46:"25906e39",47:"2c9287ca",48:"224236dd",49:"15bac6b6",50:"a32419b3",51:"5f37c5d9",52:"7c498113",53:"7eb5d225",54:"a4f0aa46",55:"31d6cfe0",56:"04757ae8",57:"0c1eb17f",58:"b46e16b6",59:"76280ee7",60:"8396c725",61:"3169234b",62:"744f6180",63:"72ab8536",64:"dd10bdae",65:"19d94b52",66:"6a971064",67:"2d6be5ea",68:"31d6cfe0",69:"31d6cfe0",70:"31d6cfe0",71:"31d6cfe0",72:"31d6cfe0",73:"31d6cfe0",74:"31d6cfe0",75:"31d6cfe0",76:"31d6cfe0",77:"31d6cfe0",78:"31d6cfe0",79:"31d6cfe0",80:"31d6cfe0",81:"31d6cfe0",82:"31d6cfe0",83:"31d6cfe0",84:"31d6cfe0",85:"31d6cfe0",86:"31d6cfe0",87:"31d6cfe0",88:"31d6cfe0",89:"31d6cfe0",90:"31d6cfe0",91:"31d6cfe0",92:"31d6cfe0",93:"31d6cfe0",94:"31d6cfe0",95:"31d6cfe0",96:"31d6cfe0",97:"31d6cfe0",98:"31d6cfe0",99:"31d6cfe0",100:"31d6cfe0",101:"31d6cfe0",102:"31d6cfe0",103:"31d6cfe0",104:"31d6cfe0",105:"31d6cfe0",106:"31d6cfe0",107:"31d6cfe0",108:"31d6cfe0",109:"31d6cfe0",110:"31d6cfe0",111:"31d6cfe0",112:"31d6cfe0",113:"31d6cfe0",114:"31d6cfe0",115:"31d6cfe0",116:"31d6cfe0",117:"31d6cfe0",118:"31d6cfe0",119:"31d6cfe0",120:"31d6cfe0",121:"31d6cfe0",122:"31d6cfe0",123:"31d6cfe0",124:"31d6cfe0",125:"31d6cfe0",126:"31d6cfe0",127:"31d6cfe0",128:"31d6cfe0",129:"31d6cfe0",130:"31d6cfe0",131:"31d6cfe0",132:"31d6cfe0",133:"31d6cfe0",134:"31d6cfe0",135:"31d6cfe0",136:"31d6cfe0",137:"31d6cfe0",138:"31d6cfe0",139:"31d6cfe0",140:"31d6cfe0",141:"31d6cfe0",142:"31d6cfe0",143:"31d6cfe0",144:"31d6cfe0",145:"31d6cfe0",146:"31d6cfe0",147:"31d6cfe0",148:"31d6cfe0",149:"31d6cfe0",150:"31d6cfe0",151:"31d6cfe0",152:"31d6cfe0",153:"31d6cfe0",154:"31d6cfe0",155:"31d6cfe0",156:"31d6cfe0",157:"31d6cfe0",158:"31d6cfe0",159:"31d6cfe0",160:"31d6cfe0",161:"31d6cfe0",162:"31d6cfe0",163:"31d6cfe0",164:"31d6cfe0",165:"31d6cfe0",166:"31d6cfe0",167:"31d6cfe0",168:"31d6cfe0",169:"31d6cfe0",170:"31d6cfe0",171:"31d6cfe0",172:"31d6cfe0",173:"31d6cfe0",174:"31d6cfe0",175:"31d6cfe0",176:"31d6cfe0",177:"31d6cfe0",178:"31d6cfe0",179:"31d6cfe0"}[e]+".chunk.css",t=b.p+d,r=document.getElementsByTagName("link"),n=0;n<r.length;n++){var o=(i=r[n]).getAttribute("data-href")||i.getAttribute("href");if("stylesheet"===i.rel&&(o===d||o===t))return f()}var u=document.getElementsByTagName("style");for(n=0;n<u.length;n++){var i;if((o=(i=u[n]).getAttribute("data-href"))===d||o===t)return f()}var l=document.createElement("link");l.rel="stylesheet",l.type="text/css",l.onload=f,l.onerror=function(f){var d=f&&f.target&&f.target.src||t,r=new Error("Loading CSS chunk "+e+" failed.\n("+d+")");r.code="CSS_CHUNK_LOAD_FAILED",r.request=d,delete a[e],l.parentNode.removeChild(l),c(r)},l.href=t,document.getElementsByTagName("head")[0].appendChild(l)})).then((function(){a[e]=0})));var c=t[e];if(0!==c)if(c)f.push(c[2]);else{var d=new Promise((function(f,d){c=t[e]=[f,d]}));f.push(c[2]=d);var r,n=document.createElement("script");n.charset="utf-8",n.timeout=120,b.nc&&n.setAttribute("nonce",b.nc),n.src=function(e){return b.p+"react/static/js/"+({}[e]||e)+"."+{0:"eac1ff57",2:"aa785f11",3:"80bceb9e",4:"1b7977a2",5:"176d0ff9",6:"e6cad334",7:"6d78bb90",8:"03454fe3",9:"309fd84f",10:"93fbf49b",11:"c168e1f7",12:"91ac27e4",13:"3e3241fd",14:"81cd7aa3",15:"9f84b016",16:"f63cddc3",17:"9696e479",18:"d81b05e5",19:"937ab58d",20:"f7452a42",21:"8b55b343",22:"7f1e6e36",23:"8d1c0fa6",24:"9b5a3ebb",25:"f4056367",26:"f86f6e6a",27:"25b323a0",28:"2e798c91",29:"60154662",30:"e6217196",31:"f0c59ac1",32:"e1d5fb3b",38:"14897a22",39:"d400eb0b",40:"9b729207",41:"4b1d7a07",42:"b208971b",43:"fe500e0e",44:"df317576",45:"7c4d0747",46:"751f7157",47:"4a3daf5f",48:"428ecec1",49:"4d8fdb6d",50:"800aad54",51:"9e147e60",52:"70fffbfe",53:"a233225d",54:"67b0af86",55:"f9995df9",56:"fcd1d61c",57:"53ef068b",58:"18b1f3d7",59:"087e8813",60:"63f48229",61:"be5f3f14",62:"362a477f",63:"731937dd",64:"db27bd8b",65:"c5ff0b1d",66:"2f0a32ae",67:"92bfa61f",68:"45b9f8aa",69:"00d910c8",70:"6c884dcc",71:"3e296cb6",72:"099f7796",73:"0a411360",74:"f8fdb2c7",75:"e70851a7",76:"d979d8f0",77:"4bec2914",78:"813a9b4e",79:"d7d38ac1",80:"957ceb84",81:"6bf7bdf1",82:"d25734ca",83:"41c6872b",84:"4a203f5b",85:"81b85cdc",86:"e8fef910",87:"ea6adbac",88:"a70166a2",89:"2f780ff8",90:"696884fb",91:"8214c88a",92:"b312dcde",93:"3c622f44",94:"6dc40bb0",95:"8257e4fc",96:"62698973",97:"1cb549e2",98:"c98f0fa9",99:"324c614b",100:"e2e0e9ae",101:"dccb0fc7",102:"1414fca3",103:"a4d4b9c2",104:"2ec13f4a",105:"7fdd33c4",106:"ed907e17",107:"d0c0bac8",108:"63c90ade",109:"4ebb7df8",110:"941d0ea5",111:"13eaddd6",112:"612a5de5",113:"b63dd1df",114:"eb5283eb",115:"818a91b1",116:"d6419779",117:"13227d1f",118:"4eec8d6c",119:"53637f78",120:"9b25cc05",121:"723141c7",122:"89bd9b4f",123:"770ad399",124:"3b065329",125:"abc12ab4",126:"34f2e346",127:"cf31304d",128:"3beb9dd3",129:"ffe5b8d0",130:"2548fe96",131:"aba31aca",132:"ec48fec9",133:"d1d4a90d",134:"e74009d7",135:"c9e8cd5b",136:"c71636c6",137:"31795e23",138:"e6f36cf2",139:"ebd0bf50",140:"f882aef3",141:"1a4c1002",142:"54047444",143:"4c8224dc",144:"268762fc",145:"b42a4a20",146:"e24a6c25",147:"aadae814",148:"0adf9c9d",149:"666e6913",150:"02dada53",151:"1ea11688",152:"15e29cd5",153:"c3bb5e21",154:"953bfdfe",155:"2b1078a7",156:"825e9eae",157:"f496a19f",158:"4c52f220",159:"d7deb0ba",160:"aa398f31",161:"00707d8d",162:"ae2d5f76",163:"ee6fc9df",164:"685e490b",165:"60df6c15",166:"20de48e7",167:"05af4244",168:"0d8b4251",169:"21252eb8",170:"4448e950",171:"b61b8749",172:"53dce4c4",173:"1158af7a",174:"b0ab1310",175:"ed04e6b9",176:"f9c1ec57",177:"258fa260",178:"c4504a2a",179:"c9f32e69"}[e]+".chunk.js"}(e);var o=new Error;r=function(f){n.onerror=n.onload=null,clearTimeout(u);var c=t[e];if(0!==c){if(c){var d=f&&("load"===f.type?"missing":f.type),a=f&&f.target&&f.target.src;o.message="Loading chunk "+e+" failed.\n("+d+": "+a+")",o.name="ChunkLoadError",o.type=d,o.request=a,c[1](o)}t[e]=void 0}};var u=setTimeout((function(){r({type:"timeout",target:n})}),12e4);n.onerror=n.onload=r,document.head.appendChild(n)}return Promise.all(f)},b.m=e,b.c=d,b.d=function(e,f,c){b.o(e,f)||Object.defineProperty(e,f,{enumerable:!0,get:c})},b.r=function(e){"undefined"!==typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},b.t=function(e,f){if(1&f&&(e=b(e)),8&f)return e;if(4&f&&"object"===typeof e&&e&&e.__esModule)return e;var c=Object.create(null);if(b.r(c),Object.defineProperty(c,"default",{enumerable:!0,value:e}),2&f&&"string"!=typeof e)for(var d in e)b.d(c,d,function(f){return e[f]}.bind(null,d));return c},b.n=function(e){var f=e&&e.__esModule?function(){return e.default}:function(){return e};return b.d(f,"a",f),f},b.o=function(e,f){return Object.prototype.hasOwnProperty.call(e,f)},b.p="./",b.oe=function(e){throw console.error(e),e};var n=this["webpackJsonposp-client-app"]=this["webpackJsonposp-client-app"]||[],o=n.push.bind(n);n.push=f,n=n.slice();for(var u=0;u<n.length;u++)f(n[u]);var i=o;c()}([]);</script><script src="./react/static/js/reactVendor.04fa31a2.chunk.js"></script><script src="./react/static/js/ospGridVendor.cac117d5.chunk.js"></script><script src="./react/static/js/antdui.08d5b4e6.chunk.js"></script><script src="./react/static/js/vendor.bd35e754.chunk.js"></script><script src="./react/static/js/main.1d73841b.chunk.js"></script></body>
+</html>

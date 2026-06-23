@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.16" class="java.beans.XMLDecoder">
+ <object class="com.pansoft.wf.flowmodel.flow.DefaultBIMFlow" id="DefaultBIMFlow0">
+  <void property="BIMEdgeMap">
+   <void method="put">
+    <string>Flow_0axxwgn</string>
+    <object class="com.pansoft.wf.flowmodel.edge.DefaultBIMEdge" id="DefaultBIMEdge0">
+     <void property="BIMEndVertice">
+      <object class="com.pansoft.wf.flowmodel.vertice.DefaultBIMVertice" id="DefaultBIMVertice0">
+       <void property="BIMFlow">
+        <object idref="DefaultBIMFlow0"/>
+       </void>
+       <void property="BIMId">
+        <string>S_3</string>
+       </void>
+       <void property="BIMVerticeType">
+        <string>NORMAL</string>
+       </void>
+       <void property="height">
+        <int>51</int>
+       </void>
+       <void property="id">
+        <string>Activity_1edxdgr</string>
+       </void>
+       <void property="inBIMEdgeMap">
+        <void method="put">
+         <string>Flow_0axxwgn</string>
+         <object idref="DefaultBIMEdge0"/>
+        </void>
+       </void>
+       <void property="name">
+        <string>分管领导报价</string>
+       </void>
+       <void property="outBIMEdgeMap">
+        <void method="put">
+         <string>Flow_14522v2</string>
+         <object class="com.pansoft.wf.flowmodel.edge.DefaultBIMEdge" id="DefaultBIMEdge1">
+          <void property="BIMEndVertice">
+           <object class="com.pansoft.wf.flowmodel.vertice.DefaultBIMVertice" id="DefaultBIMVertice1">
+            <void property="BIMFlow">
+             <object idref="DefaultBIMFlow0"/>
+            </void>
+            <void property="BIMId">
+             <string>end</string>
+            </void>
+            <void property="BIMVerticeType">
+             <string>END</string>
+            </void>
+            <void property="height">
+             <int>36</int>
+            </void>
+            <void property="id">
+             <string>Event_0g87eqt</string>
+            </void>
+            <void property="inBIMEdgeMap">
+             <void method="put">
+              <string>Flow_14522v2</string>
+              <object idref="DefaultBIMEdge1"/>
+             </void>
+            </void>
+            <void property="name">
+             <string>结束</string>
+            </void>
+            <void property="width">
+             <int>36</int>
+            </void>
+            <void property="x">
+             <int>872</int>
+            </void>
+            <void property="y">
+             <int>222</int>
+            </void>
+            <void id="Integer0" property="HLane_H"/>
+           </object>
+          </void>
+          <void property="BIMFlow">
+           <object idref="DefaultBIMFlow0"/>
+          </void>
+          <void property="BIMId">
+           <string>R_5</string>
+          </void>
+          <void property="BIMStartVertice">
+           <object idref="DefaultBIMVertice0"/>
+          </void>
+          <void property="billDataUpdateMap">
+           <void method="put">
+            <string>SUBMIT</string>
+            <object class="java.util.HashMap">
+             <void method="put">
+              <string>HLZB_XQXX_HEAD_TASKVALUE_FIELDS</string>
+              <string></string>
+             </void>
+             <void method="put">
+              <string>HLZB_XQXX_HEAD_WHERE</string>
+              <string></string>
+             </void>
+             <void method="put">
+              <string>HLZB_XQXX_HEAD_COLUMNS</string>
+              <string>XQXX_LCZT</string>
+             </void>
+             <void method="put">
+              <string>HLZB_XQXX_HEAD_VALUES</string>
+              <string>4</string>
+             </void>
+             <void method="put">
+              <string>HLZB_XQXX_HEAD_WRITEBACK_COLUMNS</string>
+              <string></string>
+             </void>
+             <void method="put">
+              <string>TABLES</string>
+              <array class="java.lang.String" length="1">
+               <void index="0">
+                <string>HLZB_XQXX_HEAD</string>
+               </void>
+              </array>
+             </void>
+            </object>
+           </void>
+          </void>
+          <void property="id">
+           <string>Flow_14522v2</string>
+          </void>
+          <void property="modelID">
+           <string>HLZB_XQXX_MX</string>
+          </void>
+          <void property="points">
+           <void method="add">
+            <object class="com.pansoft.wf.flowmodel.element.Point">
+             <void property="x">
+              <double>765.0</double>
+             </void>
+             <void property="y">
+              <double>240.0</double>
+             </void>
+            </object>
+           </void>
+           <void method="add">
+            <object class="com.pansoft.wf.flowmodel.element.Point">
+             <void property="x">
+              <double>872.0</double>
+             </void>
+             <void property="y">
+              <double>240.0</double>
+             </void>
+            </object>
+           </void>
+          </void>
+          <void property="retakeCompletedServiceKey">
+           <string></string>
+          </void>
+          <void property="retakeServiceKey">
+           <string></string>
+          </void>
+          <void property="rollbackCompletedServiceKey">
+           <string></string>
+          </void>
+          <void property="rollbackServiceKey">
+           <string></string>
+          </void>
+          <void property="submitCompletedServiceKey">
+           <string></string>
+          </void>
+          <void property="submitServiceKey">
+           <string></string>
+          </void>
+         </object>
+        </void>
+       </void>
+       <void property="width">
+        <int>111</int>
+       </void>
+       <void property="x">
+        <int>654</int>
+       </void>
+       <void property="y">
+        <int>214</int>
+       </void>
+      </object>
+     </void>
+     <void property="BIMFlow">
+      <object idref="DefaultBIMFlow0"/>
+     </void>
+     <void property="BIMId">
+      <string>R_3</string>
+     </void>
+     <void property="BIMStartVertice">
+      <object class="com.pansoft.wf.flowmodel.vertice.DefaultBIMVertice" id="DefaultBIMVertice2">
+       <void property="BIMFlow">
+        <object idref="DefaultBIMFlow0"/>
+       </void>
+       <void property="BIMId">
+        <string>S_2</string>
+       </void>
+       <void property="BIMVerticeType">
+        <string>NORMAL</string>
+       </void>
+       <void property="height">
+        <int>51</int>
+       </void>
+       <void property="id">
+        <string>Activity_18db6cw</string>
+       </void>
+       <void property="inBIMEdgeMap">
+        <void method="put">
+         <string>Flow_0uuis3f</string>
+         <object class="com.pansoft.wf.flowmodel.edge.DefaultBIMEdge" id="DefaultBIMEdge2">
+          <void property="BIMEndVertice">
+           <object idref="DefaultBIMVertice2"/>
+          </void>
+          <void property="BIMFlow">
+           <object idref="DefaultBIMFlow0"/>
+          </void>
+          <void property="BIMId">
+           <string>R_4</string>
+          </void>
+          <void property="BIMStartVertice">
+           <object class="com.pansoft.wf.flowmodel.vertice.DefaultBIMVertice" id="DefaultBIMVertice3">
+            <void property="BIMFlow">
+             <object idref="DefaultBIMFlow0"/>
+            </void>
+            <void property="BIMId">
+             <string>start</string>
+            </void>
+            <void property="BIMVerticeType">
+             <string>START</string>
+            </void>
+            <void property="attriMap">
+             <void method="put">
+              <string>NotAllowAutoSubmit</string>
+              <string></string>
+             </void>
+             <void method="put">
+              <string>submitTaskInDB</string>
+              <string></string>
+             </void>
+            </void>
+            <void property="billDataUpdateMap">
+             <void method="put">
+              <string>BILLDATAUPDATEMAP</string>
+              <object class="java.util.HashMap">
+               <void method="put">
+                <string>HLZB_XQXX_HEAD_WHERE</string>
+                <string></string>
+               </void>
+               <void method="put">
+                <string>HLZB_XQXX_HEAD_COLUMNS</string>
+                <string>XQXX_LCZT</string>
+               </void>
+               <void method="put">
+                <string>HLZB_XQXX_HEAD_VALUES</string>
+                <string>0</string>
+               </void>
+               <void method="put">
+                <string>TABLES</string>
+                <array class="java.lang.String" length="1">
+                 <void index="0">
+                  <string>HLZB_XQXX_HEAD</string>
+                 </void>
+                </array>
+               </void>
+              </object>
+             </void>
+            </void>
+            <void property="childFlowService">
+             <string></string>
+            </void>
+            <void property="groupFlowID">
+             <string></string>
+            </void>
+            <void property="height">
+             <int>40</int>
+            </void>
+            <void property="htmlProcessForm">
+             <string></string>
+            </void>
+            <void property="id">
+             <string>StartEvent_1r47rxd</string>
+            </void>
+            <void property="modelID">
+             <string>HLZB_XQXX_MX</string>
+            </void>
+            <void property="name">
+             <string>开始</string>
+            </void>
+            <void property="nodeType">
+             <string></string>
+            </void>
+            <void property="outBIMEdgeMap">
+             <void method="put">
+              <string>Flow_0uuis3f</string>
+              <object idref="DefaultBIMEdge2"/>
+             </void>
+             <void method="put">
+              <string>SequenceFlow_1chgxjr</string>
+              <object class="com.pansoft.wf.flowmodel.edge.DefaultBIMEdge" id="DefaultBIMEdge3">
+               <void property="BIMEndVertice">
+                <object class="com.pansoft.wf.flowmodel.vertice.DefaultBIMVertice" id="DefaultBIMVertice4">
+                 <void property="BIMFlow">
+                  <object idref="DefaultBIMFlow0"/>
+                 </void>
+                 <void property="BIMId">
+                  <string>S_1</string>
+                 </void>
+                 <void property="BIMVerticeType">
+                  <string>NORMAL</string>
+                 </void>
+                 <void property="height">
+                  <int>51</int>
+                 </void>
+                 <void property="id">
+                  <string>Task_0lr7c22</string>
+                 </void>
+                 <void property="inBIMEdgeMap">
+                  <void method="put">
+                   <string>SequenceFlow_1chgxjr</string>
+                   <object idref="DefaultBIMEdge3"/>
+                  </void>
+                 </void>
+                 <void property="name">
+                  <string>区域经理审核</string>
+                 </void>
+                 <void property="outBIMEdgeMap">
+                  <void method="put">
+                   <string>Flow_035z9ne</string>
+                   <object class="com.pansoft.wf.flowmodel.edge.DefaultBIMEdge" id="DefaultBIMEdge4">
+                    <void property="BIMEndVertice">
+                     <object idref="DefaultBIMVertice2"/>
+                    </void>
+                    <void property="BIMFlow">
+                     <object idref="DefaultBIMFlow0"/>
+                    </void>
+                    <void property="BIMId">
+                     <string>R_2</string>
+                    </void>
+                    <void property="BIMStartVertice">
+                     <object idref="DefaultBIMVertice4"/>
+                    </void>
+                    <void property="id">
+                     <string>Flow_035z9ne</string>
+                    </void>
+                    <void property="points">
+                     <void method="add">
+                      <object class="com.pansoft.wf.flowmodel.element.Point">
+                       <void property="x">
+                        <double>490.0</double>
+                       </void>
+                       <void property="y">
+                        <double>105.0</double>
+                       </void>
+                      </object>
+                     </void>
+                     <void method="add">
+                      <object class="com.pansoft.wf.flowmodel.element.Point">
+                       <void property="x">
+                        <double>490.0</double>
+                       </void>
+                       <void property="y">
+                        <double>214.0</double>
+                       </void>
+                      </object>
+                     </void>
+                    </void>
+                   </object>
+                  </void>
+                 </void>
+                 <void property="width">
+                  <int>111</int>
+                 </void>
+                 <void property="x">
+                  <int>434</int>
+                 </void>
+                 <void property="y">
+                  <int>54</int>
+                 </void>
+                </object>
+               </void>
+               <void property="BIMFlow">
+                <object idref="DefaultBIMFlow0"/>
+               </void>
+               <void property="BIMId">
+                <string>R_1</string>
+               </void>
+               <void property="BIMStartVertice">
+                <object idref="DefaultBIMVertice3"/>
+               </void>
+               <void property="attriMap">
+                <void method="put">
+                 <string>allowIntoTargetNodeExpGuid</string>
+                 <string>main@SJBBLC@R_1</string>
+                </void>
+               </void>
+               <void property="billDataUpdateMap">
+                <void method="put">
+                 <string>SUBMIT</string>
+                 <object class="java.util.HashMap">
+                  <void method="put">
+                   <string>HLZB_XQXX_HEAD_TASKVALUE_FIELDS</string>
+                   <string></string>
+                  </void>
+                  <void method="put">
+                   <string>HLZB_XQXX_HEAD_WHERE</string>
+                   <string></string>
+                  </void>
+                  <void method="put">
+                   <string>HLZB_XQXX_HEAD_COLUMNS</string>
+                   <string>XQXX_LCZT</string>
+                  </void>
+                  <void method="put">
+                   <string>HLZB_XQXX_HEAD_VALUES</string>
+                   <string>1</string>
+                  </void>
+                  <void method="put">
+                   <string>HLZB_XQXX_HEAD_WRITEBACK_COLUMNS</string>
+                   <string></string>
+                  </void>
+                  <void method="put">
+                   <string>TABLES</string>
+                   <array class="java.lang.String" length="1">
+                    <void index="0">
+                     <string>HLZB_XQXX_HEAD</string>
+                    </void>
+                   </array>
+                  </void>
+                 </object>
+                </void>
+               </void>
+               <void property="id">
+                <string>SequenceFlow_1chgxjr</string>
+               </void>
+               <void property="modelID">
+                <string>HLZB_XQXX_MX</string>
+               </void>
+               <void property="name">
+                <string>发起人非区域负责人</string>
+               </void>
+               <void property="points">
+                <void method="add">
+                 <object class="com.pansoft.wf.flowmodel.element.Point">
+                  <void property="x">
+                   <double>160.0</double>
+                  </void>
+                  <void property="y">
+                   <double>240.0</double>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.pansoft.wf.flowmodel.element.Point">
+                  <void property="x">
+                   <double>260.0</double>
+                  </void>
+                  <void property="y">
+                   <double>240.0</double>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.pansoft.wf.flowmodel.element.Point">
+                  <void property="x">
+                   <double>260.0</double>
+                  </void>
+                  <void property="y">
+                   <double>80.0</double>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.pansoft.wf.flowmodel.element.Point">
+                  <void property="x">
+                   <double>434.0</double>
+                  </void>
+                  <void property="y">
+                   <double>80.0</double>
+                  </void>
+                 </object>
+                </void>
+               </void>
+               <void property="retakeCompletedServiceKey">
+                <string></string>
+               </void>
+               <void property="retakeServiceKey">
+                <string></string>
+               </void>
+               <void property="rollbackCompletedServiceKey">
+                <string></string>
+               </void>
+               <void property="rollbackServiceKey">
+                <string></string>
+               </void>
+               <void property="submitCompletedServiceKey">
+                <string>FlowDataUpdate</string>
+               </void>
+               <void property="submitServiceKey">
+                <string></string>
+               </void>
+              </object>
+             </void>
+            </void>
+            <void property="userRole">
+             <string></string>
+            </void>
+            <void property="width">
+             <int>40</int>
+            </void>
+            <void property="x">
+             <int>120</int>
+            </void>
+            <void property="y">
+             <int>220</int>
+            </void>
+           </object>
+          </void>
+          <void property="attriMap">
+           <void method="put">
+            <string>allowIntoTargetNodeExpGuid</string>
+            <string>main@SJBBLC@R_4</string>
+           </void>
+          </void>
+          <void property="id">
+           <string>Flow_0uuis3f</string>
+          </void>
+          <void property="modelID">
+           <string>HLZB_XQXX_MX</string>
+          </void>
+          <void property="name">
+           <string>发起人为区域负责人</string>
+          </void>
+          <void property="points">
+           <void method="add">
+            <object class="com.pansoft.wf.flowmodel.element.Point">
+             <void property="x">
+              <double>160.0</double>
+             </void>
+             <void property="y">
+              <double>240.0</double>
+             </void>
+            </object>
+           </void>
+           <void method="add">
+            <object class="com.pansoft.wf.flowmodel.element.Point">
+             <void property="x">
+              <double>434.0</double>
+             </void>
+             <void property="y">
+              <double>240.0</double>
+             </void>
+            </object>
+           </void>
+          </void>
+          <void property="retakeCompletedServiceKey">
+           <string></string>
+          </void>
+          <void property="retakeServiceKey">
+           <string></string>
+          </void>
+          <void property="rollbackCompletedServiceKey">
+           <string></string>
+          </void>
+          <void property="rollbackServiceKey">
+           <string></string>
+          </void>
+          <void property="submitCompletedServiceKey">
+           <string>FlowDataUpdate</string>
+          </void>
+          <void property="submitServiceKey">
+           <string></string>
+          </void>
+         </object>
+        </void>
+        <void method="put">
+         <string>Flow_035z9ne</string>
+         <object idref="DefaultBIMEdge4"/>
+        </void>
+       </void>
+       <void property="name">
+        <string>营销公司经理审核</string>
+       </void>
+       <void property="outBIMEdgeMap">
+        <void method="put">
+         <string>Flow_0axxwgn</string>
+         <object idref="DefaultBIMEdge0"/>
+        </void>
+       </void>
+       <void property="width">
+        <int>111</int>
+       </void>
+       <void property="x">
+        <int>434</int>
+       </void>
+       <void property="y">
+        <int>214</int>
+       </void>
+      </object>
+     </void>
+     <void property="id">
+      <string>Flow_0axxwgn</string>
+     </void>
+     <void property="points">
+      <void method="add">
+       <object class="com.pansoft.wf.flowmodel.element.Point">
+        <void property="x">
+         <double>545.0</double>
+        </void>
+        <void property="y">
+         <double>240.0</double>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="com.pansoft.wf.flowmodel.element.Point">
+        <void property="x">
+         <double>654.0</double>
+        </void>
+        <void property="y">
+         <double>240.0</double>
+        </void>
+       </object>
+      </void>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>Flow_0uuis3f</string>
+    <object idref="DefaultBIMEdge2"/>
+   </void>
+   <void method="put">
+    <string>Flow_14522v2</string>
+    <object idref="DefaultBIMEdge1"/>
+   </void>
+   <void method="put">
+    <string>SequenceFlow_1chgxjr</string>
+    <object idref="DefaultBIMEdge3"/>
+   </void>
+   <void method="put">
+    <string>Flow_035z9ne</string>
+    <object idref="DefaultBIMEdge4"/>
+   </void>
+  </void>
+  <void property="BIMFlowType">
+   <string>0</string>
+  </void>
+  <void property="BIMVerticeMap">
+   <void method="put">
+    <string>Event_0g87eqt</string>
+    <object idref="DefaultBIMVertice1"/>
+   </void>
+   <void method="put">
+    <string>Activity_1edxdgr</string>
+    <object idref="DefaultBIMVertice0"/>
+   </void>
+   <void method="put">
+    <string>Task_0lr7c22</string>
+    <object idref="DefaultBIMVertice4"/>
+   </void>
+   <void method="put">
+    <string>Activity_18db6cw</string>
+    <object idref="DefaultBIMVertice2"/>
+   </void>
+   <void method="put">
+    <string>StartEvent_1r47rxd</string>
+    <object idref="DefaultBIMVertice3"/>
+   </void>
+  </void>
+  <void property="id">
+   <string>SJBBLC</string>
+  </void>
+  <void property="modelID">
+   <string>HLZB_XQXX_MX</string>
+  </void>
+  <void property="name">
+   <string>商机报备流程</string>
+  </void>
+  <void property="processForm">
+   <string>HLZB_tbXQXX</string>
+  </void>
+ </object>
+</java>

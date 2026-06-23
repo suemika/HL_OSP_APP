@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.16" class="java.beans.XMLDecoder">
+ <object class="com.efounder.bz.dbform.component.ComposeFormInfo">
+  <void property="dataContainerStub">
+   <object class="com.efounder.bz.dbform.component.ComponentStub" id="ComponentStub0">
+    <void property="childList">
+     <object class="java.util.Vector">
+      <void method="add">
+       <object class="com.efounder.bz.dbform.component.ComponentStub" id="ComponentStub1">
+        <void property="compClazz">
+         <string>com.efounder.datamodel.server.service.component.GeneralServiceComponent</string>
+        </void>
+        <void property="compID">
+         <string>GeneralServiceComponent74da5</string>
+        </void>
+        <void property="compName">
+         <string>通用服务组件</string>
+        </void>
+        <void property="generPropertys">
+         <object class="java.util.HashMap">
+          <void method="put">
+           <string>autoCommit</string>
+           <boolean>true</boolean>
+          </void>
+          <void method="put">
+           <string>enabled</string>
+           <boolean>true</boolean>
+          </void>
+         </object>
+        </void>
+        <void property="parentCompStub">
+         <object idref="ComponentStub0"/>
+        </void>
+        <void property="propertyMap">
+         <object class="java.util.HashMap"/>
+        </void>
+        <void property="refCompStubMap">
+         <object class="java.util.HashMap">
+          <void method="put">
+           <string>servicePluginList</string>
+           <object class="java.util.ArrayList">
+            <void method="add">
+             <object class="com.efounder.bz.dbform.component.ComponentStub" id="ComponentStub2">
+              <void property="compClazz">
+               <string>com.pansoft.lcdp.server.plugins.GenericQueryUpdatePlugin</string>
+              </void>
+              <void property="compID">
+               <string>GenericQueryUpdatePlugind8f50</string>
+              </void>
+              <void property="compName">
+               <string>统一查询插件</string>
+              </void>
+              <void property="generPropertys">
+               <object class="java.util.HashMap">
+                <void method="put">
+                 <string>enabled</string>
+                 <boolean>true</boolean>
+                </void>
+               </object>
+              </void>
+              <void property="parentCompStub">
+               <object idref="ComponentStub0"/>
+              </void>
+              <void property="propertyMap">
+               <object class="java.util.HashMap"/>
+              </void>
+             </object>
+            </void>
+           </object>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object idref="ComponentStub2"/>
+      </void>
+      <void method="add">
+       <object class="com.efounder.bz.dbform.component.ComponentStub" id="ComponentStub3">
+        <void property="compClazz">
+         <string>com.efounder.datamodel.server.service.context.GenServiceContextBuilder</string>
+        </void>
+        <void property="compID">
+         <string>GenServiceContextBuilder1028e</string>
+        </void>
+        <void property="compName">
+         <string>通用数据服务环境创建</string>
+        </void>
+        <void property="parentCompStub">
+         <object idref="ComponentStub0"/>
+        </void>
+        <void property="propertyMap">
+         <object class="java.util.HashMap"/>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void property="compClazz">
+     <string>com.efounder.bz.service.ServiceContainer</string>
+    </void>
+    <void property="compID">
+     <string>ServiceContainer2241</string>
+    </void>
+    <void property="compName">
+     <string>ServiceContainer2241</string>
+    </void>
+    <void property="generPropertys">
+     <object class="java.util.HashMap">
+      <void method="put">
+       <string>finishBeforeCommit</string>
+       <boolean>false</boolean>
+      </void>
+      <void method="put">
+       <string>stageTran</string>
+       <int>2</int>
+      </void>
+      <void method="put">
+       <string>beforePrepareComp</string>
+       <boolean>false</boolean>
+      </void>
+      <void method="put">
+       <string>needDBConnection</string>
+       <boolean>true</boolean>
+      </void>
+      <void method="put">
+       <string>scriptable</string>
+       <boolean>false</boolean>
+      </void>
+     </object>
+    </void>
+    <void property="propertyMap">
+     <object class="java.util.HashMap"/>
+    </void>
+    <void property="refCompStubMap">
+     <object class="java.util.HashMap">
+      <void method="put">
+       <string>processServiceComponent</string>
+       <object idref="ComponentStub1"/>
+      </void>
+      <void method="put">
+       <string>serviceContextBuilder</string>
+       <object idref="ComponentStub3"/>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="eventContainerStub">
+   <object class="com.efounder.bz.dbform.component.ComponentStub">
+    <void property="compClazz">
+     <string>com.efounder.bz.dbform.event.EventContainer</string>
+    </void>
+    <void property="compID">
+     <string>EventContainer</string>
+    </void>
+    <void property="compName">
+     <string>EventContainer</string>
+    </void>
+   </object>
+  </void>
+  <void property="formID">
+   <string>GenericQueryUpdateServiceTwo</string>
+  </void>
+  <void property="formName">
+   <string>GenericQueryUpdateService</string>
+  </void>
+ </object>
+</java>

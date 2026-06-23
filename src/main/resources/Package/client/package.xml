@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package id="" caption="装配清单">
+  <BIZServiceComponentPalettes caption="服务组件面板定义">
+    <item id="demoServiceComponentPalette" caption="Demo服务组件列表" icon="oicons/group.png"/>
+  </BIZServiceComponentPalettes>
+  <demoServiceComponentPalette>
+    <page id="demoServiceComponents" caption="Demo服务组件"/>
+    <page id="demoContextComponents" caption="Demo服务环境组件"/>
+    <page id="demoServicePlugins"    caption="Demo服务插件"/>
+  </demoServiceComponentPalette>
+
+  <demoServiceComponents>
+    <item id="DemoServiceComponent"  caption="Demo服务组件" modelClazz="com.pansoft.lcdp.server.component.DemoServiceComponent" icon16="oicons/databinding.png" icon32="oicons/databinding.png" />
+  </demoServiceComponents>
+
+  <demoContextComponents>
+    <item id="DemoServiceContextBuilder"  caption="Demo数据服务环境创建" modelClazz="com.pansoft.lcdp.server.context.DemoServiceContextBuilder" icon16="oicons/dbconn.png" icon32="oicons/dbconn.png" />
+  </demoContextComponents>
+
+  <demoServicePlugins>      
+    <!-- 参数转换与Demo处理插件 -->
+    <item id="DemoPlugin1"  caption="Demo插件1" modelClazz="com.pansoft.lcdp.server.plugins.FirstDemoPlugin" icon16="oicons/class_diagram.png" icon32="oicons/class_diagram.png" />
+    <item id="DemoPlugin2"  caption="Demo插件2" modelClazz="com.pansoft.lcdp.server.plugins.SecondDemoPlugin" icon16="oicons/class_diagram.png" icon32="oicons/class_diagram.png" />
+  </demoServicePlugins>
+  
+</package>

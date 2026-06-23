@@ -1,0 +1,42 @@
+{
+  "key" : "RootPage",
+  "formName" : "年度产品发货报表",
+  "formID" : "HLZB_BB_NDCPFH",
+  "lastAuthor" : "",
+  "lastChanged" : "",
+  "version" : "React",
+  "compName" : "表单画布",
+  "rootProps" : {
+    "scriptsCode" : {
+      "componentDidMount" : ""
+    },
+    "style" : {
+      "flexDirection" : "column",
+      "flexWrap" : "nowrap",
+      "justifyContent" : "flex-start",
+      "alignItems" : "flex-start",
+      "overflow" : "auto"
+    }
+  },
+  "components" : [ {
+    "key" : "FormIFrame2",
+    "type" : "FormIFrame",
+    "props" : {
+      "scriptsCode" : {
+        "endLoad" : ""
+      },
+      "style" : {
+        "height" : "100%",
+        "width" : "100%",
+        "display" : "block"
+      },
+      "url" : "http://60.213.146.71:8075/webroot/decision/view/report?viewlet=%25E5%258D%258E%25E9%25B2%2581%25E8%25A3%2585%25E5%25A4%2587%252F%25E5%25B9%25B4%25E5%25BA%25A6%25E4%25BA%25A7%25E5%2593%2581%25E5%258F%2591%25E8%25B4%25A7%25E8%25A1%25A8.cpt&ref_t=design&op=view&ref_c=b55c4daf-76f1-480a-b68a-f1b52c192bf3"
+    },
+    "compName" : "网页",
+    "children" : [ ]
+  } ],
+  "dataModels" : [ ],
+  "actionComps" : [ ],
+  "serverJsComps" : [ ],
+  "tableSource" : [ ]
+}

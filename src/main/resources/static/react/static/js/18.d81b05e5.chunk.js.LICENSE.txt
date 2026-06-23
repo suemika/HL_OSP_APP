@@ -1,0 +1,12 @@
+/*!
+ * 
+ * SpreadJS Library 15.2.5
+ * 
+ * Copyright(c) GrapeCity, Inc.  All rights reserved.
+ * 
+ * Licensed under the SpreadJS Commercial License.
+ * us.sales@grapecity.com
+ * http://www.grapecity.com/en/licensing/grapecity/
+ * 
+ * 
+ */

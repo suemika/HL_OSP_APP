@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<script src="ckeditor.js"></script>
+	
+	
+	
+</head>
+<body id="main" onload="initSample()">
+
+<textarea id="area" rows="3" cols="20">
+在w3school，你可以找到你所需要123456的所
+</textarea>
+
+<button  onClick="get()"> 取值 </button>
+<button  onClick="set()"> 设值 </button>
+
+
+<script>
+	function  initSample(){
+		CKEDITOR.replace( 'area',
+	    {
+	        customConfig : 'config.js'
+	    });
+	}
+
+
+	function  set(){
+		alert("设值");
+		//var dialogObj = new CKEDITOR.dialog( CKEDITOR.editor, 'smiley' );
+		//dialogObj.show();
+	}
+
+	function  get(){
+		alert("取值");
+	}
+
+
+
+
+</script>
+
+</body>
+</html>

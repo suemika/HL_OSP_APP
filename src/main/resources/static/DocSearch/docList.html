@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/docSerch.css" />
+	</head>
+	<body class="boxSize_borderBox">
+	    <div class="doc_header">
+			<p class="search">
+				<input id="keywords" type="search" onkeydown="onTextareaKeyDown()"  placeholder="关键词" />
+				<button type="button" onclick="onClick()" >搜索</button>				
+			</p>			
+		</div>
+	
+		<div class="head_nums_cont_outer">
+			<div class="head_nums_cont_inner" style="top: -42px;">
+				<div class="search_tool_conter">
+					<span class="c-gap-left-samll search_tool_close" onclick="closeTool()" ><i class="c-icon searchTool-up c-icon-chevron-top-gray-s"></i>收起工具</span>
+					<span class="search_tool_tf " data-class="xgd" >按相关度<i class="c-icon c-icon-triangle-down"></i></span>
+					<span class="search_tool_ft c-gap-left" data-class="qw" >全文<i class="c-icon c-icon-triangle-down"></i></span>
+					<span class="search_tool_si c-gap-left" data-class="lx" >文件类型<i class="c-icon c-icon-triangle-down"></i></span>
+					<span class="search_tool_sj c-gap-left" data-class="sj" >时间不限<i class="c-icon c-icon-triangle-down"></i></span>
+				</div>
+				<div class="nums new_nums">
+					<div class="search_tool" onclick="expandTool()" ><i class="c-icon searchTool-spanner c-icon-setting"></i>搜索工具</div>
+					<span class="nums_text" style="display: none;">为您找到相关结果约<span id="nums_total">23,900,000</span>个</span>
+				</div>
+			</div>
+		</div>
+		<div class="table">
+			<ul class="list">
+				<p class="hr"></p>
+			</ul>
+		</div>
+		<!--文档预览-->
+		<div class="layer">
+			<div class="docDetail">
+				<p class="headline">
+					<span>文档预览</span>
+					<i class="close">x</i>
+				</p>
+					<div class="iframe">
+					
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="c-tips-container new-pmd" id="c-tips-container">
+			<div class="c-tip-con" style="top: 88px; left: 25px; z-index: 222; display: none;">
+				<div>
+					<div class="c-tip-menu c-tip-timerfilter c-tip-timerfilter-si"><ul> 
+						<li><a href="javascript:;" onclick="orderChangeUrl(&quot;asc&quot;,this.innerHTML,1)">升序</a></li> 
+						<li><a href="javascript:;" onclick="orderChangeUrl(&quot;desc&quot;,this.innerHTML,2)">降序</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+			<div class="c-tip-con" style="top: 88px; left: 100px; z-index: 222; display: none;">
+				<div>
+					<div class="c-tip-menu c-tip-timerfilter c-tip-timerfilter-si"><ul> 
+					    <li><a href="javascript:;" onclick="classChangeUrl(&quot;体育&quot;,this.innerHTML,1)">体育</a></li> 
+						<li><a href="javascript:;" onclick="classChangeUrl(&quot;军事&quot;,this.innerHTML,2)">军事</a></li>
+						<li><a href="javascript:;" onclick="classChangeUrl(&quot;教育&quot;,this.innerHTML,2)">教育</a></li>
+						<li><a href="javascript:;" onclick="classChangeUrl(&quot;健康&quot;,this.innerHTML,2)">健康</a></li>
+						<li><a href="javascript:;" onclick="classChangeUrl(&quot;汽车&quot;,this.innerHTML,2)">汽车</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>		
+			<div class="c-tip-con" style="top: 88px; left: 165px; z-index: 221; display: none;">
+				<div>
+					<div class="c-tip-menu c-tip-timerfilter c-tip-timerfilter-ft"><ul> <li><span>所有网页和文件(不限格式)</span></li> <li><a href="javascript:;" onclick="fileChangeUrl(&quot;Pdf&quot;,this.innerHTML,1)">Adobe Acrobat PDF(.pdf)</a></li> <li><a href="javascript:;" onclick="fileChangeUrl(&quot;Word&quot;,this.innerHTML,2)">微软 Word(.doc)</a></li> <li><a href="javascript:;" onclick="fileChangeUrl(&quot;Excel&quot;,this.innerHTML,3)">微软 Excel(.xls)</a></li> <li><a href="javascript:;" onclick="fileChangeUrl(&quot;PowerPoint&quot;,this.innerHTML,4)">微软 PowerPoint(.ppt)</a></li> <li><a href="javascript:;" onclick="fileChangeUrl(&quot;RTF&quot;,this.innerHTML,5)">RTF 文件(.rtf)</a></li></ul>
+					</div>
+				</div>
+			</div>			
+			<div class="c-tip-con" style="top: 88px; left: 255px; z-index: 232; display: none;">
+				<div>
+					<div class="c-tip-menu c-tip-timerfilter"><ul> <li><span>时间不限</span></li> <li><a href="javascript:;" onclick="advChangeUrl(&quot;gpc&quot;,&quot;stf=1600566298,1600652698|stftype=1&quot;,this.innerHTML,1)">一天内</a></li> <li><a href="javascript:;" onclick="advChangeUrl(&quot;gpc&quot;,&quot;stf=1600047898,1600652698|stftype=1&quot;,this.innerHTML,2)">一周内</a></li> <li><a href="javascript:;" onclick="advChangeUrl(&quot;gpc&quot;,&quot;stf=1597974298,1600652698|stftype=1&quot;,this.innerHTML,3)">一月内</a></li> <li><a href="javascript:;" onclick="advChangeUrl(&quot;gpc&quot;,&quot;stf=1569030298,1600652698|stftype=1&quot;,this.innerHTML,4)">一年内</a></li> <li class="c-tip-custom"> <hr>自定义 <p class="c-tip-custom-st">从<input name="st" date-min="0" date-max="" type="txt" autocomplete="off" value="" data-value="" class="c-tip-custom-input c-tip-custom-input-init"></p>  <p class="c-tip-custom-et">至<input name="et" date-min="0" date-max="" type="txt" autocomplete="off" value="" data-value="" class="c-tip-custom-input c-tip-custom-input-init"></p><div class="c-tip-timerfilter-custom-error" style="display: none;" >自定义时间错误！</div><a href="javascript:;" onclick="advChangeUrl(&quot;gpc&quot;,&quot;stf=1569030298,1600652698|stftype=1&quot;,this.innerHTML,5)" class="c-tip-custom-submit">确认</a></li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<script>
+			// 服务器接口地址
+			var serviceUrl = '';
+			var windowUrl = window.location.href;
+			for (var i = 0; i < 4; i++) {
+				serviceUrl += windowUrl.split("/")[i] + "/";
+			}
+			$(function() {
+			    getList(serviceUrl);
+				// 双击文档列表跳转到详情
+				$(".list").on("click","li",function() {
+				    //var groupid = $(this).attr("data-groupid");
+					var id = $(this).attr("data-id");
+					getDetail(id);
+					$(".layer").show();
+				});
+				//点击关闭弹窗
+				$(".layer .close").on("click",function() {
+					$(".layer").hide();
+				});
+				var date = new Date();
+				var st = date.toLocaleDateString();
+				st = st.replace(/\//g,"-");
+				$("input[name='st']").val(st);
+				$("input[name='st']").attr("date-max",st);
+				$("input[name='et']").val(st);
+				$("input[name='et']").attr("date-max",st);
+				//获取文档
+				function getDetail(id) {
+					//var wurl = serviceUrl + "rest/file/getFileBytes"+"?doc_store_info_01="+groupid+"&doc_store_info_02="+id;
+					//var yurl = "http://127.0.0.1:8012/onlinePreview?url=" + encodeURIComponent(id);
+					//var htmlfram = '<a href="'+ id +'" download="" target="_blank">下载</a>';
+					var htmlfram = '<iframe name="na" class="embed-responsive-item" src="'+ id +'"></iframe>'
+					$(".iframe").html(htmlfram);						
+				}
+			});
+			// 获取文档列表
+			function getList(serviceUrl,starttime,endtime,ordertype,doctype,classify){
+				var words = $("input#keywords").val();
+				console.log(""+words);
+				var where = '';
+				if(words != undefined && words != null && words != ''){
+					where = '"words":"'+ words +'"';
+				}else{
+					return;
+				}
+				if(starttime != undefined && starttime != null && starttime != ''){
+					where = where +',"start_time":"'+ starttime +'"';
+				}
+				if(endtime != undefined && endtime != null && endtime != ''){
+					where = where +',"end_time":"'+ endtime +'"';
+				}
+				if(ordertype != undefined && ordertype != null && ordertype != ''){
+					where = where +',"order_type":"' + ordertype +'"';
+				}
+				if(doctype != undefined && doctype != null && doctype != ''){
+					where = where +',"doc_type":"' + doctype +'"';
+				}
+				if(classify != undefined && classify != null && classify != ''){
+					where = where +',"doc_content_type":"' + classify +'"';
+				}
+				params = '{'+where+'}';
+				// 获取文档列表
+				$.ajax({
+					type:"POST",
+					url: serviceUrl + "rest/file/search",
+					async:true,
+					processData: false,
+					contentType: "application/json",
+					data: params,
+					success:function(data) {
+						console.log(data);
+						if(data.code == "0") {
+							var res = data.result;
+							$("#nums_total").text(data.total);
+							$(".nums_text").css("display","block");
+							// 先清空列表
+							$(".list").empty();
+							$(".list").append('<p class="hr"></p>');
+							for(var i in res) {
+								var html = '';
+								if(res[i].isTop) {
+									html += '<li class="clearfix act" doc_id="'+ res[i].doc_id +'"data-id="'+ res[i].doc_store_url +'">';
+									//html += '<a href="'+ res[i].doc_store_url +'" download="" target="_blank"></a>';
+								} else {
+									html += '<li class="clearfix" doc_id="'+ res[i].doc_id +'"data-id="'+ res[i].doc_store_url +'">';
+									//html += '<a href="'+ res[i].doc_store_url +'" download="" target="_blank"></a>';
+								}
+								html += '<div class="left">';
+								
+								
+								if(res[i].doc_type == "Word")	{
+									html += '<i>Word</i>';
+								} else if(res[i].doc_type == "Pdf") {
+									html += '<span class="Pdf">Pdf</span>';
+								} else if(res[i].doc_type == "PowerPoint") {
+									html += '<span class="PowerPoint">PowerPoint</span>';
+								}else if(res[i].doc_type == "Excel") {
+									html += '<span class="Excel">Excel</span>';
+								}else if(res[i].doc_type == "RTF") {
+									html += '<span class="RTF">RTF</span>';
+								}else {
+								
+								}
+								var img = '';
+								var affixArray = res[i].affixArray;
+								if(affixArray != null && affixArray.length>0){
+									img = '<img class="imgmiddle" src="'+serviceUrl+'/Notice/img/affix.svg" />';
+								}
+								html +=		'<a href="javascript:;">'+ res[i].doc_filename + img +'</a>' +
+										'</div>' +
+										'<div class="maintext">' +res[i].doc_highlight +'</div>'+
+										'<p class="date">'+ res[i].doc_upload_time +'</p>';	//' | '+res[i].Author +							
+								if(res[i].isTop) {
+									$(".list .hr").before(html);
+								} else {
+									$(".list").append(html);
+								}
+							}
+						} else {
+							console.log("暂无数据");
+						}
+					}
+				});
+			}
+			function onTextareaKeyDown() {
+				if (event.keyCode == 13) { //如果按的是enter键 13是enter
+					event.preventDefault(); //禁止默认事件（默认是换行）
+					getList(serviceUrl); //执行动作
+				}
+			}
+			function onClick() {
+				getList(serviceUrl);
+			}
+			function closeTool() {
+				$(".head_nums_cont_inner").css("top","-42px");
+			}
+			function expandTool() {
+				$(".head_nums_cont_inner").css("top","0px");
+			}
+			$(".search_tool_conter span").on("click", function() {
+				var classname = $(this).attr("data-class");
+				if("xgd"==classname){
+				    changeDisplay(0);
+					return;
+				}
+				if("qw"==classname){
+				    changeDisplay(1);
+					return;
+				}
+				if("lx"==classname){
+				    changeDisplay(2);
+					return;
+				}
+				if("sj"==classname){
+				    changeDisplay(3);
+					return;
+				}
+			});
+			function changeDisplay(i) {
+			    var display = $("#c-tips-container .c-tip-con").eq(i).css("display");
+				$("#c-tips-container .c-tip-con").eq(0).css("display","none");
+				$("#c-tips-container .c-tip-con").eq(1).css("display","none");
+				$("#c-tips-container .c-tip-con").eq(2).css("display","none");
+				$("#c-tips-container .c-tip-con").eq(3).css("display","none");
+				
+				if ("none"==display) {
+					$("#c-tips-container .c-tip-con").eq(i).css("display","block");
+				}else{
+					$("#c-tips-container .c-tip-con").eq(i).css("display","none");
+				}
+			}
+			function fileChangeUrl(type,html,ft) {				
+				changeDisplay(2);
+				getList(serviceUrl,null,null,null,type);
+			}
+			function advChangeUrl(type,stf,html,sj) {
+				if(5==sj) {
+					var stimeval = $("input[name='st']").val();
+					if(!(isNaN(stimeval)&&!isNaN(Date.parse(stimeval)))){
+　　					$(".c-tip-timerfilter-custom-error").css("display","block");
+						return;
+					}
+					stimeval = stimeval.replace(/-/g,"/");
+					stval= new Date(Date.parse(stimeval));
+				    var maxdate = $("input[name='st']").attr("date-max");
+					maxdate = maxdate.replace(/-/g,"/");
+					maxdate= new Date(Date.parse(maxdate));
+					if(stval>maxdate) {
+						$(".c-tip-timerfilter-custom-error").css("display","block");
+						return;
+					}
+					var etimeval = $("input[name='et']").val();
+					if(!(isNaN(etimeval)&&!isNaN(Date.parse(etimeval)))){
+　　					$(".c-tip-timerfilter-custom-error").css("display","block");
+						return;
+					}
+					etimeval = etimeval.replace(/-/g,"/");
+					etval= new Date(Date.parse(etimeval));
+				    var maxdate = $("input[name='et']").attr("date-max");
+					maxdate = maxdate.replace(/-/g,"/");
+					maxdate= new Date(Date.parse(maxdate));
+					if(etval>maxdate) {
+						$(".c-tip-timerfilter-custom-error").css("display","block");
+						return;
+					}
+					if(stval>etval) {
+						$(".c-tip-timerfilter-custom-error").css("display","block");
+						return;
+					}
+					getList(serviceUrl,new Date(stimeval).getTime(),new Date().getTime());
+					changeDisplay(3);
+					return;
+				}
+				var timestamp = (new Date()).getTime();
+				var startime = '';
+				if(1==sj) {
+					startime = getTimeByDay(timestamp,1);
+				}else if(2==sj) {
+					startime = getTimeByDay(timestamp,7);
+				}else if(3==sj) {
+					startime = getTimeByDay(timestamp,30);
+				}else if(4==sj) {
+					startime = getTimeByDay(timestamp,360);
+				}else {
+								
+				}
+				getList(serviceUrl,startime,timestamp);
+				changeDisplay(3);
+			}
+			 function getTimeByDay(today,num) {
+				return today - 60 * 60 * 1000 * 24 * num;
+			}
+			function orderChangeUrl(type,html,ord) {				
+				changeDisplay(0);
+				getList(serviceUrl,null,null,type);
+			}
+			function classChangeUrl(type,html,ord) {				
+				changeDisplay(1);
+				getList(serviceUrl,null,null,null,null,type);
+			}
+			
+		</script>
+	</body>
+</html>

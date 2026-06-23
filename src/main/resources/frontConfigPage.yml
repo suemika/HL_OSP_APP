@@ -1,0 +1,196 @@
+front:
+  config:
+    index: index
+    details:
+      loadedConfig: true
+      LOGIN:
+        logo: react/images/login/logo_title.svg
+        logo_title_zh_CN: ''
+        logo_title_zh_TW: ''
+        logo_title_zh_HK: ''
+        logo_title_en_US: ''
+        login_bkg: react/images/login/loginAppBg.png
+        login_li01: react/images/login/5-618x406.jpg
+        login_li02: react/images/login/5-618x406.jpg
+        login_li03: react/images/login/5-618x406.jpg
+        login_li04: react/images/login/5-618x406.jpg
+        login_li05: react/images/login/5-618x406.jpg
+        #登录页banner是否轮播，默认轮播
+        isCarousel: false
+        #是否显示扫码登录
+        scanLoginShow: false
+        # 是否显示忘记密码
+        forgetPassShow: true
+        # 是否显示短信验证码登录
+        smsLoginShow: false
+        # 是否显示邮箱验证码登录
+        mailLoginShow: false
+        # 验证码失效时间，单位：秒(s)
+        codeInvalidTime: 60
+        loginIcon:
+          width: 35
+          height: 35
+        # logo尺寸
+        supportTitle:
+          zh_CN: '技术支持：普联软件股份有限公司'
+          zh_HK: '技術支持：普聯軟件股份有限公司'
+          en_US: 'Technical support: Pansoft'
+        loginFor4A: false
+        # 登录页是否隐藏 语言选择
+        hideI18n: false
+      TITLE: 中国建筑
+      # 浏览器页签icon
+      ICON: 'react/images/login/logo_title.svg'
+      # 页面Loading图
+      waitingImg: 'react/images/loading.gif'
+      APP:
+        logo: react/images/login/logo_title.svg
+        logo-size:
+          height: 35
+        logoTitleColor: '#0081cc'
+        logo_title_zh_CN: ''
+        logo_title_zh_HK: ''
+        logo_title_en_US: ''
+        error: react/images/404.png
+        picture1: react/images/app/1.jpg
+        picture2: react/images/app/2.jpg
+        picture3: react/images/app/3.jpg
+        picture4: react/images/app/4.jpg
+        picture5: react/images/app/5.jpg
+        picture6: react/images/app/6.jpg
+      # React应用模式
+      runMode: react
+      # 是否加载GWT相关的js '1'：加载， '0'：不加载
+      loadGWTJS: '0'
+      # 是否启用tab页签
+      keepalive: true
+      # tab页签右键是否显示设计表单
+      showDesignerFormOnMenu: '1'
+      langConfig:
+        # 登录页默认图标
+        langLoginIcon: react/images/lang/default-black.svg
+        # 应用里默认图标
+        langWebIcon: react/images/lang/default.svg
+        # 多语言类别
+        langType:
+          - {title: 'zh_CN',icon: "react/images/lang/ch.png"}
+          - {title: 'zh_HK',icon: "react/images/lang/ch.png"}
+          - {title: 'en_US',icon: "react/images/lang/US.png"}
+        # 多语言名称
+        langTitle_zh_CN:
+          - 简体中文
+          - 繁体中文
+          - 英语
+        langTitle_en_US:
+          - Chinese
+          - HK
+          - English
+        langTitle_zh_HK:
+          - 簡體中文
+          - 繁體中文
+          - 英語
+      SYS_ID: 'MHZX'
+      SYS_MC: '门户中心'
+      # 前台代码中接口调用的超时阈值，单位毫秒； osp-reac-base：request
+      RequestTimeOut: 100000
+      # 菜单拖拽时的最大和最小尺寸，单位px
+      MENU:
+        # 是否加载老版菜单结构
+        LoadOldMenu: false
+        menuMinWidth: '250'
+        menuMaxWidth: '500'
+        # 默认是否隐藏
+        defaultHideMenu: false
+        # 默认是否折叠
+        defaultCollapsedMenu: false
+      # 顶部header高度
+      headerHeight: 52
+      # 是否隐藏tab页签
+      defaultHideTab: false
+      # tab栏是否显示图标
+      showTabIcon: false
+      THEME:
+        # 启用自定义主题色
+        enableCustomTheme: true
+        # 应用主题色
+        primaryColor: '#0081cc'
+        primaryHoverColor: '#3d9fd8'
+        primaryActiveColor: '#0c6ea7'
+        primaryShadowColor: 'rgba(101, 134, 153, 0.2)'
+        # 左侧menu主题色
+        menuBackgroundColor: '#0081cc'
+        menuFontColor: 'rgba(255,255,255,0.85)'
+        menuSelectShadowColor: 'rgba(255,255,255,0.05)'
+        menuSelectFontColor: 'rgba(255,255,255,1)'
+        #部栏主题色
+        topBarBackgroundColor: '#ffffff'
+      # 加载GWT JS的超时时间，单位秒
+      MaxErrorNum: 100
+      # 是否显示顶部中间的搜索框  1：显示  0：不显示
+      ShowHeaderSearch: 0
+      sysWarn:
+        # 错误码
+        code:
+          - 1400
+          - 1401
+          - 1402
+        message_zh_CN:
+          - 解析系统访问策略失败，不允许访问系统
+          - 当前区域不允许访问本系统
+          - 当前时间段不允许访问本系统
+        message_en_US:
+          - Failed to resolve system access policy. System access is not allowed
+          - The current area does not allow access to this system
+          - Access to this system is not allowed in the current time period
+        message_zh_HK:
+          - 解析系統訪問策略失敗，不允許訪問系統
+          - 當前區域不允許訪問本系統
+          - 當前時間段不允許訪問本系統
+      # 全局loading模式是否启用骨架屏
+      loadingIsSkeleton: true
+      formPlay:
+        # 1 忽略token认证
+        ignoreToken: '0'
+        clientId: TOKENTEMP
+        clientSecret: TOKENTEMPSECRET
+      # 设置水印
+      watermark:
+        app:
+          show: true
+          text: '应用未授权 请联系管理员授权'
+        form:
+          show:
+            -
+          text: 'OSP平台 <br /> @UserName@ -- @DATETIME@ '
+      # 系统公告
+      notice:
+        # 是否弹出
+        isNoticeEnable: false
+        # 点击“不再提示”是否关闭所有
+        notPromptedAll: true
+      # 是否加载配置中心
+      loadFrontConfig: true
+      # 默认进入应用管理模块，false的话进入dashboard
+      appManageAllow: true
+      # 是否显示上次登录信息
+      showLastLoginDescription: false
+      # error消息框自动关闭的延时
+      ErrorMessageBoxDuration: 3
+      APP_PO:
+        # 可通过配置中心配置， 功能同 window.GWTPO
+        International: 'zh'
+        Country: 'CN'
+        # 是否启用多语言，在保存表单时生成不同的json文件
+        MultiLanguage: 'false'
+        # 是否启用菜单多语言
+        MenuMultiLanguage: 'false'
+        DBNO: 'OSP_DB01'
+        DataBaseName: 'OSP_DB01'
+      # 错误提示显示message还是弹窗,默认message
+      ShowExceptionWindow: false
+      Designer:
+        hideImageComps: false
+      # 中建配置
+      cscec:
+        # 隐藏历史记录菜单
+        hideHistoryMenu: true

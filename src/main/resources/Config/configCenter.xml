@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package caption="配置中心配置">
+    <configCenter>
+        <item key="enabled"                       value="false" des="是否使用远程配置文件:true会从远程获取配置,false则直接获取本地配置"/>
+        <item key="app"                           value="osplcdpservice" des="系统应用名称"/>
+        <item key="version"                       value="1_0_0" des="应用版本"/>
+        <item key="env"                           value="K8S" des="运行环境：DEV：开发、UAT：测试、PRO：生产"/>
+        <item key="protocol"                      value="http"/>
+        <item key="host"                          value=""/>
+        <item key="port"                          value=""/>
+        <item key="path"                          value="OSPConfigCenter"/>
+        <item key="zookeeperURL"                  value=""/>
+        <item key="configServerRetryTimes"        value="0" des="获取远程配置 重试次数，默认是3次"/>
+        <item key="configServerRetrySleepSeconds" value="5" des="获取远程配置 重试时休眠时间，默认是5秒"/>
+        <item key="DataBaseName"                  value="ZYYT_DB01"/>
+    </configCenter>
+
+    <configDirList caption="配置目录">
+        <item id="classesDir" dir="classes"/>
+        <item id="classesConfigDir" dir="classes/Config"/>
+        <item id="classesPackageClientDir" dir="classes/Package/client"/>
+        <item id="classesPackagePublicDir" dir="classes/Package/public"/>
+        <item id="classesPackageServerDir" dir="classes/Package/server"/>
+        <item id="CnfgSpaceDir" dir="CnfgSpace"/>
+        <item id="yamlDir" dir="classes" />
+    </configDirList>
+   <yamlDir>
+        <item file="application.yml"/>
+        <item file="frontConfigPage.yml"/>
+    </yamlDir>
+
+    <classesDir>
+        <item file="logback-spring.xml"/>
+    </classesDir>
+
+    <classesConfigDir>
+        <item file="redis.properties"/>
+        <item file="zookeeper.properties"/>
+        <item file="flyway.properties"/>
+        <item file="datasource.properties"/>
+        <item file="mongodb.properties"/>
+        <item file="elasticsearch.properties"/>
+        <item file="mq.properties"/>
+        <item file="dubbo.properties"/>
+        <item file="opentracing.properties"/>
+        <item file="job-executor.properties"/>
+        <item file="fastdfs.properties"/>
+        <item file="email.properties"/>
+        <item file="mobilenote.properties"/>
+    </classesConfigDir>
+
+    <classesPackageClientDir>
+        <item file="package1.xml"/>
+        <item file="package2.xml"/>
+        <item file="package78.xml"/>
+    </classesPackageClientDir>
+
+    <classesPackagePublicDir>
+        <item file="package1.xml"/>
+        <item file="package2.xml"/>
+        <item file="package78.xml"/>
+    </classesPackagePublicDir>
+
+    <classesPackageServerDir>
+        <item file="package1.xml"/>
+        <item file="package2.xml"/>
+        <item file="package78.xml"/>
+    </classesPackageServerDir>
+
+    <CnfgSpaceDir>
+        <item file="DBConfig.xml"/>
+    </CnfgSpaceDir>
+
+</package>

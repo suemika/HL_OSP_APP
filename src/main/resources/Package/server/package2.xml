@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package id="" caption="装配清单">
+  
+	<com.efounder.eai.EAIServer>
+		<!--
+		<item id="djztest" caption="代账系统子库" protocol="http" host="localhost" port="8080" path="HTML5ServerDZ" service="ESPService" DataBaseName="djztest" DBNO="djztest"/>
+		-->
+	</com.efounder.eai.EAIServer>
+
+	<!--   memcached服务器配置  -->
+	<!--
+	<memcachedServer caption="memcached服务器列表"> 
+		<item id="memServer1" caption="缓存服务器" host="" port="" weight="10"/>
+	</memcachedServer> 
+	-->
+	
+    <!-- 过载保护 -->
+	<OVERLOAD_PROTECTION caption="过载保护">
+		<item id="OVERLOAD_PROTECTON" caption="过载保护" OPEN="1" ROW_COUNT_THRESHOLD="100000"/>
+	</OVERLOAD_PROTECTION>
+
+	<!-- fastdfs服务器配置 -->
+	<fastdfs>
+	    <!--
+		<item id="server1" host="" port=""/>
+		-->
+	</fastdfs>
+
+	<!-- 定时任务   -->
+	<timerServiceList>
+	<!--
+		<item id="FMISTOFRSS" caption="取FMIS数据到FRSS" eaiServer="FRSSServer" DataBaseName="" DBNO="" serviceKey="FTest" fwk="ESPFRSSDataManagerService" iom="importAllTable" userName="" userCaption="" userPass="" timerType="loop" loopTimer="60" fixedTime="" varTime="" property=""/>
+	-->
+	</timerServiceList>
+
+</package>

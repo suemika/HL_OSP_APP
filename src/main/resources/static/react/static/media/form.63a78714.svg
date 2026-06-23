@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="72" viewBox="0 0 128 72">
+  <g id="表单" transform="translate(-636 -366)" opacity="0.65">
+    <g id="矩形_828" data-name="矩形 828" transform="translate(636 366)" fill="none" stroke="#fff" stroke-width="1">
+      <rect width="128" height="72" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="127" height="71" rx="1.5" fill="none"/>
+    </g>
+    <g id="矩形_835" data-name="矩形 835" transform="translate(684 370)" fill="none" stroke="#fff" stroke-width="1">
+      <rect width="32" height="8" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="31" height="7" rx="1.5" fill="none"/>
+    </g>
+    <g id="矩形_830" data-name="矩形 830" transform="translate(640 380)" fill="none" stroke="#fff" stroke-width="1">
+      <rect width="120" height="25" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="119" height="24" rx="1.5" fill="none"/>
+    </g>
+    <g id="矩形_836" data-name="矩形 836" transform="translate(640 409)" fill="none" stroke="#fff" stroke-width="1">
+      <rect width="120" height="25" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="119" height="24" rx="1.5" fill="none"/>
+    </g>
+  </g>
+</svg>

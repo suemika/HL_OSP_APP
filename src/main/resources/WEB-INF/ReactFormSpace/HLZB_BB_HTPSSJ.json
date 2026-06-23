@@ -1,0 +1,42 @@
+{
+  "key" : "RootPage",
+  "formName" : "合同评审审计",
+  "formID" : "HLZB_BB_HTPSSJ",
+  "lastAuthor" : "9999",
+  "lastChanged" : "2025-12-05 13:12:06",
+  "version" : "React",
+  "compName" : "表单画布",
+  "rootProps" : {
+    "scriptsCode" : {
+      "componentDidMount" : ""
+    },
+    "style" : {
+      "flexDirection" : "column",
+      "flexWrap" : "nowrap",
+      "justifyContent" : "flex-start",
+      "alignItems" : "flex-start",
+      "overflow" : "auto"
+    }
+  },
+  "components" : [ {
+    "key" : "FormIFrame1",
+    "type" : "FormIFrame",
+    "props" : {
+      "scriptsCode" : {
+        "endLoad" : ""
+      },
+      "style" : {
+        "height" : "100%",
+        "width" : "100%",
+        "display" : "block"
+      },
+      "url" : "http://60.213.146.71:8075/webroot/decision/view/report?viewlet=%25E5%258D%258E%25E9%25B2%2581%25E8%25A3%2585%25E5%25A4%2587%252F%25E5%2590%2588%25E5%2590%258C%25E8%25AF%2584%25E5%25AE%25A1%25E7%25BB%259F%25E8%25AE%25A1%25E6%258A%25A5%25E8%25A1%25A8.cpt&ref_t=design&op=view&ref_c=815673c8-1b7e-4c50-bfca-a1b51134e6f2"
+    },
+    "compName" : "网页",
+    "children" : [ ]
+  } ],
+  "dataModels" : [ ],
+  "actionComps" : [ ],
+  "serverJsComps" : [ ],
+  "tableSource" : [ ]
+}

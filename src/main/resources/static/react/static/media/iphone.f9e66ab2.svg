@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="421" height="852" viewBox="0 0 421 852">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path" d="M83,15A15,15,0,0,0,98,30H277a15,15,0,0,0,15-15V5a5,5,0,0,1,5-5h38a40,40,0,0,1,40,40V772a40,40,0,0,1-40,40H40A40,40,0,0,1,0,772V40A40,40,0,0,1,40,0H78a5,5,0,0,1,5,5Z" transform="translate(543 142)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="组_2990" data-name="组 2990" transform="translate(-752 -135)">
+    <g id="矩形_362" data-name="矩形 362" transform="translate(755 135)" fill="#d9d9d9" stroke="#d9d9d9" stroke-width="4">
+      <rect width="415" height="852" rx="64" stroke="none"/>
+      <rect x="2" y="2" width="411" height="848" rx="62" fill="none"/>
+    </g>
+    <g id="蒙版组_11" data-name="蒙版组 11" transform="translate(232 13)" clip-path="url(#clip-path)">
+      <g id="组_2578" data-name="组 2578" transform="translate(515 62)">
+        <rect id="矩形_361" data-name="矩形 361" width="375" height="812" transform="translate(28 79)" fill="#fff"/>
+        <g id="Status_Bars_-_iPhone_-_Light" data-name="Status Bars - iPhone - Light" transform="translate(28 79)">
+          <g id="Status_Bar" data-name="Status Bar" transform="translate(654 2332)">
+            <rect id="BG" width="375" height="44" transform="translate(-654 -2332)" fill="rgba(0,0,0,0.04)"/>
+            <g id="Status_Bar-2" data-name="Status Bar" transform="translate(-654 -2332)">
+              <rect id="Bars_Status_Bars_iPhone_Light_background" data-name="Bars/Status Bars/iPhone/Light background" width="375" height="44" fill="none"/>
+              <g id="Battery" transform="translate(336 17)">
+                <g id="Border" transform="translate(0.333 0.333)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1" opacity="0.35">
+                  <rect width="22" height="11.333" rx="2.667" stroke="none"/>
+                  <rect x="0.5" y="0.5" width="21" height="10.333" rx="2.167" fill="none"/>
+                </g>
+                <path id="Cap" d="M0,0V4A2.17,2.17,0,0,0,1.328,2,2.17,2.17,0,0,0,0,0" transform="translate(23.333 4)" opacity="0.4"/>
+                <rect id="Capacity" width="18" height="7.333" rx="1.333" transform="translate(2.333 2.333)"/>
+              </g>
+              <path id="Wifi" d="M7.445,10.907,5.439,8.885a.309.309,0,0,1-.094-.231.314.314,0,0,1,.1-.227,3.437,3.437,0,0,1,4.437,0,.315.315,0,0,1,.009.458L7.889,10.907a.313.313,0,0,1-.445,0Zm3.53-3.542a4.928,4.928,0,0,0-6.612,0,.311.311,0,0,1-.435-.005L2.768,6.189a.322.322,0,0,1,0-.46,7.193,7.193,0,0,1,9.791,0,.322.322,0,0,1,0,.46L11.409,7.36a.311.311,0,0,1-.435.005Zm2.669-2.7a8.68,8.68,0,0,0-11.955,0,.308.308,0,0,1-.435,0L.094,3.5a.323.323,0,0,1,0-.457,10.947,10.947,0,0,1,15.141,0,.323.323,0,0,1,0,.457l-1.161,1.17a.308.308,0,0,1-.435,0Z" transform="translate(316 17.331)"/>
+              <path id="Cellular_Connection" data-name="Cellular Connection" d="M15,10.667a1,1,0,0,1-1-1V1a1,1,0,0,1,1-1h1a1,1,0,0,1,1,1V9.667a1,1,0,0,1-1,1Zm-4.667,0a1,1,0,0,1-1-1V3.334a1,1,0,0,1,1-1h1a1,1,0,0,1,1,1V9.667a1,1,0,0,1-1,1Zm-4.667,0a1,1,0,0,1-1-1v-4a1,1,0,0,1,1-1h1a1,1,0,0,1,1,1v4a1,1,0,0,1-1,1ZM1,10.667a1,1,0,0,1-1-1v-2a1,1,0,0,1,1-1H2a1,1,0,0,1,1,1v2a1,1,0,0,1-1,1Z" transform="translate(294 17.667)"/>
+              <g id="Time_Style" data-name="Time Style" transform="translate(21.5 13)">
+                <g id="Time_-_Light" data-name="Time - Light">
+                  <rect id="Time_-_Light_background" data-name="Time - Light background" width="54" height="21" fill="none"/>
+                  <text id="Time" transform="translate(0 2)" font-size="15" font-family="SFProText-Semibold, SF Pro Text" font-weight="600" letter-spacing="-0.02em"><tspan x="11.337" y="14">9:41</tspan></text>
+                </g>
+              </g>
+              <g id="Time_-_Light-2" data-name="Time - Light" transform="translate(22 13)">
+                <g id="Time_-_Light-3" data-name="Time - Light">
+                  <rect id="Time_-_Light_background-2" data-name="Time - Light background" width="54" height="21" fill="none"/>
+                  <text id="Time-2" data-name="Time" transform="translate(0 2)" font-size="15" font-family="SFProText-Semibold, SF Pro Text" font-weight="600" letter-spacing="-0.02em"><tspan x="11.337" y="14">9:41</tspan></text>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="Home_Indicator" data-name="Home Indicator" transform="translate(28 857)">
+          <g id="Home_Indicators_-_iPhone_-_Light_-_Portrait" data-name="Home Indicators - iPhone - Light - Portrait">
+            <rect id="Frame" width="375" height="34" fill="rgba(0,0,0,0.04)"/>
+            <rect id="Home_Indicator-2" data-name="Home Indicator" width="134" height="5" rx="2.5" transform="translate(121 21)"/>
+          </g>
+        </g>
+        <g id="Safe_Area_-_Portrait" data-name="Safe Area - Portrait" transform="translate(28 123)">
+          <g id="Safe_Area_-_Portait" data-name="Safe Area - Portait">
+            <rect id="Safe_Area_-_Portrait_background" data-name="Safe Area - Portrait background" width="375" height="734" transform="translate(0 0)" fill="rgba(255,255,255,0.05)"/>
+          </g>
+          <g id="Layout_Margins_-_Compact_Width" data-name="Layout Margins - Compact Width">
+            <rect id="Layout_Margin:_Right" data-name="Layout Margin: Right" width="16" height="734" transform="translate(359)" fill="rgba(255,255,255,0.05)"/>
+            <rect id="Layout_Margin:_Left" data-name="Layout Margin: Left" width="16" height="734" transform="translate(0 0)" fill="rgba(255,255,255,0.05)"/>
+          </g>
+        </g>
+      </g>
+      <path id="Path-2" data-name="Path" d="M83,15A15,15,0,0,0,98,30H277a15,15,0,0,0,15-15V5a5,5,0,0,1,5-5h38a40,40,0,0,1,40,40V772a40,40,0,0,1-40,40H40A40,40,0,0,1,0,772V40A40,40,0,0,1,40,0H78a5,5,0,0,1,5,5Z" transform="translate(543 142)" fill="none"/>
+    </g>
+    <circle id="椭圆_4" data-name="椭圆 4" cx="8" cy="8" r="8" transform="translate(997 163)" fill="#f5f5f5"/>
+    <rect id="矩形_363" data-name="矩形 363" width="46" height="8" rx="4" transform="translate(940 167)" fill="#f5f5f5"/>
+    <rect id="矩形_599" data-name="矩形 599" width="3" height="36" transform="translate(752 267)" fill="#d9d9d9"/>
+    <rect id="矩形_600" data-name="矩形 600" width="3" height="64" transform="translate(752 330)" fill="#d9d9d9"/>
+    <rect id="矩形_602" data-name="矩形 602" width="3" height="104" transform="translate(1170 352)" fill="#d9d9d9"/>
+    <rect id="矩形_601" data-name="矩形 601" width="3" height="64" transform="translate(752 410)" fill="#d9d9d9"/>
+  </g>
+</svg>

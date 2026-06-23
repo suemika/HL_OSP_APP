@@ -1,0 +1,76 @@
+{
+  "key" : "RootPage",
+  "formName" : "网页报表_模板",
+  "formID" : "HTML_BB",
+  "lastAuthor" : "",
+  "lastChanged" : "2025-12-01 10:22:15",
+  "version" : "React",
+  "compName" : "表单画布",
+  "rootProps" : {
+    "scriptsCode" : {
+      "componentDidMount" : "var po = new JParamObject();\nvar name = po.getEnv(\"UserName\");\nFormIFrame1.setUrl(\"http://60.213.146.71:8075/webroot/decision/view/report?viewlet=%25E5%258D%258E%25E9%25B2%2581%25E8%25A3%2585%25E5%25A4%2587%252F%25E5%2595%2586%25E6%259C%25BA%25E6%258A%25A5%25E5%25A4%2587%25E8%25BD%25AC%25E5%258C%2596%25E7%25BB%259F%25E8%25AE%25A1%25E6%258A%25A5%25E8%25A1%25A8BAK.cpt&ref_t=design&op=view&ref_c=3ebf71fd-3c16-486c-a273-1a8fbfd307e5&name=0113\");\n"
+    },
+    "style" : {
+      "flexDirection" : "column",
+      "flexWrap" : "nowrap",
+      "justifyContent" : "flex-start",
+      "alignItems" : "flex-start",
+      "overflow" : "auto"
+    }
+  },
+  "components" : [ {
+    "key" : "FormBoxContainer1",
+    "type" : "FormBoxContainer",
+    "props" : {
+      "floatPositionOrigin" : "rb",
+      "floatX" : "0",
+      "floatY" : "0",
+      "resizeDirection" : "both",
+      "scriptsCode" : {
+        "onClickHandler" : "",
+        "afterCloseFullScreen" : "",
+        "onMouseEnter" : "",
+        "onMouseLeave" : "",
+        "onMouseWheel" : ""
+      },
+      "style" : {
+        "height" : "100%",
+        "flexDirection" : "column",
+        "flexWrap" : "nowrap",
+        "justifyContent" : "flex-start",
+        "alignItems" : "flex-start",
+        "overflow" : "hidden",
+        "backgroundRepeat" : "tensile",
+        "backgroundPosition" : "left top",
+        "display" : "flex",
+        "gap" : "16px",
+        "cursor" : "default"
+      },
+      "isFloat" : false,
+      "isDraggable" : false,
+      "isResizable" : false
+    },
+    "compName" : "通用布局",
+    "children" : [ {
+      "key" : "FormIFrame1",
+      "type" : "FormIFrame",
+      "props" : {
+        "scriptsCode" : {
+          "endLoad" : ""
+        },
+        "style" : {
+          "height" : "100%",
+          "width" : "100%",
+          "display" : "block"
+        },
+        "url" : "http://60.213.146.71:8075//webroot/decision/view/report?viewlet=%25E5%258D%258E%25E9%25B2%2581%25E8%25A3%2585%25E5%25A4%2587%252F%25E6%25B5%258B%25E8%25AF%2595.cpt&ref_t=design&ref_c=3ebf71fd-3c16-486c-a273-1a8fbfd307e5"
+      },
+      "compName" : "网页",
+      "children" : [ ]
+    } ]
+  } ],
+  "dataModels" : [ ],
+  "actionComps" : [ ],
+  "serverJsComps" : [ ],
+  "tableSource" : [ ]
+}

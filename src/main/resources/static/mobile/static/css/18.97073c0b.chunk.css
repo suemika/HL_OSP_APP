@@ -1,0 +1,86 @@
+.ormc-login {
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.ormc-login .icon-layout {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 38px;
+}
+.ormc-login .icon-layout .title {
+  margin-top: 16px;
+  padding: 0 24px;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: bold;
+  font-size: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ormc-login .body {
+  display: flex;
+  flex: 1.5 1;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+.ormc-login .body .adm-form {
+  width: 100%;
+}
+.ormc-login .body .adm-form .adm-list {
+  --active-background-color: none;
+  --border-inner: none;
+  --border-top: none;
+  --border-bottom: none;
+  --padding-left: 0;
+}
+.ormc-login .body .adm-form .adm-list-body {
+  background-color: rgba(0, 0, 0, 0);
+}
+.ormc-login .body .adm-form .adm-list-item-content-main {
+  padding: 0;
+}
+.ormc-login .body .adm-form .adm-list-item-content {
+  padding-right: 0;
+}
+.ormc-login .body .adm-form .adm-form-footer {
+  padding: 0;
+}
+.ormc-login .body .input-layout {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: var(--ospm-padding-middle);
+  padding-bottom: var(--ospm-padding-middle);
+  border-bottom: var(--ospm-border-color) solid 1px;
+}
+.ormc-login .body .input-layout .icon {
+  width: 20px;
+  height: 20px;
+}
+.ormc-login .body .remember-password-layout {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: var(--ospm-font-color-caption);
+  padding-top: var(--ospm-padding-middle);
+  justify-content: flex-end;
+}
+.ormc-login .body .remember-password-layout .adm-checkbox {
+  --icon-size: 16px;
+  --font-size: var(--ospm-font-size-main);
+}
+.ormc-login .body .remember-password-layout .adm-checkbox .adm-checkbox-icon {
+  border-radius: 2px;
+}
+.ormc-login .body .remember-password-layout .adm-checkbox .adm-checkbox-content {
+  line-height: var(--ospm-font-size-main);
+  margin-top: -2px;
+}
+

@@ -1,0 +1,105 @@
+<html>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="codemirror/lib/codemirror.css">
+	<link rel="stylesheet" href="codemirror/addon/hint/show-hint.css">
+	<script src="codemirror/lib/codemirror.js"></script>
+	<script src="codemirror/addon/hint/show-hint.js"></script>
+	<script src="codemirror/addon/edit/matchbrackets.js"></script>
+	<script src="fomula-hint.js"></script>
+	<script src="codemirror/addon/selection/active-line.js"></script> 
+	<link rel="stylesheet" href="style1.css">
+	<script src="jquery.min.js"></script>
+	<script src="html.js"></script>
+	<script src="formula.js"></script>
+	<style>
+		
+	</style>
+	<body>
+		<div style="width:100%;height:100%" id="abc"></div>
+		
+	</body>
+	
+	<script type="text/javascript">
+		var flowExpressComponent = FlowExpressComponent("abc");
+		var flowInfo = [
+			{title:"流程变量",children:[
+				{title:"单据编号",exp:"VAR.BIZ_ID",remark:"单据编号<br />VAR.BIZ_ID<br />返回单据编号"},
+				{title:"审批人编号",exp:"VAR.APPROVE_USER",remark:"审批人编号<br />VAR.APPROVE_USER<br />返回审批人编号"}
+			]},
+			{title:"流程信息",children:[
+				{title:"流程编号",exp:"FLOW.FLOW_ID",remark:"流程编号<br />FLOW.FLOW_ID<br />返回流程编号"},
+				{title:"流程名称",exp:"FLOW.FLOW_NAME",remark:"流程名称<br />FLOW.FLOW_NAME<br />返回流程名称"}
+			]},
+			{title:"节点信息",children:[
+				{title:"节点编号",exp:"NODE.NODE_ID",remark:"节点编号<br />NODE.NODE_ID<br />返回节点编号"},
+				{title:"节点名称",exp:"NODE.NODE_NAME",remark:"节点名称<br />NODE.NODE_NAME<br />返回节点名称"}
+
+			]},
+			{title:"任务信息",children:[
+				{title:"任务编号",exp:"TASK.TASK_ID",remark:"任务编号<br />TASK.TASK_ID<br />返回任务编号"},
+				{title:"任务名称",exp:"TASK.TASK_NAME",remark:"任务名称<br />TASK.TASK_NAME<br />返回任务名称"}
+			]}
+		];
+		flowExpressComponent.initFlowInfo(flowInfo);
+		var flowFunc = [
+			{title:"数学函数",children:[
+				{title:"abs111",exp:"abs",remark:"abs(x)<br />返回 x 的绝对值"},
+				{title:"ceil",exp:"ceil",remark:"ceil(x)<br />返回大于等于 x 的最小整数"},
+				{title:"floor",exp:"floor",remark:"floor(x)<br />返回小于等于 x 的最大整数"},
+				{title:"round",exp:"round",remark:"round(x, scale)<br />将 x 四舍五入到 scale 指定的小数位数"},
+				{title:"max",exp:"max",remark:"max(a, b)<br />返回 a 和 b 中的较大值"},
+				{title:"min",exp:"min",remark:"min(a, b)<br />返回 a 和 b 中的较小值"},
+				{title:"rand",exp:"rand",remark:"rand()<br />返回一个随机数"},
+				{title:"int",exp:"int",remark:"int(x)<br />将 x 转为整数"},
+				{title:"long",exp:"long",remark:"long(x)<br />将 x 转为长整型"},
+				{title:"double",exp:"double",remark:"double(x)<br />将 x 转为双精度浮点型"}
+			]},
+			{title:"字符串函数",children:[
+				{title:"string.length",exp:"string.length",remark:"string.length(s)<br />返回字符串 s 的长度"},
+				{title:"string.contains",exp:"string.contains",remark:"string.contains(s, sub)<br />判断字符串 s 是否包含子字符串 sub"},
+				{title:"string.startsWith",exp:"string.startsWith",remark:"string.startsWith(s, prefix)<br />判断 s 是否以 prefix 开头"},
+				{title:"string.endsWith",exp:"string.endsWith",remark:"string.endsWith(s, suffix)<br />判断 s 是否以 suffix 结尾"},
+				{title:"string.substring",exp:"string.substring",remark:"string.substring(s, start, end)<br />返回 s 从 start 到 end 的子字符串"},
+				{title:"string.indexOf",exp:"string.indexOf",remark:"string.indexOf(s, sub)<br />返回 sub 在 s 中首次出现的索引"},
+				{title:"string.upper",exp:"string.upper",remark:"string.upper(s)<br />将 s 转为大写"},
+				{title:"string.lower",exp:"string.lower",remark:"string.lower(s)<br />将 s 转为小写"},
+				{title:"string.trim",exp:"string.trim",remark:"string.trim(s)<br />去掉字符串 s 的首尾空白字符"}
+			]},
+			{title:"集合函数",children:[
+				{title:"size",exp:"size",remark:"size(collection)<br />返回集合的大小"},
+				{title:"contains",exp:"contains",remark:"contains(collection, element)<br />检查集合是否包含元素 element"}
+			]},
+			{title:"日期和时间函数",children:[
+				{title:"now",exp:"now",remark:"now()<br />返回当前时间的时间戳"},
+				{title:"date_format",exp:"date_format",remark:"date_format(date, format)<br />格式化日期对象为指定格式的字符串"},
+				{title:"today",exp:"today",remark:"today()<br />返回当天的日期"},
+				{title:"year",exp:"year",remark:"year(date)<br />返回指定日期的年"},
+				{title:"month",exp:"month",remark:"month(date)<br />返回指定日期的月"},
+				{title:"day",exp:"day",remark:"day(date)<br />返回指定日期的日"},
+			]},
+			{title:"逻辑函数",children:[
+				{title:"if",exp:"if",remark:"if(condition, trueValue, falseValue)<br />条件表达式，如果条件为真返回 trueValue，否则返回 falseValue"},
+				{title:"equals",exp:"equals",remark:"equals(a, b)<br />检查 a 和 b 是否相等"}
+			]},
+			{title:"逻辑函数",children:[
+				{title:"string",exp:"string",remark:"string(x)<br />将 x 转换为字符串"},
+				{title:"boolean",exp:"boolean",remark:"boolean(x)<br />将 x 转换为布尔值"},
+				{title:"number",exp:"number",remark:"number(x)<br />将 x 转换为数字"}
+			]}
+		];
+		flowExpressComponent.initFlowFunc(flowFunc);
+
+		flowExpressComponent.setExpData([{"id":696832982131454500,"name":"info","text":"流程变量.单据编号","value":"VAR.BIZ_ID"},{"id":442076134195903000,"name":"i003","text":"==","value":"==","editable":false}]);
+		//获取值
+		//flowExpressComponent.getValue()
+		//获取数据
+		//flowExpressComponent.getExpData()
+		//获取文本
+		//flowExpressComponent.getText()
+		//设置数据
+		//flowExpressComponent.setExpData(data);
+		//销毁
+		//flowExpressComponent.destory();
+
+	</script>
+</html>

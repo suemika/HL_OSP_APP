@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package id="" caption="装配清单">
+
+	<com.core.servlet.ServletServiceManager caption="可以随时创建新的Servlet">
+		<item implement="com.efounder.eai.service.ESPServiceManager" id="ESPService"/>
+		<item implement="com.efounder.eai.service.ESPServiceManager" id="ESPServer"/>
+		<item implement="com.efounder.eai.service.GWTServiceManager" id="ESPGWTService"/>
+		<item implement="com.efounder.eai.service.DataSetServiceManager" id="DataService"/>
+		<item implement="com.efounder.eai.service.CtrlServiceManager" id="CtrlService"/>
+		<item implement="com.efounder.eai.service.StartServiceManager" id="StartService"/>
+		<item implement="com.efounder.eai.service.ImageServiceManager" id="ImageService"/>
+		<item implement="com.efounder.eai.service.TestServiceManager" id="TSTService"/>
+		<item implement="com.efounder.eai.service.EAIServiceManager" id="EAIService"/>
+		<item implement="com.efounder.eai.service.EAIServerManager" id="EAIServer"/>
+		<item implement="com.efounder.eai.service.UpdateServiceManager" id="UpdateService"/>
+		<item implement="com.efounder.eai.service.PageServiceManager" id="PageService"/>
+		<item implement="com.efounder.eai.service.LoginServiceManager" id="LoginService"/>
+		<item implement="com.efounder.eai.service.SessionService" id="SessionListener"/>
+		<item implement="com.efounder.eai.service.WEBServiceManager" id="ESPWebService"/>
+		<item implement="com.efounder.eai.service.XMLService" id="XMLService"/>
+		<item implement="com.efounder.eai.service.JSONService" id="JSONService"/>
+		<item implement="com.efounder.eai.service.AndroidService" id="AndroidService"/>
+		<item implement="com.efounder.eai.service.OpenAPIServiceManager" id="OpenAPIService"/>
+	</com.core.servlet.ServletServiceManager>
+	
+    <!--  免验证的方法 -->
+	<UnauthorizedWebInvoke>
+		<item object="DBManagerObject" method="getDatabaseList"/>
+		<item object="SecurityObject"  method="loginProduct"/>
+		<item object="SecurityObject"  method="logoffProduct"/>
+		<item object="SecurityObject"  method="initApplication"/>
+		<item object="ServerManger"    method="loginProduct"/>
+		<item object="ConfigObject"    method="loadWebInfConfig"/>
+		<item object="ConfigObject"    method="saveWebInfConfig"/>
+   </UnauthorizedWebInvoke>
+
+</package>

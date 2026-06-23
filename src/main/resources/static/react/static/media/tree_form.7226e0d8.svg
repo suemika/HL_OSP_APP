@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="72" viewBox="0 0 128 72">
+  <g id="树表" transform="translate(-636 -366)" opacity="0.65">
+    <g id="矩形_828" data-name="矩形 828" transform="translate(636 366)" fill="none" stroke="#fff" stroke-width="1">
+      <rect width="128" height="72" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="127" height="71" rx="1.5" fill="none"/>
+    </g>
+    <g id="矩形_835" data-name="矩形 835" transform="translate(640 370)" fill="none" stroke="#fff" stroke-width="1">
+      <rect width="36" height="25" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="35" height="24" rx="1.5" fill="none"/>
+    </g>
+    <g id="矩形_830" data-name="矩形 830" transform="translate(684 370)" fill="none" stroke="#fff" stroke-width="1">
+      <rect width="76" height="52" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="75" height="51" rx="1.5" fill="none"/>
+    </g>
+    <line id="直线_32" data-name="直线 32" y2="64" transform="translate(679.5 370)" fill="none" stroke="#fff" stroke-width="1"/>
+    <g id="矩形_837" data-name="矩形 837" transform="translate(752 426)" fill="none" stroke="#fff" stroke-width="1">
+      <rect width="8" height="8" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="7" height="7" rx="1.5" fill="none"/>
+    </g>
+    <g id="矩形_838" data-name="矩形 838" transform="translate(742 426)" fill="none" stroke="#fff" stroke-width="1">
+      <rect width="8" height="8" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="7" height="7" rx="1.5" fill="none"/>
+    </g>
+    <g id="矩形_839" data-name="矩形 839" transform="translate(732 426)" fill="none" stroke="#fff" stroke-width="1">
+      <rect width="8" height="8" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="7" height="7" rx="1.5" fill="none"/>
+    </g>
+    <g id="矩形_840" data-name="矩形 840" transform="translate(722 426)" fill="none" stroke="#fff" stroke-width="1">
+      <rect width="8" height="8" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="7" height="7" rx="1.5" fill="none"/>
+    </g>
+  </g>
+</svg>

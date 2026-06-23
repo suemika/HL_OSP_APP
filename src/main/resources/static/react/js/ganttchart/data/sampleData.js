@@ -1,0 +1,42 @@
+var SampleData = {
+    data: [
+        { id: 1, text: "巡回办公", type: "project", progress: 0.4, open: true, start_date: "02-04-2020 00:00", duration: 17, parent: 0 },
+        { id: 2, text: "驻场办公", type: "project", start_date: "02-04-2020 00:00", duration: 5, progress: 0.6, parent: 1, open: true },
+        { id: 5, text: "室内办公", type: "task", start_date: "02-04-2020 00:00", duration: 3, parent: 2, progress: 0.6, open: true },
+        { id: 6, text: "空调检查", type: "task", start_date: "05-04-2020 00:00", duration: 2, parent: 2, progress: 0.29, open: true },
+        { id: 3, text: "家具安装", type: "project", start_date: "08-04-2020 00:00", duration: 2, parent: 1, progress: 0.6, open: false },
+        { id: 7, text: "工作场所准备", type: "task", start_date: "08-04-2020 00:00", duration: 2, parent: 3, progress: 0.6, open: true },
+        { id: 4, text: "员工迁入", type: "project", start_date: "10-04-2020 00:00", duration: 9, parent: 1, progress: 0.5, open: true },
+        { id: 8, text: "工作场所准备", type: "task", start_date: "10-04-2020 00:00", duration: 3, parent: 4, progress: 0.5, open: true },
+        { id: 9, text: "工作场所入口", type: "task", start_date: "13-04-2020 00:00", duration: 3, parent: 4, progress: 0.5, open: true },
+        { id: 10, text: "工作场所出口", type: "task", start_date: "16-04-2020 00:00", duration: 3, parent: 4, progress: 0.5, open: true },
+        { id: 11, text: "产品发布", type: "project", progress: 0.6, open: true, start_date: "02-04-2020 00:00", duration: 17, parent: 0 },
+        { id: 12, text: "执行初始测试", type: "task", start_date: "02-04-2020 00:00", duration: 5, parent: 11, progress: 1, open: true },
+        { id: 13, text: "迭代", type: "project", start_date: "03-04-2020 00:00", duration: 16, parent: 11, progress: 0.5, open: true },
+        { id: 17, text: "开发系统", type: "task", start_date: "03-04-2020 00:00", duration: 5, parent: 13, progress: 1, open: true },
+        { id: 25, text: "版本测试", type: "milestone", start_date: "08-04-2020 00:00", duration: 0, parent: 13, progress: 0, open: true },
+        { id: 18, text: "系统集成", type: "task", start_date: "08-04-2020 00:00", duration: 4, parent: 13, progress: 0.8, open: true },
+        { id: 19, text: "测试", type: "task", start_date: "12-04-2020 00:00", duration: 3, parent: 13, progress: 0.2, open: true },
+        { id: 20, text: "发行", type: "task", start_date: "15-04-2020 00:00", duration: 4, parent: 13, progress: 0, open: true },
+        { id: 14, text: "分析", type: "task", start_date: "02-04-2020 00:00", duration: 4, parent: 11, progress: 0.8, open: true },
+        { id: 15, text: "设计", type: "project", start_date: "06-04-2020 00:00", duration: 6, parent: 11, progress: 0.2, open: true },
+        { id: 21, text: "设计数据库", type: "task", start_date: "06-04-2020 00:00", duration: 4, parent: 15, progress: 0.5, open: true },
+        { id: 22, text: "软件设计", type: "task", start_date: "08-04-2020 00:00", duration: 4, parent: 15, progress: 0.1, open: true },
+        { id: 16, text: "创建文档", type: "task", start_date: "11-04-2020 00:00", duration: 5, parent: 11, progress: 0, open: true },
+        { id: 24, text: "发布版本1.0", type: "milestone", start_date: "19-04-2020 00:00", duration: 0, parent: 11, progress: 0, open: true }
+    ],
+    links: [
+        { id: 1, source: "2", target: "3", type: "0" },
+        { id: 2, source: "3", target: "4", type: "0" },
+        { id: 3, source: "17", target: "25", type: "0" },
+        { id: 4, source: "18", target: "19", type: "0" },
+        { id: 5, source: "19", target: "20", type: "0" },
+        { id: 6, source: "13", target: "24", type: "0" },
+        { id: 7, source: "25", target: "18", type: "0" },
+        { id: 8, source: "5", target: "6", type: "0" },
+        { id: 9, source: "8", target: "9", type: "0" },
+        { id: 10, source: "9", target: "10", type: "0" },
+        { id: 11, source: "16", target: "24", type: "0" },
+        { id: 12, source: "14", target: "15", type: "0" }
+    ]
+}

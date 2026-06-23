@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package id="" caption="装配清单">
+	<System_Variable>
+		<!-- 配置是否打印before convert  和after convert后的执行sql：7：打印，9：不打印-->
+		<item id="SQL_MONITOR" value="7" caption=""/>
+		<item id="CALL_MONITOR" value="1" caption=""/>
+		<item id="RoleUseLimit" value="1" caption=""/>
+		<item id="FLOW_TASK2USER_LIST" value="1" caption=""/>
+		<!-- 0：不检查 1：检查 -->
+		<item id="CHECK_SESSION_INVALID" value="0" caption="检查session是否失效"/>
+		<!-- SQL_CONVERTER_LOG控制是否打印before convert  和after convert。 为0 不打印，非0 打印 -->
+		<item id="SQL_CONVERTER_LOG" value="0" caption=""/>
+		<item id="FLOW_DB_ONLY" value="0" caption="流程XML及对象只存数据库"/>
+		<item id="STRESS_TEST" value="0" caption="是否是压力测试"/>
+		<item id="KKFileViewURL" value="http://192.168.30.193:8012/onlinePreview" caption="KKFileViewURL"/>
+		<item id="KKFileViewVersion" value="4.4.0" caption="KKFileViewURL预览服务版本"/>
+		<item id="APP_URL" value="https://cloud.openserver.cn/OSPSpringService" caption="应用URL"/>
+		<item id="I18n" value="zh-CN" caption="系统多语言"/>
+		<item id="LICENSE_ID" value="b3NwLWxpY2Vuc2Ws7QAFc3IAKGNvbS5wYW5zb2Z0LmxpY2Vuc2UuY2xpZW50LkxpY2Vuc2VFbnRpdHkWxdIxMZ8FeQIABUoACWFwcGx5VGltZUoACmV4cGlyZVRpbWVMAANtZDV0ABJMamF2YS9sYW5nL1N0cmluZztbAApwdWJsaWNLZXlzdAACW0JbAAlzcGxpdEZsYWdxAH4AAnhwAAABmy+JFLMAAAGif5T8AHQAIGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdldXIAAltCrPMX+AYIVOACAAB4cAAAAKIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKDQDU89+yhim81R8HwjM+B88lhX1SQTfjfIukBM9dfJExyuPcFvR9view32g7z+GkubI8hQsRFZ5eZmhSbHHUHj8lANaObCk9eJ2SwT2TFPyIAoo1jbIVwoVlRtCSLU8PFDZYNrEjn4oCxlQNIT07QiXbCgON+iSNUCzzpSdQDzAgMBAAF1cQB+AAUAAAACCER3ughEAAABmy+JFLMAAAGif5T8AAhEojCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAoNANTz37KGKbzVHwfCMz4HzyWFfVJBN+N8i6QEz118kTHK49wW9H2+J7DfaDvP4aS5sjyFCxEVnl5maFJscdQePyUA1o5sKT14nZLBPZMU/IgCijWNshXChWVG0JItTw8UNlg2sSOfigLGVA0hPTtCJdsKA436JI1QLPOlJ1APMCAwEAAQhEAA==" caption="授权信息" />
+
+		<!-- 指定加载定时任务列表的数据库，id固定；value ="DBNO:DataBaseName" -->
+		<!-- <item id="TIMETASK_DB" value="ZYYT_DB01:ZYYT_DB01" caption=""/> -->
+		<!--	首次登录重置密码时，是否展示需要输入 验证码	部分 0:不展示，1：展示-->
+		<item id="FIRST_LOGIN_SHOWCODE" value="0" caption=""/>
+
+		<item caption="存储类型强制覆盖" id="IMageStoreageMode" value="MINIO"/>
+		<item caption="附件上传中间件类型，目前支持FASTDFS、MinIO" id="fileUploadType" value="MinIO"/>
+	</System_Variable>
+	<ESPMailSender>
+	   <!--
+		<item URL="smtp.163.com" Port="25" SendAddress="发件用户名@163.com" SendAddressPass="发件邮箱密码" ToAdress="" pTitle="" pBody=""/>
+		-->
+	</ESPMailSender>
+	<ExtendAttribute>
+		<!-- mbxtDefine目标系统扩展属性 -->
+		<r id="setUnitPublish" caption="按使用单位发布" caption_en="publishing by the use of units" note="按使用单位发布" type="mbxtDefine"/>
+		<!-- objDefine字典扩展属性 -->
+		<r id="CreateBuffer" caption="是否创建缓冲表" caption_en="Whether to create a buffer table" note="数据对象定义的扩展属性" type="objDefine"/>
+		<r id="partObj" caption="是否分区表" caption_en="Whether the distinction between table" note="数据对象定义的扩展属性" type="objDefine"/>
+		<!-- dctDefine字典扩展属性 -->
+		<r id="CodeRule" caption="主数据编码规则" caption_en="Master data encoding rules" note="数据字典定义的扩展属性" type="dctDefine"/>
+		<r id="ApplyCodeRule" caption="主数据申请编码规则" caption_en="Master data to apply the coding rules" note="新增主数据申请时使用" type="dctDefine"/>
+		<r id="ColumnSort" caption="主数据单击列排序" caption_en="Master data click on the column sorting" note="单击是否按列排序" type="dctDefine"/>
+		<r id="BIZDependColumn" caption="业务主数据维护依赖字段" caption_en="Business master data maintenance dependent field" note="数据字典定义的扩展属性" type="dctDefine"/>
+		<r id="DependColumn" caption="主数据维护依赖字段" caption_en="Master data maintenance dependent field" note="数据字典定义的扩展属性" type="dctDefine,objDefine"/>
+		<r id="FilterColumn" caption="主数据查询过滤字段" caption_en="Master data query filter fields" note="数据字典定义的扩展属性" type="dctDefine,objDefine"/>
+		<r id="RlglColumnRelation" caption="关系对象列对应关系" caption_en="Object relational columns corresponding relationship" note="数据字典定义的扩展属性" type="objDefine"/>
+		<r id="DCT_MC" caption="个性化字典名称" caption_en="Personalized dictionary name" note="数据字典定义的扩展属性" type="dctDefine"/>
+		<r id="GPRLGLDCT" caption="分组关系字典" caption_en="packet relations dictionary" note="分组关系字典" type="dctDefine"/>
+		<r id="PhysicalDelete" caption="是否物理删除" caption_en="Whether physically remove" note="是否物理删除" type="dctDefine"/>
+		<r id="PCHECKCOLUMN" caption="检查上级字段" caption_en="Check the superior field" note="检查上级字段" type="dctDefine"/>
+		<r id="SJQXBH" caption="数据权限编号" caption_en="Data permission number" note="数据权限编号" type="dctDefine"/>
+		<r id="SJQXZT" caption="数据权限状态" caption_en="State of the Data permission" note="数据权限状态" type="dctDefine"/>
+		<r id="CodeRuleExact" caption="精确获取编码规则最大编号" caption_en="Accurately obtain the maximum number of encoding rules" note="从数据库中获取最大编号" type="dctDefine"/>
+		<r id="CheckKeyFromDB" caption="精确判断主键是否重复" caption_en="accurately judge primary key repeat" note="" type="dctDefine"/>
+		<r id="ShowF_CRDATEParam" caption="显示创建时间参数" caption_en="Display creation time parameters" note="" type="dctDefine"/>
+		<r id="ShowF_CHDATEParam" caption="显示修改时间参数" caption_en="Display modification time parameters" note="" type="dctDefine"/>
+		<r id="SearchNameRepated" caption="查找重复名称" caption_en="Find duplicate name" note="" type="dctDefine"/>
+		<r id="AddCopyPrevious" caption="新增时复制上一行数据" caption_en="Add copy the last row of data" note="" type="dctDefine"/>
+		<r id="MemCached" caption="启用MemCached" caption_en="Start using MemCached" note="" type="dctDefine"/>
+		<r id="LEVEL_TYPE" caption="分级类型" caption_en="LEVEL_TYPE" note="" type="dctDefine"/>
+		<r id="HELPCOL" caption="帮助显示列" caption_en="HELPCOL" note="" type="dctDefine"/>
+		<r id="CodeLength" caption="编码长度" caption_en="HELPCOL" note="编码长度，默认：4" type="dctDefine"/>
+		<r id="orderCol"   caption="排序列"  caption_en="orderCol"  note=""                     type="dctDefine"/>
+		<!--r id="CodeStep" caption="编码步长" caption_en="HELPCOL" note="编码自动增加步长，默认：1" type="dctDefine"/-->
+		<r id="BILL_BH_COL" caption="单据编号字段" caption_en="" note="" type="bizDefine"/>
+		<r id="BILL_CODE_BHFS" caption="编号方式" caption_en="" note="" type="bizDefine"/>
+		<r id="BILL_CODE_LEN" caption="编号长度" caption_en="" note="" type="bizDefine"/>
+		<r id="BILL_CRDATE_COL" caption="创建日期字段" caption_en="" note="" type="bizDefine"/>
+		<r id="BILL_CHDATE_COL" caption="修改日期字段" caption_en="" note="" type="bizDefine"/>
+		<r id="BILL_GUID_COL" caption="GUID字段" caption_en="" note="" type="bizDefine"/>
+		<r id="BILL_HL_COL" caption="汇率字段" caption_en="" note="" type="bizDefine"/>
+		<r id="BILL_KEYDCT_COL" caption="关键指标字段" caption_en="" note="" type="bizDefine"/>
+		<r id="BILL_TYBH_COL" caption="统一编号字段" caption_en="" note="" type="bizDefine"/>
+		<r id="BILL_TYPE_COL" caption="单据类型字段" caption_en="" note="" type="bizDefine"/>
+		<r id="BILL_WBBH_COL" caption="外币字段" caption_en="" note="" type="bizDefine"/>
+		<r id="BLFL_BH_COL" caption="分录编号字段" caption_en="" note="" type="bizDefine"/>
+		<r id="BLMX_BH_COL" caption="明细分录编号字段" caption_en="" note="" type="bizDefine"/>
+		<r id="DATE_COL" caption="单据日期字段" caption_en="" note="" type="bizDefine"/>
+		<r id="BILL_TYPE_DCT" caption="单据类型字典" caption_en="" note="" type="bizDefine"/>
+		<r id="ZZJG_ID_COL" caption="组织机构字段" caption_en="" note="" type="bizDefine"/>
+		<r id="MDL_FDWBM" caption="分单位编码(0不分 1组织机构 2单位)" caption_en="" note="" type="bizDefine"/>
+		<r id="MDL_FQJBM" caption="分期间编码(0不分 1分期间)" caption_en="" note="" type="bizDefine"/>
+		<r id="MDL_NOT_COPY_COL" caption="不需要复制字段" caption_en="" note="" type="bizDefine"/>
+		<!-- modelDefine模型扩展属性：分模型，公用的model = "" -->
+		
+		
+		<!--r id="pubExtendAttribute"   caption="公用属性示例"                note="系统环境属性值"    type="modelDefine"  model = "pub"/-->
+		<!-- 使用单位扩展属性 -->
+		<!--r id="test"              caption="测试"                   note="使用单位扩展属性"    type="unitDefine"   dctid = "SYS_UNITS"/-->
+		
+	</ExtendAttribute>
+
+
+
+</package>

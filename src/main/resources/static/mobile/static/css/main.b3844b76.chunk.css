@@ -1,0 +1,110 @@
+/* 全局变量，使用var()方法引用 */
+:root {
+  --ospm-primary-color: #0081cc;
+  --ospm-primary-sub-color: #239cd9;
+  --ospm-bg-color: #f5f5f5;
+  --ospm-fg-color: #fff;
+  --ospm-padding-large: 24px;
+  --ospm-padding-middle: 16px;
+  --ospm-padding-main: 12px;
+  --ospm-padding-small: 8px;
+  --ospm-padding-mini: 4px;
+  --ospm-border-radius: 5px;
+  --ospm-border-color: #d9d9d9;
+  --ospm-dividers-color: #f4f4f4;
+  --ospm-font-size-title-large: 20px;
+  --ospm-font-size-title-middle: 18px;
+  --ospm-font-size-title-small: 16px;
+  --ospm-font-size-main: 14px;
+  --ospm-font-size-mini: 12px;
+  --ospm-font-color-title: #262626;
+  --ospm-font-color-main: #595959;
+  --ospm-font-color-caption: #8c8c8c;
+  --ospm-font-color-disable: #bfbfbf;
+  --ospm-font-color-link: var(--ospm-primary-color);
+  --ospm-color-progress: var(--ospm-primary-color);
+  --ospm-color-success: #29bc38;
+  --ospm-color-warning: #f93;
+  --ospm-color-danger: #f33;
+  --ospm-color-white: #fff;
+  --adm-color-primary: var(--ospm-primary-color);
+  --adm-color-success: var(--ospm-color-success);
+  --adm-color-warning: var(--ospm-color-warning);
+  --adm-color-danger: var(--ospm-color-danger);
+  --adm-color-white: var(--ospm-color-white);
+  --adm-color-text: var(--ospm-font-color-title);
+  --adm-color-text-secondary: var(--ospm-font-color-main);
+  --adm-color-weak: var(--ospm-font-color-caption);
+  --adm-color-light: var(--ospm-font-color-disable);
+  --adm-color-border: var(--ospm-border-color);
+  --adm-color-box: var(--ospm-bg-color);
+  --adm-color-background: var(--ospm-fg-color);
+  --adm-font-size-main: var(--ospm-font-size-main);
+}
+/* 全局通用页面样式 */
+.osp-mobile-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.osp-mobile-page-top {
+  flex: 0 1;
+  background-color: var(--ospm-fg-color);
+  border-bottom: solid 1px var(--adm-color-border);
+}
+.osp-mobile-page-container {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  width: 100%;
+  height: 0;
+  overflow: auto;
+  background-color: var(--ospm-bg-color);
+}
+.osp-mobile-page-bottom {
+  flex: 0 1;
+  background-color: var(--ospm-fg-color);
+  border-top: solid 1px var(--adm-color-border);
+}
+.osp-mobile-error-page {
+  height: 100%;
+  background-color: var(--ospm-fg-color);
+}
+.osp-mobile-error-page .icon {
+  width: 200px;
+  height: 200px;
+}
+.osp-mobile-error-page .adm-error-block .adm-error-block-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.osp-mobile-error-page .adm-error-block .adm-error-block-description-title {
+  color: var(--adm-color-weak);
+  font-size: var(--ospm-font-size-main);
+}
+.osp-mobile-error-page .adm-error-block .adm-error-block-description-subtitle {
+  color: var(--adm-color-light);
+  font-size: var(--ospm-font-size-mini);
+}
+body {
+  height: 100vh;
+  margin: 0;
+  font-size: var(--ospm-font-size-main);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--ospm-fg-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* 缓存相关 react-activation */
+.ka-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.ka-content {
+  width: 100%;
+  height: 100%;
+}
+

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_995" data-name="矩形 995" width="10" height="10" transform="translate(379 248)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="未开始" transform="translate(-376 -245)">
+    <circle id="椭圆_2" data-name="椭圆 2" cx="8" cy="8" r="8" transform="translate(376 245)" fill="rgba(0,0,0,0.25)"/>
+    <g id="蒙版组_135" data-name="蒙版组 135" clip-path="url(#clip-path)">
+      <path id="等待" d="M9.815,10.562H9.253v-1.6A3.2,3.2,0,0,0,7.677,6.635,4.648,4.648,0,0,1,7.163,6.2l-.048-.055.055-.055a5.788,5.788,0,0,1,.521-.411c.665-.48,1.583-1.138,1.583-2.186V1.968h.541a.35.35,0,1,0,0-.7h-7.1a.35.35,0,1,0,0,.7h.541V3.5c0,1.049.912,1.707,1.583,2.186A4.066,4.066,0,0,1,5.36,6.1l.055.055-.048.055a4.648,4.648,0,0,1-.514.439A3.184,3.184,0,0,0,3.277,8.965v1.6H2.715a.35.35,0,1,0,0,.7h7.1a.351.351,0,0,0,.35-.35.353.353,0,0,0-.35-.356ZM7.567,9.575h-2.6a.322.322,0,0,1,0-.644h2.6a.322.322,0,0,1,0,.644Z" transform="translate(377.734 246.731)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

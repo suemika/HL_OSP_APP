@@ -1,0 +1,1395 @@
+{
+    "name": "OSPFlow",
+    "prefix": "ospflow",
+    "uri": "http://www.solorsource.cn/ospflow",
+    "xml": {
+        "tagAlias": "lowerCase"
+    },
+    "associations": [],
+    "types": [
+        {
+            "name": "CustomFunction",
+            "superClass": [
+                "Element"
+            ],
+            "properties": [
+                {
+                    "name": "customFunction",
+                    "isMany": true,
+                    "type": "Script"
+                }
+            ]
+        },
+        {
+            "name": "Script",
+            "properties": [
+                {
+                    "name": "functionName",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    "name": "text",
+                    "isBody": true,
+                    "type": "String"
+                }
+            ]
+        },
+        {
+            "name": "FormParams",
+            "superClass": [
+                "Element"
+            ],
+            "properties": [
+                {
+                    "name": "values",
+                    "type": "Property",
+                    "isMany": true
+                }
+            ]
+        },
+        {
+            "name": "AttriMap",
+            "superClass": [
+                "Element"
+            ],
+            "properties": [
+                {
+                    "name": "values",
+                    "type": "Property",
+                    "isMany": true
+                }
+            ]
+        },
+        {
+            "name": "FormProperty",
+            "superClass": [
+                "Element"
+            ],
+            "properties": [
+                {
+                    "name": "values",
+                    "type": "Property",
+                    "isMany": true
+                }
+            ]
+        },
+        {
+            "name": "HtmlFormProperty",
+            "superClass": [
+                "Element"
+            ],
+            "properties": [
+                {
+                    "name": "values",
+                    "type": "Property",
+                    "isMany": true
+                }
+            ]
+        },
+        {
+            "name": "FlexFormProperty",
+            "superClass": [
+                "Element"
+            ],
+            "properties": [
+                {
+                    "name": "values",
+                    "type": "Property",
+                    "isMany": true
+                }
+            ]
+        },
+        {
+            "name": "PadFormProperty",
+            "superClass": [
+                "Element"
+            ],
+            "properties": [
+                {
+                    "name": "values",
+                    "type": "Property",
+                    "isMany": true
+                }
+            ]
+        },
+        {
+            "name": "PhoneFormProperty",
+            "superClass": [
+                "Element"
+            ],
+            "properties": [
+                {
+                    "name": "values",
+                    "type": "Property",
+                    "isMany": true
+                }
+            ]
+        },{
+            "name": "SplitAttrMap",
+            "superClass": [
+                "Element"
+            ],
+            "properties": [
+                {
+                    "name": "values",
+                    "type": "Property",
+                    "isMany": true
+                }
+            ]
+        },{
+            "name": "AddDataMap",
+            "superClass": [
+                "Element"
+            ],
+            "properties": [
+                {
+                    "name": "values",
+                    "type": "Property",
+                    "isMany": true
+                }
+            ]
+        },{
+            "name": "BillDataUpdateMap",
+            "superClass": [
+                "Element"
+            ],
+            "properties": [
+                {
+                    "name": "values",
+                    "type": "Property",
+                    "isMany": true
+                }
+            ]
+        },{
+            "name": "SubmitBillDataUpdateMap",
+            "superClass": [
+                "Element"
+            ],
+            "properties": [
+                {
+                    "name": "values",
+                    "type": "Property",
+                    "isMany": true
+                }
+            ]
+        },{
+            "name": "RollbackBillDataUpdateMap",
+            "superClass": [
+                "Element"
+            ],
+            "properties": [
+                {
+                    "name": "values",
+                    "type": "Property",
+                    "isMany": true
+                }
+            ]
+        },{
+            "name": "RetakeBillDataUpdateMap",
+            "superClass": [
+                "Element"
+            ],
+            "properties": [
+                {
+                    "name": "values",
+                    "type": "Property",
+                    "isMany": true
+                }
+            ]
+        },
+        {
+            "name": "Property",
+            "superClass": [
+                "Element"
+            ],
+            "properties": [
+                {
+                    "name": "id",
+                    "type": "String",
+                    "isAttr": true
+                },
+                {
+                    "name": "name",
+                    "type": "String",
+                    "isAttr": true
+                },
+                {
+                    "name": "value",
+                    "type": "String",
+                    "isAttr": true
+                }
+            ]
+        },
+        {
+            "name": "OSPTask",
+            "extends": [
+                "bpmn:Task"
+            ],
+            "properties": [
+                {
+                    // 节点名称
+                    "name": "name",
+                    "isAttr": true,
+                    "type": "String",
+                    "default": "任务",
+                    "redefines": "bpmn:FlowElement#name"
+                },
+                {
+                    // 业务标识
+                    "name": "BIMId",
+                    "isAttr": true,
+                    "type": "String",
+                    "isEditable":false
+
+                },
+                {
+                    // 节点类型
+                    "name": "BIMVerticeType",
+                    "isAttr": true,
+                    "type": "String",
+                    "default": "NORMAL"
+                },
+                {
+                    // 节点操作类型
+                    "name": "BIMVerticeOpType",
+                    "isAttr": true,
+                    "type": "String",
+                    "default": "AUTO"
+                },
+                {
+                    // 业务模型ID
+                    "name": "modelID",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    //节点颜色
+                    "name": "TaskColor",
+                    "isAttr": true,
+                    "type": "String",
+                    "default": "#e4f3ff"
+                },
+                {
+                    // 节点自动处理时是否装入数据
+                    "name": "loadDataInAutoTask",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },
+                {
+                    // 是否自定义节点
+                    "name": "userDefinedNode",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },
+                {
+                    // 是否虚拟节点
+                    "name": "virtualNode",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },
+                {
+                    // 用户功能编号
+                    "name": "userGnbh",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 用户角色
+                    "name": "userRule",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 准备表单ID
+                    "name": "prepareForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 执行表单ID
+                    "name": "processForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 表单参数集合
+                    "name": "formParams",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 自定义扩展属性
+                    "name": "attriMap",
+                    "type": "camunda:Property",
+                    "isMany": true
+                },
+                {
+                    // 是否显示此节点任务
+                    "name": "showTask",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": true
+                },{
+                    //是否允许取回
+                    "name": "allowRetake",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": true
+                },{
+                    //重置（Reset）时选择重置方式
+                    "name": "resetType",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },{
+                    // 退回（Rollback）到制单节点 add by liuguozhen 2021.03.01 16:20
+                    "name": "rollbackToStartType",
+                    "isAttr": true,
+                    "type": "String"
+                },{
+                    // 提单人节点 add by liuguozhen 2019.11.13 19:41
+                    "name": "opUserNode",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },
+                {
+                    // 权限ID
+                    "name": "limitID",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 业务操作类型
+                    "name": "BIZOperate",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 业务角色
+                    "name": "BIZRule",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 合并节点
+                    "name": "mergeNode",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },
+                {
+                    // 合并来源节点
+                    "name": "mergeSrcNodeId",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 合并来源边
+                    "name": "mergeSrcEdgeId",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 子流程服务key
+                    "name": "childFlowService",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 重置服务
+                    "name": "breakResetServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 取消服务
+                    "name": "breakCancelServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 终止服务
+                    "name": "breakEndServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 业务服务 add by liuguozhen at 2020.11.25 09:50
+                    "name": "businessServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 表单参数
+                    "name": "htmlFormParam",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 准备表单id
+                    "name": "htmlPrepareForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 执行表单id
+                    "name": "htmlProcessForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // flex表单参数
+                    "name": "flexFormParam",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // flex准备表单id
+                    "name": "flexPrepareForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // flex执行表单id
+                    "name": "flexProcessForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // phone表单参数
+                    "name": "phoneFormParam",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // phone准备表单id
+                    "name": "phonePrepareForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // phone执行表单id
+                    "name": "phoneProcessForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // pad表单参数
+                    "name": "padFormParam",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // pad准备表单id
+                    "name": "padPrepareForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // pad执行表单id
+                    "name": "padProcessForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 审批表单属性 add by liuguozhen at 2021.03.18 15:37
+                    "name": "approvalForm",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },
+                {
+                    "name": "approvalFormId",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    "name": "approvalFormServer",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 节点业务类型 add by LiuGuozhen at 2018-7-16 17:15:56
+                    "name": "nodeType",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 打包流程 add by luzaiquan at 2020.06.16
+                    "name": "groupFlowID",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 节点任务显示方式 add by wangchengyi at 2019.01.22
+                    "name": "taskDisMode",
+                    "isAttr": true,
+                    "type": "String"
+                }
+            ]
+        },
+        {
+            "name": "OSPStartEvent",
+            "extends": [
+                "bpmn:StartEvent"
+            ],
+            "properties": [
+                {
+                    // 节点名称
+                    "name": "name",
+                    "isAttr": true,
+                    "type": "String",
+                    "default": "开始",
+                    "redefines": "bpmn:FlowElement#name"
+                },
+                {
+                    // 业务标识
+                    "name": "BIMId",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 节点类型
+                    "name": "BIMVerticeType",
+                    "isAttr": true,
+                    "type": "String",
+                    "default": "START"
+                },
+                {
+                    // 节点操作类型
+                    "name": "BIMVerticeOpType",
+                    "isAttr": true,
+                    "type": "String",
+                    "default": "AUTO"
+                },
+                {
+                    // 业务模型ID
+                    "name": "modelID",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 节点自动处理时是否装入数据
+                    "name": "loadDataInAutoTask",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },
+                {
+                    // 是否合并节点
+                    "name": "mergeNode",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },
+                {
+                    // 合并来源边
+                    "name": "mergeSrcEdgeId",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 合并来源节点
+                    "name": "mergeSrcNodeId",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 是否自定义节点
+                    "name": "userDefinedNode",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },
+                {
+                    // 是否虚拟节点
+                    "name": "virtualNode",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },
+                {
+                    // 用户功能编号
+                    "name": "userGnbh",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 用户角色
+                    "name": "userRule",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 准备表单ID
+                    "name": "prepareForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 执行表单ID
+                    "name": "processForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 表单参数集合
+                    "name": "formParams",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 自定义扩展属性
+                    "name": "attriMap",
+                    "type": "camunda:Property",
+                    "isMany": true
+                },
+                {
+                    // 是否显示此节点任务
+                    "name": "showTask",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": true
+                },{
+                    //是否允许取回
+                    "name": "allowRetake",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": true
+                }, {
+                    //重置（Reset）时选择重置方式
+                    "name": "resetType",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },{
+                    // 退回（Rollback）到制单节点 add by liuguozhen 2021.03.01 16:20
+                    "name": "rollbackToStartType",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 权限ID
+                    "name": "limitID",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 业务操作类型
+                    "name": "BIZOperate",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 业务角色
+                    "name": "BIZRule",
+                    "isAttr": true,
+                    "type": "String"
+                },
+
+                {
+                    // 子流程服务key
+                    "name": "childFlowService",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 重置服务
+                    "name": "breakResetServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 取消服务
+                    "name": "breakCancelServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 终止服务
+                    "name": "breakEndServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 业务服务 add by liuguozhen at 2020.11.25 09:50
+                    "name": "businessServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 表单参数
+                    "name": "htmlFormParam",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 准备表单id
+                    "name": "htmlPrepareForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 执行表单id
+                    "name": "htmlProcessForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // flex表单参数
+                    "name": "flexFormParam",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // flex准备表单id
+                    "name": "flexPrepareForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // flex执行表单id
+                    "name": "flexProcessForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // phone表单参数
+                    "name": "phoneFormParam",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // phone准备表单id
+                    "name": "phonePrepareForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // phone执行表单id
+                    "name": "phoneProcessForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // pad表单参数
+                    "name": "padFormParam",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // pad准备表单id
+                    "name": "padPrepareForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // pad执行表单id
+                    "name": "padProcessForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 审批表单属性 add by liuguozhen at 2021.03.18 15:37
+                    "name": "approvalForm",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },
+                {
+                    "name": "approvalFormId",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    "name": "approvalFormServer",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 节点业务类型 add by LiuGuozhen at 2018-7-30 09:54:59
+                    "name": "nodeType",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 打包流程 add by luzaiquan at 2020.06.16
+                    "name": "groupFlowID",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 节点任务显示方式 add by wangchengyi at 2019.01.22
+                    "name": "taskDisMode",
+                    "isAttr": true,
+                    "type": "String"
+                }
+            ]
+        },
+        {
+            "name": "OSPEndEvent",
+            "extends": [
+                "bpmn:EndEvent"
+            ],
+            "properties": [
+                {
+                    // 节点名称
+                    "name": "name",
+                    "isAttr": true,
+                    "type": "String",
+                    "default": "结束",
+                    "redefines": "bpmn:FlowElement#name"
+                },
+                {
+                    // 业务标识
+                    "name": "BIMId",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 节点类型
+                    "name": "BIMVerticeType",
+                    "isAttr": true,
+                    "type": "String",
+                    "default": "END"
+                },
+                {
+                    // 节点操作类型
+                    "name": "BIMVerticeOpType",
+                    "isAttr": true,
+                    "type": "String",
+                    "default": "AUTO"
+                },
+                {
+                    // 业务模型ID
+                    "name": "modelID",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 批量任务时装入数据
+                    "name": "loadDataInAutoTask",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },
+                {
+                    // 是否自定义节点
+                    "name": "userDefinedNode",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },
+                {
+                    // 是否虚拟节点
+                    "name": "virtualNode",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },
+                {
+                    // 用户功能编号
+                    "name": "userGnbh",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 用户角色
+                    "name": "userRule",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 准备表单ID
+                    "name": "prepareForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 执行表单ID
+                    "name": "processForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 表单参数集合
+                    "name": "formParams",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 是否合并节点
+                    "name": "mergeNode",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },
+                {
+                    // 合并来源边
+                    "name": "mergeSrcEdgeId",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 合并来源节点
+                    "name": "mergeSrcNodeId",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 自定义扩展属性
+                    "name": "attriMap",
+                    "type": "camunda:Property",
+                    "isMany": true
+                },
+                {
+                    // 是否显示此节点任务
+                    "name": "showTask",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": true
+                },
+                {
+                    //是否允许取回
+                    "name": "allowRetake",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": true
+                }, {
+                    //重置（Reset）时选择重置方式
+                    "name": "resetType",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },{
+                    // 退回（Rollback）到制单节点 add by liuguozhen 2021.03.01 16:20
+                    "name": "rollbackToStartType",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 权限ID
+                    "name": "limitID",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 业务操作类型
+                    "name": "BIZOperate",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 业务角色
+                    "name": "BIZRule",
+                    "isAttr": true,
+                    "type": "String"
+                },
+
+                {
+                    // 子流程服务key
+                    "name": "childFlowService",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 重置服务
+                    "name": "breakResetServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 取消服务
+                    "name": "breakCancelServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+
+                {
+                    // 终止服务
+                    "name": "breakEndServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 业务服务 add by liuguozhen at 2020.11.25 09:50
+                    "name": "businessServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 表单参数
+                    "name": "htmlFormParam",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 准备表单id
+                    "name": "htmlPrepareForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 执行表单id
+                    "name": "htmlProcessForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // flex表单参数
+                    "name": "flexFormParam",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // flex准备表单id
+                    "name": "flexPrepareForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // flex执行表单id
+                    "name": "flexProcessForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // phone表单参数
+                    "name": "phoneFormParam",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // phone准备表单id
+                    "name": "phonePrepareForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // phone执行表单id
+                    "name": "phoneProcessForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // pad表单参数
+                    "name": "padFormParam",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // pad准备表单id
+                    "name": "padPrepareForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // pad执行表单id
+                    "name": "padProcessForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 审批表单属性 add by liuguozhen at 2021.03.18 15:37
+                    "name": "approvalForm",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },
+                {
+                    "name": "approvalFormId",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    "name": "approvalFormServer",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 节点业务类型 add by LiuGuozhen at 2018-7-30 09:54:59
+                    "name": "nodeType",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 打包流程 add by luzaiquan at 2020.06.16
+                    "name": "groupFlowID",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 节点任务显示方式 add by wangchengyi at 2019.01.22
+                    "name": "taskDisMode",
+                    "isAttr": true,
+                    "type": "String"
+                }
+            ]
+        },
+        {
+            "name": "OSPSequenceFlow",
+            "extends": [
+                "bpmn:SequenceFlow"
+            ],
+            "properties": [
+                {
+                    //  边名称
+                    "name": "name",
+                    "isAttr": true,
+                    "type": "String",
+                    "redefines": "bpmn:FlowElement#name"
+                },
+                {
+                    //  功能编号
+                    "name": "GNBH",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 业务标识
+                    "name": "BIMId",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 边类型
+                    "name": "BIMEdgeType",
+                    "isAttr": true,
+                    "type": "String",
+                    "default": "submit"
+                },
+                {
+                    // 边操作类型
+                    "name": "edgeOpreateType",
+                    "isAttr": true,
+                    "type": "int",
+                    "default": "2"
+                },
+                {
+                    // 子流程ID
+                    "name": "childBIMFlowID",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 业务模型ID
+                    "name": "modelID",
+                    "isAttr": true,
+                    "type": "String"
+                },{
+                    // 是否虚拟边（子流程边）
+                    "name": "virtualEdge",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },{
+                    // 排他边
+                    "name": "exclusiveEdge",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },
+                {
+                    // 取回完成服务Key
+                    "name": "retakeCompletedServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 取回服务Key
+                    "name": "retakeServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 取回回滚服务Key add by LiuGuozhen at 2018-11-28 15:05:09
+                    "name": "retakeRollbackServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 退回完成服务Key
+                    "name": "rollbackCompletedServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 退回服务Key
+                    "name": "rollbackServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 退回回滚服务Key add by LiuGuozhen at 2018-11-28 15:05:09
+                    "name": "rollbackRollbackServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 提交完成服务Key
+                    "name": "submitCompletedServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 提交服务Key
+                    "name": "submitServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 提交回滚服务Key add by LiuGuozhen at 2018-11-28 15:05:09
+                    "name": "submitRollbackServiceKey",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 子流程前节点是否自动提交 add by wangchengyi at 2019.03.11
+                    "name": "autoSubmitBeforeChildFlow",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                }
+            ]
+        },
+        {
+            "name": "OSPProcess",
+            "extends": [
+                "bpmn:Process"
+            ],
+            "properties": [
+                {
+                    // 流程类型
+                    "name": "BIMFlowType",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 准备表单id
+                    "name": "prepareForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 执行表单id
+                    "name": "processForm",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 审批表单属性 add by liuguozhen at 2021.03.18 15:37
+                    "name": "approvalFormId",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    "name": "approvalFormServer",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 分组织机构
+                    "name": "FUnit",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                },
+                {
+                    // 流程开始服务
+                    "name": "flowStartService",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 流程开始回滚服务 add by LiuGuozhen at 2018-12-4 14:53:52
+                    "name": "flowStartRollbackService",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 流程重置服务
+                    "name": "flowBreakService",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 流程重置回滚服务 add by LiuGuozhen at 2018-11-28 16:31:53
+                    "name": "flowBreakRollbackService",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 流程取消服务
+                    "name": "flowCancelService",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 流程取消回滚服务 add by LiuGuozhen at 2018-11-28 16:31:53
+                    "name": "flowCancelRollbackService",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 流程终止服务
+                    "name": "flowEndService",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 流程终止回滚服务 add by LiuGuozhen at 2018-11-28 16:31:53
+                    "name": "flowEndRollbackService",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 流程结束服务
+                    "name": "flowFinishService",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 流程结束回滚服务 add by LiuGuozhen at 2018-11-28 16:31:53
+                    "name": "flowFinishRollbackService",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 流程提交服务 add by liuguozhen at 2021.02.04 15:10
+                    "name": "flowSubmitService",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 表单参数集合
+                    "name": "formParams",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 流程图标
+                    "name": "flowIcon",
+                    "isAttr": true,
+                    "type": "String"
+                },{
+                    // 业务模型ID
+                    "name": "modelID",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    // 是否互相审批
+                    "name": "examineEachOther",
+                    "isAttr": true,
+                    "type": "Boolean",
+                    "default": false
+                }
+            ]
+        }
+    ]
+}

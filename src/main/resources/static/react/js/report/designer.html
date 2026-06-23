@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>设计器</title>
+		<link href="./css/stimulsoft.designer.office2013.whiteblue.css" rel="stylesheet">
+		<link href="./css/stimulsoft.viewer.office2013.whiteblue.css" rel="stylesheet"/>
+		<link href="css/cscec.css" rel="stylesheet"/>
+		<style type="text/css">
+			html,
+			body {
+				margin: 0px;
+				padding: 0px;
+				height: 100%;
+				background-color: #e8e8e8;
+				overflow: hidden;
+			}
+
+			p {
+				margin: 0;
+			}
+
+			.model {
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				z-index: 999999;
+				display: none;
+			}
+
+			.model .savainfo {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin: -115px 0 0 -143px;
+				background-color: #FFFFFF;
+				border: 1px solid #19478a;
+				color: #444444;
+				display: none;
+			}
+
+			.model .savainfo .close {
+				height: 30px;
+				line-height: 30px;
+				border-bottom: 1px dotted #c6c6c6;
+			}
+
+			.model .savainfo .close i {
+				float: right;
+				font-style: normal;
+				width: 30px;
+				text-align: center;
+				color: #666666;
+				cursor: pointer;
+			}
+
+			.model .savainfo .close i:hover {
+				color: #000000;
+			}
+
+			.model .savainfo .form {
+				padding: 20px;
+			}
+
+			.model .savainfo .line {
+				height: 34px;
+				line-height: 34px;
+			}
+
+			.model .savainfo .line .mandatory {
+				float: left;
+				width: 10px;
+				color: red;
+			}
+
+			.model .savainfo .line span {
+				float: left;
+				width: 50px;
+			}
+
+			.model .savainfo .line input {
+				float: left;
+				padding: 0 5px;
+				height: 30px;
+				line-height: 30px;
+				width: 180px;
+			}
+
+			.model .savainfo .error {
+				color: #FF0000;
+				font-size: 12px;
+				line-height: 30px;
+				height: 30px;
+				padding-left: 50px;
+				visibility: hidden;
+			}
+
+			.model .btn {
+				height: 28px;
+			}
+
+			.model .btn span {
+				display: inline-block;
+				width: 50%;
+				float: left;
+				text-align: center;
+				height: 100%;
+			}
+
+			.model .btn i {
+				display: inline-block;
+				font-style: normal;
+				cursor: pointer;
+				width: 80px;
+				border: 1px solid #ababab;
+				font-size: 12px;
+				height: 26px;
+				line-height: 26px;
+			}
+
+			.model .btn span i:hover {
+				background-color: #d5e1f2;
+				border: 1px solid #a3dbe3;
+			}
+
+			/* 提示信息弹窗 */
+			.tips {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				background-color: #FFFFFF;
+				border: 1px solid #19478a;
+				color: #444444;
+				width: 442px;
+				margin: -65px 0 0 -222px;
+				display: none;
+			}
+
+			.model .title {
+				line-height: 28px;
+				text-align: center;
+				position: relative;
+			}
+
+			.model .title span {
+				display: inline-block;
+				width: 100%;
+				font-size: 13px;
+				color: #19478a;
+				font-weight: 700;
+			}
+
+			.model .title i {
+				position: absolute;
+				top: 0;
+				right: 0;
+				height: 28px;
+				width: 28px;
+				cursor: pointer;
+			}
+
+			.model .title i:hover {
+				background-color: #d5e1f2;
+			}
+
+			.tips .content {
+				padding: 10px 20px;
+				line-height: 28px;
+				font-size: 12px;
+				min-height: 28px;
+			}
+
+			.tips .btn {
+				border-top: 1px dotted #c6c6c6;
+				padding: 8px;
+				height: 25px;
+			}
+
+			.tips .btn span {
+				float: right;
+				width: 80px;
+				height: 23px;
+				line-height: 23px;
+				font-size: 12px;
+				border: 1px solid #ababab;
+				text-align: center;
+				cursor: pointer;
+			}
+
+			.tips .btn span:hover {
+				background-color: #d5e1f2;
+				border: 1px solid #a3dbe3;
+			}
+
+			/* 加载元数据弹窗 */
+			.loadDictionary {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				background-color: #FFFFFF;
+				border: 1px solid #19478a;
+				color: #444444;
+				width: 500px;
+				margin: -65px 0 0 -251px;
+				padding-bottom: 10px;
+				display: none;
+			}
+
+			.loadDictionary .url {
+				border-top: 1px dotted #c6c6c6;
+				border-bottom: 1px dotted #c6c6c6;
+				padding: 10px 20px;
+				height: 28px;
+				line-height: 28px;
+				font-size: 12px;
+			}
+
+			.loadDictionary .url p {
+				float: left;
+			}
+
+			.loadDictionary .url input {
+				float: left;
+				height: 22px;
+				padding: 1px 5px;
+				width: 350px;
+			}
+
+			.loadDictionary .btn {
+				padding-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 弹窗蒙层 -->
+		<div class="model">
+			<!-- 保存弹窗 -->
+			<div class="savainfo">
+				<p class="close">
+					<i>x</i>
+				</p>
+				<div class="form">
+					<p class="line number">
+						<span class="mandatory">*</span>
+						<span>编号：</span>
+						<input type="text"/>
+					</p>
+					<p class="error numbererror"></p>
+					<p class=" line name">
+						<span class="mandatory">*</span>
+						<span>名称：</span>
+						<input type="text"/>
+					</p>
+					<p class="error nameerror"></p>
+					<div class="btn">
+		                        <span class="preservation">
+		                            <i>保存</i>
+		                        </span>
+						<span class="cancel">
+		                            <i>取消</i>
+		                        </span>
+					</div>
+				</div>
+			</div>
+			<!-- 所有提示弹窗 -->
+			<div class="tips">
+				<p class="title">
+					<span>提示！</span>
+					<i>
+						<img src="images/i_close.png"/>
+					</i>
+				</p>
+				<p class="content"></p>
+				<div class="btn">
+					<span>确定</span>
+				</div>
+			</div>
+			<!-- 加载元数据 -->
+			<div class="loadDictionary">
+				<p class="title">
+					<span>加载元数据</span>
+					<i>
+						<img src="images/i_close.png"/>
+					</i>
+				</p>
+				<div class="url">
+					<p>元数据加载路径：</p>
+					<input class="stiDesignerTextBox_Mouse" type="text" />
+				</div>
+				<div class="btn">
+		                    <span class="preservation">
+		                        <i>确定</i>
+		                    </span>
+					<span class="cancel">
+		                        <i>取消</i>
+		                    </span>
+				</div>
+			</div>
+		</div>
+
+		<script src="./scripts/jquery-1.11.2.min.js" type="text/javascript"></script>
+		<script src="./scripts/stimulsoft.reports.engine.pack.js" type="text/javascript"></script>
+		<script src="./scripts/stimulsoft.reports.chart.pack.js" type="text/javascript"></script>
+		<script src="./scripts/stimulsoft.reports.export.pack.js" type="text/javascript"></script>
+		<script src="./scripts/stimulsoft.viewer.pack.js" type="text/javascript"></script>
+		<script src="./scripts/stimulsoft.designer.pack.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			Stimulsoft.Base.StiLicense.key = "6vJhGtLLLz2GNviWmUTrhSqnOItdDwjBylQzQcAOiHkeCyu4tQ/fHMz14+aX8heK5fPWPOh9GhOJWHXzBWfWkku5KP" +
+				"ChSipMnMVPpqTvfJS7sIxjF/cxhVrUvULFfcxcaCxjU9i6mZsEDM7BO+haAK3b38ycQVY0MQLANLSx5MZDk64iZY3P" +
+				"Tch8l8h+G4eHK2bcztaqjQsdfficwLSgadjyB/6byFWPUQGIUZIicm7hdluCKxvRMJ9LksBxlgcJSnXQYm5RJxoibg" +
+				"yH5H5tzHyms+PF3ePcgpoXlcRotDn6IyefrvWPGiKKcia/HRIsoXRM8lDeOueiFgQ29UyMwGQ2In/3iwD9vdZ9ag1A" +
+				"wsjwO/i95q9QMe5Vl8qh7DaGaICQUN41fCgSX2UcS9wNzX8pu1/YUfQ0Nr3ZrE2GTnLDWiBBMGxCbmTmny0xJRMmIJ" +
+				"zSO0o//fqTfSKvGTZqquNLg4+YrXxUWDMos04Xka1BO4DkZVnN33tUwINu44cuzUrRVXe/BvmphpnEEskGGbmtT86z" +
+				"GSdRjirhJWqtsV4PaPlsFATWMafoe3/+EA1a";
+
+			// 获取url参数
+			function getUrlParam(name) {
+				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+				var r = window.location.search.substr(1).match(reg); //匹配目标参数
+				if (r != null) return decodeURI(r[2]);
+				return null; //返回参数值
+			}
+
+			var lang = getUrlParam("lang") == null ? "zh_CN" : getUrlParam("lang");
+			Stimulsoft.Base.Localization.StiLocalization.addLocalizationFile("./Localization/" + lang + ".xml", false, lang);
+			Stimulsoft.Base.Localization.StiLocalization.cultureName = lang;
+
+			var report = new Stimulsoft.Report.StiReport();
+			var options = new Stimulsoft.Designer.StiDesignerOptions();
+			options.height = "100%";
+			options.appearance.showReportTree = true;
+			options.appearance.showTooltips = true;
+			options.appearance.showTooltipsHelp = false;
+			options.appearance.allowChangeWindowTitle = true;
+			options.appearance.showPropertiesGrid = true;
+			options.appearance.showSaveDialog = false;
+			options.appearance.allowChangeWindowTitle = false;
+			options.appearance.showLocalization = false;
+			options.toolbar.showFileMenu = true;
+			options.toolbar.showSetupToolboxButton = true;
+			options.toolbar.showInsertButton = true;
+			options.toolbar.showLayoutButton = true;
+			options.toolbar.showFileMenuSaveAs = true;
+			options.toolbar.showFileMenuAbout = false;
+			options.toolbar.showFileMenuHelp = false;
+
+			options.bands.showTable = true;
+			options.components.showPanel = true;
+			var designer = new Stimulsoft.Designer.StiDesigner(options);
+			designer.onSaveReport = function (args) {
+				report = args.report;
+				showSaveModel();
+			}
+			// Stimulsoft.System.StiError.showError("Some message after saving", true);
+
+			var FORM_BH = getUrlParam("FORM_BH") == null ? '' : getUrlParam("FORM_BH"),
+				FORM_MC = getUrlParam("FORM_MC") == null ? '' : getUrlParam("FORM_MC"),
+				PF_TYPE = getUrlParam("PF_TYPE") == null ? '' : getUrlParam("PF_TYPE"),
+				F_NOTE = getUrlParam("F_NOTE") == null ? '' : getUrlParam("F_NOTE"),
+				MDL_ID = getUrlParam("MDL_ID") == null ? '' : getUrlParam("MDL_ID"),
+				isreact = getUrlParam("isreact") == null ? '0' : '1', // '0'代表GWT 不传,'1'代表react
+				chuser = getUrlParam("chuser") == null ? '' : getUrlParam("chuser"),//修改人
+				DefDictKey = getUrlParam("DefDictKey") == null ? '' : getUrlParam("DefDictKey");
+			EditRefDict = getUrlParam("EditRefDict") == null ? '' : getUrlParam("EditRefDict");
+			multiLanguage = getUrlParam("MultiLanguage") == null ? "false" : getUrlParam("MultiLanguage");
+			businessID = getUrlParam("businessID") == null ? '' : getUrlParam("businessID");
+
+			var flag = FORM_BH == '' ? false : true; //新建:false  编辑:true
+
+			/*---------预加载默认数据源begin--------*/
+			var DefDict = null;
+			//如果不存在DefDictKey默认数据源key，则直接调用加载格式文件
+			if (DefDictKey != '') {
+				if (typeof window['indexedDB'] !== 'undefined') {
+					linkIndexDB();
+				} else {
+					//如果不支持，也直接加载格式文件。
+					getMrt();
+					showTips("你的浏览器不支持indexedDB，无法加载默认数据源");
+				}
+			} else {
+				getMrt();
+			}
+			var request,
+				db;
+
+			function linkIndexDB() {
+				request = window.indexedDB.open("GWTindexedDB", "1");
+				request.onerror = function (event) {
+					showTips("你的浏览器不支持indexedDB，无法加载默认数据源");
+				};
+				request.onsuccess = function (e) {
+					db = request.result;
+					getDefaultDataBase(db, DefDictKey, loadDataBase);
+
+				}
+			}
+
+			// 根据key值从indexDB获取数据JSON
+			function getDefaultDataBase(db, key, callback) {
+				// 获取单条数据
+				var transaction = db.transaction(['ROStore']);
+				var store = transaction.objectStore('ROStore');
+				var res = store.get(key);
+				res.onsuccess = function (e) {
+					callback(JSON.parse(e.target.result));
+				}
+			}
+
+			// 加载数据源
+			function loadDataBase(data) {
+				//如果是新建，则直接追加
+				DefDict = data;
+				if (!flag) {
+					designer.report = report;
+					designer.jsObject.options.commands[0] = {
+						command: "OpenDictionary",
+						base64Data: data,
+					}
+					designer.jsObject.ExecuteCommandFromStack();
+				} else {
+					//编辑的话直接加载格式文件，然后判断是否替换
+					getMrt();
+				}
+			}
+
+			/*---------预加载默认数据源end-----------*/
+
+			/*-------如果是编辑模式加载格式文件begin------*/
+			function getMrt() {
+				//如果是新建则不加载mrt文件
+				if (!flag) {
+					designer.report = report;
+				} else {
+					$(".number input").val(FORM_BH),
+						$(".name input").val(FORM_MC);
+					var params = '{"params": {"PrintID": "' + FORM_BH + '","MultiLanguage": "' + multiLanguage + '"}}';
+					$.ajax({
+						type: "POST",
+						url: "../../../rest/print/loadmrt",
+						async: true,
+						processData: false,
+						contentType: "application/json",
+						data: params,
+						success: function (data) {
+							if (data.code == 0) {
+								var mrtjson = data.data.mrtjson;
+								//如果是编辑，且强制刷新数据源是1，且默认数据源不为空，则替换格式上的数据源
+								if (flag && EditRefDict == "1" && DefDict != null) {
+									mrtjson.Dictionary = DefDict;
+								}
+								report.load(mrtjson)
+								designer.report = report;
+							} else {
+								showTips(data.message);
+							}
+						},
+						error: function (xhr, type, errorThrown) {
+							showTips("模板加载失败，请检查网络！");
+						}
+					});
+				}
+			}
+
+			/*-------如果是编辑模式加载格式文件end------*/
+			// 关闭元数据加载弹窗
+			$(".model .loadDictionary").on("click", ".title i, .cancel i", function () {
+				hideLoadDictionary();
+			});
+
+			function hideLoadDictionary() {
+				$(".model").hide();
+				$(".loadDictionary").hide();
+			}
+			$("body").on("paste", function (e) {
+				if ($(".loadDictionary").css("display") === "block") {
+					$(".loadDictionary .url input").focus();
+				}
+			});
+
+			// 加载字典json
+			$(".model .loadDictionary").on("click", ".preservation i", function () {
+				var jsonURL = $(".loadDictionary .url input").val();
+				if (jsonURL == "") {
+
+				} else {
+					hideLoadDictionary();
+					$.ajax({
+						type: "POST",
+						url: jsonURL,
+						async: false,
+						processData: false,
+						contentType: "application/json",
+						success: function (data) {
+							if (data.code == 0) {
+								designer.jsObject.options.commands[0] = {
+									command: "OpenDictionary",
+									base64Data: data.data,
+									// commandGuid: "a0e681c58f9747f494c760747e141fc2"
+								}
+								designer.jsObject.ExecuteCommandFromStack();
+							} else {
+								showTips(data.message);
+							}
+						},
+						error: function (xhr, type, errorThrown) {
+							hideLoadDictionary();
+							showTips("数据导入出错！");
+						}
+					});
+				}
+			});
+
+			// 显示提示弹窗
+			function showTips(txt) {
+				$(".tips .content").text(txt);
+				$(".model").show();
+				$(".tips").show();
+			}
+
+			// 隐藏提示弹窗
+			function hideTips() {
+				$(".tips .content").text("");
+				$(".model").hide();
+				$(".tips").hide();
+			}
+
+			$(".tips .title i, .tips .btn span").on("click", function () {
+				hideTips();
+			});
+
+			// 显示保存弹窗
+			function showSaveModel(isSaveAs) {
+				if (isSaveAs == true) {
+					flag = false;
+					$(".number input").val(""),
+						$(".name input").val("");
+				} else if (FORM_BH == '') {
+					flag = false;
+					$(".number input").val(""),
+						$(".name input").val("");
+				} else {
+					flag = true;
+					$(".number input").val(FORM_BH),
+						$(".name input").val(FORM_MC);
+				}
+				if (flag) {
+					$(".number input").attr("disabled", true);
+				} else {
+					$(".number input").attr("disabled", false);
+				}
+				$(".model").show();
+				$(".savainfo").show();
+			}
+
+			// 编号未输入提示
+			function showNumError(txt) {
+				$(".savainfo .numbererror").text(txt);
+				$(".savainfo .numbererror").css("visibility", "visible");
+			}
+
+			// 名称未输入提示
+			function showNameError(txt) {
+				$(".savainfo .nameerror").text(txt);
+				$(".savainfo .nameerror").css("visibility", "visible");
+			}
+
+			// 取消保存框所有提示
+			function hideAllEoor() {
+				$(".savainfo .numbererror").text("");
+				$(".savainfo .nameerror").text("");
+				$(".savainfo .error").css("visibility", "hidden");
+			}
+
+			// 保存弹窗input获取焦点,隐藏错误提示
+			$(".savainfo").on("input", "input", function () {
+				hideAllEoor();
+			});
+			// 取消保存弹窗
+			$(".model .savainfo").on("click", ".close i, .cancel i", function () {
+				$(".model").hide();
+				$(".savainfo").hide();
+			});
+			// 点击保存
+			$(".model").on("click", ".savainfo .preservation i", function () {
+				var PrintID = $(".number input").val().trim(),
+					PrintName = $(".name input").val().trim();
+				var isAllowSave = true;
+				if (PrintID == '') {
+					showNumError("请输入编号");
+					isAllowSave = false;
+				} else if (PrintID.length > 30) {
+					showNumError("编号长度不得超过30，当前长度:" + PrintID.length);
+					isAllowSave = false;
+				}
+				if (PrintName == '') {
+					showNameError("请输入名称");
+					isAllowSave = false;
+				} else if (PrintName.length > 60) {
+					showNameError("名称长度不得超过60，当前长度:" + PrintName.length);
+					isAllowSave = false;
+				}
+				if (isAllowSave == false) {
+					return false;
+				}
+				if (flag) {
+					savemrt(PrintID, PrintName);
+				} else {
+					checkmrt(PrintID, PrintName);
+				}
+			});
+
+			// 检测ID是否重复
+			function checkmrt(PrintID, PrintName) {
+				var params = '{"params": {"PrintID": "' + PrintID + '"}}';
+				$.ajax({
+					type: "POST",
+					url: "../../../rest/print/checkmrt",
+					async: true,
+					processData: false,
+					contentType: "application/json",
+					data: params,
+					success: function (data) {
+						if (data.code == 0) {
+							savemrt(PrintID, PrintName);
+						} else {
+							showNumError(data.message);
+						}
+					},
+					error: function (xhr, type, errorThrown) {
+						showNumError("编号检查失败，请检查网络！");
+					}
+				});
+			}
+
+			// 保存mrt
+			function savemrt(PrintID, PrintName) {
+				var jsonString = report.saveToJsonString();
+				FORM_BH = PrintID;
+				FORM_MC = PrintName;
+				var params;
+				if (isreact == '1') {
+					//修改为只传修改人 有修改人时，如果没有模板，创建人==修改人，时间==当前时间
+					//有修改人时，如果有模板，更新修改人与修改时间
+					params = '{"printData": ' + jsonString + ',"params": {"PrintType": "' + PF_TYPE + '","chuser": "' + chuser + '","PrintID": "' + PrintID + '","PrintName": "' + PrintName + '","PrintNote": "","MultiLanguage": "' + multiLanguage + '","businessID":"' + businessID + '"}}';
+				} else {
+					params = '{"printData": ' + jsonString + ',"params": {"PrintType": "' + PF_TYPE + '","PrintID": "' + PrintID + '","PrintName": "' + PrintName + '","PrintNote": "","MultiLanguage": "' + multiLanguage + '","businessID":"' + businessID + '"}}';
+				}
+				$.ajax({
+					type: "POST",
+					url: "../../../rest/print/savemrt",
+					async: true,
+					processData: false,
+					contentType: "application/json",
+					data: params,
+					success: function (data) {
+						$(".savainfo").hide();
+						showTips(data.message);
+					},
+					error: function (xhr, type, errorThrown) {
+						showTips("保存失败，请检查网络！");
+					}
+				});
+			}
+		</script>
+
+	</body>
+</html>

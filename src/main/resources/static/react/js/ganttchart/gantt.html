@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv='Content-type' content='text/html; charset=utf-8'>
+    <title>甘特图</title>
+    <!-- 甘特图样式 -->
+    <!-- <link rel='stylesheet' href='./codebase/dhtmlxgantt.css'> -->
+    <link rel='stylesheet' href='./codebase/skins/dhtmlxgantt_material.css'>
+    
+    <!-- 甘特图 -->
+    <script src='./codebase/dhtmlxgantt.js'></script>
+    <!-- 国际化 -->
+    <script src='./locali18n/locali18n.js'></script>
+    <!-- 示例数据 -->
+    <script src='./data/sampleData.js'></script>
+    <!-- uuid -->
+    <script src='./utils/uuid.js'></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='gantt_here' style='width:100%; height:100%;'></div>
+    <script>
+        /* 获取url参数 */
+        function getUrlParam(name) {
+            let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            let r = window.location.search.substr(1).match(reg); //匹配目标参数
+            if (r != null) return decodeURI(r[2]);
+            return null; //返回参数值
+        }
+        let lang = getUrlParam("lang") == null ? "zh_CN" : getUrlParam("lang");
+        /* 替换容器ID，避免元素ID重复 */
+        let ganttContainer = document.getElementById('gantt_here')
+        let id = uuid();
+        ganttContainer.id = id;
+        /* 设置国际化标识 */
+        gantt.i18n.setLocale(Locali18n[lang])
+        /* 设置甘特图插件参数 */
+        gantt.plugins({
+            quick_info: true, /* Provides a popup with a task details. */
+            tooltip: true,  /* Gives the possibility to add extra information for users without overflowing the screen with the text. */
+            critical_path: true, /* Presents a sequence of tasks that can't be delayed without affecting the whole project's deadline. The critical path also determines the shortest time the project can take. */
+            click_drag: true, /* Provides the possibility to create and select tasks with drag-n-drop. */
+        });
+        /* 设置从周一开始 */
+        gantt.config.start_on_monday = true;
+        /* 设置第几周的格式 */
+        if (lang === 'zh_CN') {
+            gantt.config.scale_unit = 'week';
+            gantt.config.date_scale = '%y年 第%W周';
+            gantt.config.min_column_width = 80;
+            gantt.config.subscales = [
+                { unit: 'day', step: 1, date: '%D' }
+            ];
+        }
+        /* 实例化甘特图 */
+        gantt.init(id);
+        /* 设置数据 */
+        gantt.parse(SampleData);
+
+        /* 动态设置数据 */
+        window.setGanttChartData = function (dataJson) {
+
+        }
+        /* 动态设置时间跨度TODO */
+        /* . */
+        /* . */
+        /* . */
+        /* . */
+        /* . */
+
+    </script>
+</body>
+
+</html>

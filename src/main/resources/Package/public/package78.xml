@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package caption="" id="">
+
+	<System_Variable>
+		<item caption="流程启用resid缓存" id="FLOWDATA_REDIS" value="0"/>
+		<item caption="元数据启用redis缓存" id="METADATA_REDIS" value="0"/>
+		<item caption="流程启用模型中心" id="BIZModelCenterServer" value="0"/>
+		<item caption="是否为流程中心" id="BIMFlowCenterServer" value="0"/>
+		<item caption="启用消息服务（移动端）" id="EnableIMServer" value="0"/>
+		<item caption="启用自定义流程" id="EnableUserDefinedFlow" value="1"/>
+		<item caption="任务代理审批" id="FLOW_GRANT_TO_USER" value="1"/>
+		<item caption="任务代理审批,与系统时间比较" id="GTU_SYSTEM_TIME" value="1"/>
+		<item id="checkMDModelModified" value="0" caption="是否检查MDModel修改"/>
+		<item id="OnlyLoadUnitWithPermission" value="0" caption="是否只加载有权限的组织机构"/>
+		<item id="DEF_COND_TYPE2" value="0" caption="是否启用方式二定义条件"/>
+		<item id="DevelopPlatForm" value="1" caption="是否是开发平台" />
+		<item id="saveJSONForm2DB" value="1" caption="保存JSON表单到数据库"/>
+	</System_Variable>
+
+	<com.efounder.eai.EAIServer>
+		<!--<item id="OSPDef" caption="OSP应用" protocol="http" host="localhost" port="8080" path="GWTServer" service="ESPService" DataBaseName="ZYYT_DB01" DBNO="ZYYT_DB01"/>-->
+		<!--
+		<item caption="流程中心默认数据库连接配置" id="ESPDefaultServer" service="" protocol="" port="" path="" host="" DataBaseName="CWGXDBDEV" DBNO="CWGXDBDEV"/>
+		<item caption="模型中心地址" id="BIZModelCenterServer" service="ESPService" protocol="http" port="10002" path="mxzx" host="11.11.48.16" DataBaseName="CWGXDB" DBNO="CWGXDB"/>
+		<item caption="业务系统" id="BusinessService" service="ESPService" protocol="http" port="8088" path="OSPServer20171015" host="127.0.0.1" DataBaseName="CWGXDB" DBNO="CWGXDB"/>
+		-->
+	</com.efounder.eai.EAIServer>
+
+	<!-- 业务产品帐套对应关系配置，用于模型中心根据产品Product从产品数据库中加载元数据, -->
+	<!-- 主要解决流程中心从模型中心加载元数据时，PO中的帐套为流程中心帐套，通过配置重定向到产品帐套。 -->
+	<!-- 注意：目前模型中心和流程中心都需要此配置 -->
+	<!--
+	<ProductDB>
+		<item id="BusinessService" DataBaseName="CWGXDB" DBNO="CWGXDB" Product="BusinessService" name="业务系统"/>
+	</ProductDB>
+	-->
+	<bizGenServicePlugins>
+		<item id="GenericQueryUpdatePlugin" caption="统一查询插件"
+			  modelClazz="com.pansoft.lcdp.server.plugins.GenericQueryUpdatePlugin" />
+	</bizGenServicePlugins>
+</package>

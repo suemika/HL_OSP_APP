@@ -1,0 +1,26 @@
+{
+  "key" : "RootPage",
+  "formName" : "生产进度追踪明细",
+  "formID" : "HLZB_tbProductionProgresss_MXS",
+  "lastAuthor" : "",
+  "lastChanged" : "",
+  "version" : "React",
+  "compName" : "表单画布",
+  "rootProps" : {
+    "scriptsCode" : {
+      "componentDidMount" : ""
+    },
+    "style" : {
+      "flexDirection" : "column",
+      "flexWrap" : "nowrap",
+      "justifyContent" : "flex-start",
+      "alignItems" : "flex-start",
+      "overflow" : "auto"
+    }
+  },
+  "components" : [ ],
+  "dataModels" : [ ],
+  "actionComps" : [ ],
+  "serverJsComps" : [ ],
+  "tableSource" : [ ]
+}

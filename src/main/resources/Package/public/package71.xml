@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package caption="" id="">
+	<Flow_ConditionFunction>
+		<item funName="dateDif" funCaption="日期差值" clazz="com.efounder.wf.condition.SystemConditionFunction" exeMethod="dateDif" enable="1" >
+			<description name="description">
+				dateDif（开始日期，结束日期），返回结束日期与开始日期之间的日期差，单位为天。<br/>例如：dateDif(20171201,20171231),返回31天。
+			</description>
+			<parameters name="parameters">
+				<parameter parameterName='FUN_PAR' parameterCaption='开始日期' parameterType='string' parameterMacro="0"/>
+				<parameter parameterName='FUN_PAR' parameterCaption='结束日期' parameterType='string' parameterMacro="0"/>
+			</parameters>
+		</item>
+
+		<item funName="fkeyAttr" funCaption="外键属性函数" clazz="com.efounder.wf.condition.SystemConditionFunction" exeMethod="fkeyAttr" enable="1" >
+			<description name="description">
+				fkeyAttrTest(外键列,@外键表@,@外键表属性列@)。
+			</description>
+			<parameters name="parameters">
+				<parameter parameterName='FUN_PAR' parameterCaption='外键列' parameterType='string' parameterMacro="0"/>
+				<parameter parameterName='FUN_PAR' parameterCaption='外键表(默认带出元数据外键表)' parameterType='string'  parameterMacro="1"/>
+				<parameter parameterName='FUN_PAR' parameterCaption='属性列' parameterType='string' parameterMacro="1"/>
+			</parameters>
+		</item>
+
+		<item funName="userToGW" funCaption="用户所属岗位" clazz="com.efounder.wf.condition.SystemConditionFunction" exeMethod="userToGW" enable="1" >
+			<description name="description">
+				参数列选择的是用户编号字段。
+			</description>
+			<parameters name="parameters">
+				<parameter parameterName='FUN_PAR' parameterCaption='用户列' parameterType='string' parameterMacro="0"/>
+			</parameters>
+		</item>
+
+		<item funName="customValueSet" funCaption="自定义值集" clazz="com.efounder.wf.condition.SystemConditionFunction" exeMethod="customValueSet" enable="1" >
+			<description name="description">
+				用'值集表属性列=属性值'为条件，在值集表查询出相应的值集，然后用值集表的'值集表值集列'做为比较值。
+			</description>
+			<parameters name="parameters">
+				<parameter parameterName='FUN_PAR' parameterCaption='值集表' parameterType='string' parameterMacro="0"/>
+				<parameter parameterName='FUN_PAR' parameterCaption='值集表属性列' parameterType='string' parameterMacro="0"/>
+				<parameter parameterName='FUN_PAR' parameterCaption='属性值' parameterType='string' parameterMacro="0"/>
+				<parameter parameterName='FUN_PAR' parameterCaption='值集表值集列' parameterType='string' parameterMacro="0"/>
+			</parameters>
+		</item>
+
+		<item funName="itemsCompare" funCaption="多行分录字段值比较" clazz="com.efounder.wf.condition.SystemConditionFunction" exeMethod="itemsCompare" enable="0" >
+			<description name="description">
+				参数列选择的是用户编号字段。
+			</description>
+			<parameters name="parameters">
+			</parameters>
+		</item>
+	</Flow_ConditionFunction>
+</package>

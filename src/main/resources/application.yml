@@ -1,0 +1,144 @@
+# 设置http请求编码为UTF-8，解决拦截器中文乱码问题
+server:
+  #服务端口
+  port: 8080
+  servlet:
+    context-path: /hlzb
+    session:
+      #session超时时间
+      timeout: 1800
+  # 设置http请求编码为UTF-8，解决拦截器中文乱码问题
+  tomcat:
+    uri-encoding: UTF-8
+  compression:
+    enabled: true
+    #mime-types: application/javascript,text/css,application/json,application/xml,text/html,text/xml,text/plain
+    min-response-size: 1024
+spring:
+  banner:
+    charset: UTF-8       # 设置 Banner 文件的编码
+    location: classpath:banner.txt  # 指定 Banner 文件路径
+  main:
+    banner-mode: console  # 控制 Banner 显示模式（console/log/off）
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  profiles:
+    active: dev
+  thymeleaf:
+    prefix: classpath:/static
+    check-template-location: true
+    encoding: UTF-8
+    mode: HTML5
+    cache: false
+    suffix: .html
+  mvc:
+    view:
+      prefix: classpath:/static/
+      suffix: .html
+  config:
+    import:
+      - classpath:frontConfigPage.yml
+logging:
+  level:
+    com:
+      efounder:
+        spring: debug
+    org:
+      mongodb: error
+
+
+
+osp:
+  servlet:
+    webuploaderservice: true
+  identity:
+    enable: true
+    details:
+      - { appid: osp-lcdp-service,appkey: osp-lcdp-service-appkey }
+  authentication:
+    enable: true
+    token-cache: guava
+    bean-name: defaultOspAuthentication
+    permit-paths:
+      - /sys/time
+      - /extendAuth
+      - /osplogin
+      - /checkLoginQRCode
+      - /createLoginQRCode
+      - /rest/beforelogin/lange/switchlanguage
+      - /ESPGWTService/**
+      - /login.html
+      - /login/**
+      - /build/**
+      - /react/**
+      - /designer/**
+      - /mobile/**
+      - /code/**
+      - /application.html
+      - /js/**
+      - /ImageSpace/**
+      - /images/**
+      - /GWTStandard/**
+      - /GWTEnterprise1/**
+      - /token/check
+      - /mobile/**
+      - /index.html
+      - /home.html
+      - /password/reset
+      - /code/getphoneandemail
+      - /code/sms/send
+      - /code/email/send
+      - /**.gupld
+      - /**.rupld
+      - /security/conf/list
+      - /token/produce
+      - /**.rupld
+      - /**CtrlService
+      - /echart/**
+      - /front/config
+      - /front/config/details
+      - /formPlay/**
+      - /developer.html
+    login-page: /developer.html
+    login-process-url: /osplogin
+    logout-url: /logout
+    logout-success-url: /logout/success
+    password-encoder-name: ospPasswordEncoder
+    front-config-enable: false
+  system:
+    settings:
+      single-login: true
+      single-login-policy: prevent
+      session-type: token
+      token-validity: 1800
+      token-prefix: authentication
+      code-type: sms
+  code:
+    code-prefix: validatecode
+    code-validity: 1800
+    code-length: 6
+    image-width: 90
+    image-height: 23
+    sms-Title: 普联软件
+
+  cas:
+    enable: false
+    cas-server-url: http://127.0.0.1:8080/OSPIam/authz/cas
+    cas-server-login-url: http://127.0.0.1:8080/OSPIam/authz/cas/login
+
+    cas-client-url: http://127.0.0.1:9527/OSPApplication/
+    cas-client-login-url: callback
+    cas-client-login-success-url: http://127.0.0.1:9527/OSPApplication/index.html
+    cas-client-logout-url: /logout
+
+  json-config:
+    # 是否开启自定义对象的fastjson序列化字段过滤器，不配置时默认为false不开启
+    enable-filters: false
+    filters:
+
+  webOrigin:
+    enabled: true
+    allowedOrigins:
+    allowedHeaders:
+    allowedMethods:

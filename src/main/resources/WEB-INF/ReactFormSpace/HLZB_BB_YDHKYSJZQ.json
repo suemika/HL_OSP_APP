@@ -1,0 +1,42 @@
+{
+  "key" : "RootPage",
+  "formName" : "月度回款预算及债券报表",
+  "formID" : "HLZB_BB_YDHKYSJZQ",
+  "lastAuthor" : "",
+  "lastChanged" : "",
+  "version" : "React",
+  "compName" : "表单画布",
+  "rootProps" : {
+    "scriptsCode" : {
+      "componentDidMount" : ""
+    },
+    "style" : {
+      "flexDirection" : "column",
+      "flexWrap" : "nowrap",
+      "justifyContent" : "flex-start",
+      "alignItems" : "flex-start",
+      "overflow" : "auto"
+    }
+  },
+  "components" : [ {
+    "key" : "FormIFrame1",
+    "type" : "FormIFrame",
+    "props" : {
+      "scriptsCode" : {
+        "endLoad" : ""
+      },
+      "style" : {
+        "height" : "100%",
+        "width" : "100%",
+        "display" : "block"
+      },
+      "url" : "http://60.213.146.71:8075/webroot/decision/view/report?viewlet=%25E5%258D%258E%25E9%25B2%2581%25E8%25A3%2585%25E5%25A4%2587%252F%25E6%259C%2588%25E5%25BA%25A6%25E5%259B%259E%25E6%25AC%25BE%25E9%25A2%2584%25E7%25AE%2597%25E5%258F%258A%25E5%2580%25BA%25E6%259D%2583%25E6%258A%25A5%25E8%25A1%25A8.cpt&ref_t=design&op=view&ref_c=5a9a7bbf-9673-461d-b29c-525821408715"
+    },
+    "compName" : "网页",
+    "children" : [ ]
+  } ],
+  "dataModels" : [ ],
+  "actionComps" : [ ],
+  "serverJsComps" : [ ],
+  "tableSource" : [ ]
+}

@@ -1,0 +1,757 @@
+{
+    "key": "root_page",
+    "formName": "",
+    "formID": "",
+    "lastAuthor": "",
+    "lastChanged": "",
+    "version": "React",
+    "compName": "表单画布",
+    "rootProps": {
+        "scriptsCode": {
+            "componentDidMount": "FormModel1.loadBIZModel();"
+        },
+        "style": {
+            "flexDirection": "column",
+            "flexWrap": "nowrap",
+            "justifyContent": "flex-start",
+            "alignItems": "flex-start",
+            "overflow": "auto",
+            "backgroundColor": "",
+            "padding": ""
+        }
+    },
+    "components": [
+        {
+            "key": "FormBoxContainer1",
+            "type": "FormBoxContainer",
+            "props": {
+                "scriptsCode": {
+                    "onClickHandler": ""
+                },
+                "style": {
+                    "height": "100%",
+                    "minHeight": "10px",
+                    "width": "100%",
+                    "minWidth": "10px",
+                    "flexDirection": "column",
+                    "flexWrap": "nowrap",
+                    "justifyContent": "flex-start",
+                    "alignItems": "flex-start",
+                    "overflow": "auto",
+                    "backgroundColor": "#FFF",
+                    "opacity": 1,
+                    "backgroundImage": "",
+                    "backgroundRepeat": "repeat",
+                    "backgroundPosition": "left top",
+                    "borderStyle": "solid",
+                    "borderColor": "#d9d9d9",
+                    "borderWidth": "0px",
+                    "borderRadius": "0px",
+                    "boxShadow": "",
+                    "display": "flex",
+                    "margin": "",
+                    "padding": "",
+                    "gap": "16px",
+                    "paddingTop": "24px",
+                    "paddingRight": "24px",
+                    "paddingBottom": "24px",
+                    "paddingLeft": "24px"
+                }
+            },
+            "compName": "通用布局",
+            "children": [
+                {
+                    "key": "FormLabel1",
+                    "type": "FormLabel",
+                    "props": {
+                        "textVal": "默认文本",
+                        "isShowTitle": false,
+                        "titleToolTipCustomText": "",
+                        "editMask": "",
+                        "asteriskRed": true,
+                        "scriptsCode": {
+                            "onClick": ""
+                        },
+                        "dataModel": "",
+                        "dataSetID": "",
+                        "dataSetColID": "",
+                        "style": {
+                            "height": "40px",
+                            "width": "100%",
+                            "justifyContent": "center",
+                            "alignItems": "center",
+                            "backgroundColor": "#ffffff",
+                            "opacity": 1,
+                            "borderStyle": "none",
+                            "borderColor": "#d9d9d9",
+                            "borderWidth": "1px",
+                            "borderRadius": "2px",
+                            "display": "",
+                            "color": "#2796ffff",
+                            "fontFamily": "Microsoft YaHei",
+                            "fontSize": "22px",
+                            "fontWeight": "500",
+                            "fontStyle": "normal",
+                            "textDecoration": "none",
+                            "margin": "",
+                            "padding": "0px 16px 0px 16px",
+                            "cursor": "default",
+                            "paddingTop": "0px",
+                            "paddingRight": "0px",
+                            "paddingBottom": "0px",
+                            "paddingLeft": "0px",
+                            "marginTop": "0px"
+                        }
+                    },
+                    "compName": "简单文本"
+                },
+                {
+                    "key": "FormBoxContainer8",
+                    "type": "FormBoxContainer",
+                    "props": {
+                        "scriptsCode": {
+                            "onClickHandler": ""
+                        },
+                        "style": {
+                            "height": "auto",
+                            "minHeight": "100px",
+                            "width": "100%",
+                            "minWidth": "10px",
+                            "flexDirection": "row",
+                            "flexWrap": "wrap",
+                            "justifyContent": "flex-start",
+                            "alignItems": "flex-start",
+                            "overflow": "auto",
+                            "backgroundColor": "",
+                            "opacity": 1,
+                            "backgroundImage": "",
+                            "backgroundRepeat": "repeat",
+                            "backgroundPosition": "left top",
+                            "borderStyle": "solid",
+                            "borderColor": "#d9d9d9",
+                            "borderWidth": "0px",
+                            "borderRadius": "0px",
+                            "boxShadow": "",
+                            "display": "flex",
+                            "margin": "",
+                            "paddingTop": "0",
+                            "paddingRight": "24px",
+                            "paddingBottom": "0",
+                            "paddingLeft": "24px",
+                            "gap": "16px 0px"
+                        }
+                    },
+                    "compName": "通用布局",
+                    "children": []
+                },
+                {
+                    "key": "FormBoxContainer3",
+                    "type": "FormBoxContainer",
+                    "props": {
+                        "scriptsCode": {
+                            "onClickHandler": ""
+                        },
+                        "style": {
+                            "height": "auto",
+                            "minHeight": "10px",
+                            "width": "100%",
+                            "minWidth": "10px",
+                            "flexDirection": "row",
+                            "flexWrap": "nowrap",
+                            "justifyContent": "flex-start",
+                            "alignItems": "center",
+                            "overflow": "hidden",
+                            "backgroundColor": "",
+                            "opacity": 1,
+                            "backgroundImage": "",
+                            "backgroundRepeat": "repeat",
+                            "backgroundPosition": "left top",
+                            "borderStyle": "solid",
+                            "borderColor": "#d9d9d9",
+                            "borderWidth": "0px",
+                            "borderRadius": "0px",
+                            "boxShadow": "",
+                            "display": "flex",
+                            "margin": "",
+                            "padding": "",
+                            "gap": "16px"
+                        }
+                    },
+                    "compName": "通用布局",
+                    "children": [
+                        {
+                            "key": "FormButton5",
+                            "type": "FormButton",
+                            "props": {
+                                "labelText": "新建",
+                                "isShowTitle": false,
+                                "titleToolTipCustomText": "",
+                                "isShowBadge": false,
+                                "leftOffset": -5,
+                                "topOffset": -33,
+                                "action": "FormCreateAction1",
+                                "scriptsCode": {
+                                    "onClick": "",
+                                    "onDoubleClick": "",
+                                    "onMouseEnter": "",
+                                    "onMouseLeave": "",
+                                    "onMouseOver": ""
+                                },
+                                "style": {
+                                    "height": "28px",
+                                    "width": "70px",
+                                    "backgroundColor": "rgba(0, 129, 204, 1)",
+                                    "opacity": 1,
+                                    "borderStyle": "none",
+                                    "borderColor": "",
+                                    "borderWidth": "0px",
+                                    "borderRadius": "4px",
+                                    "display": "",
+                                    "color": "#FFFFFF",
+                                    "fontFamily": "",
+                                    "fontSize": "14px",
+                                    "textAlign": "center",
+                                    "fontWeight": "normal",
+                                    "fontStyle": "normal",
+                                    "textDecoration": "none",
+                                    "margin": "",
+                                    "cursor": "pointer",
+                                    "borderTopWidth": "0px",
+                                    "borderRightWidth": "0px",
+                                    "borderBottomWidth": "0px",
+                                    "borderLeftWidth": "0px"
+                                }
+                            },
+                            "compName": "按钮"
+                        },
+                        {
+                            "key": "FormButton1",
+                            "type": "FormButton",
+                            "props": {
+                                "labelText": "编辑",
+                                "isShowTitle": false,
+                                "titleToolTipCustomText": "",
+                                "isShowBadge": false,
+                                "leftOffset": -5,
+                                "topOffset": -33,
+                                "action": "FormEditAction1",
+                                "scriptsCode": {
+                                    "onClick": "",
+                                    "onDoubleClick": "",
+                                    "onMouseEnter": "",
+                                    "onMouseLeave": "",
+                                    "onMouseOver": ""
+                                },
+                                "style": {
+                                    "height": "28px",
+                                    "width": "70px",
+                                    "backgroundColor": "transparent",
+                                    "opacity": 1,
+                                    "borderStyle": "solid",
+                                    "borderColor": "#1890ff",
+                                    "borderWidth": "1px",
+                                    "borderRadius": "2px",
+                                    "display": "",
+                                    "color": "#1890ff",
+                                    "fontFamily": "",
+                                    "fontSize": "14px",
+                                    "textAlign": "center",
+                                    "fontWeight": "normal",
+                                    "fontStyle": "normal",
+                                    "textDecoration": "none",
+                                    "margin": "",
+                                    "cursor": "pointer",
+                                    "borderTopWidth": "1px",
+                                    "borderRightWidth": "1px",
+                                    "borderBottomWidth": "1px",
+                                    "borderLeftWidth": "1px"
+                                }
+                            },
+                            "compName": "编辑"
+                        },
+                        {
+                            "key": "FormButton2",
+                            "type": "FormButton",
+                            "props": {
+                                "labelText": "增加",
+                                "isShowTitle": false,
+                                "titleToolTipCustomText": "",
+                                "isShowBadge": false,
+                                "leftOffset": -5,
+                                "topOffset": -33,
+                                "action": "FormAddItemAction1",
+                                "scriptsCode": {
+                                    "onClick": "",
+                                    "onDoubleClick": "",
+                                    "onMouseEnter": "",
+                                    "onMouseLeave": "",
+                                    "onMouseOver": ""
+                                },
+                                "style": {
+                                    "height": "28px",
+                                    "width": "70px",
+                                    "backgroundColor": "transparent",
+                                    "opacity": 1,
+                                    "borderStyle": "solid",
+                                    "borderColor": "#1890ff",
+                                    "borderWidth": "1px",
+                                    "borderRadius": "2px",
+                                    "display": "",
+                                    "color": "#1890ff",
+                                    "fontFamily": "",
+                                    "fontSize": "14px",
+                                    "textAlign": "center",
+                                    "fontWeight": "normal",
+                                    "fontStyle": "normal",
+                                    "textDecoration": "none",
+                                    "margin": "",
+                                    "cursor": "pointer",
+                                    "borderTopWidth": "1px",
+                                    "borderRightWidth": "1px",
+                                    "borderBottomWidth": "1px",
+                                    "borderLeftWidth": "1px"
+                                }
+                            },
+                            "compName": "增加"
+                        },
+                        {
+                            "key": "FormButton3",
+                            "type": "FormButton",
+                            "props": {
+                                "labelText": "删除",
+                                "isShowTitle": false,
+                                "titleToolTipCustomText": "",
+                                "isShowBadge": false,
+                                "leftOffset": -5,
+                                "topOffset": -33,
+                                "action": "FormRemoveItemAction1",
+                                "scriptsCode": {
+                                    "onClick": "",
+                                    "onDoubleClick": "",
+                                    "onMouseEnter": "",
+                                    "onMouseLeave": "",
+                                    "onMouseOver": ""
+                                },
+                                "style": {
+                                    "height": "28px",
+                                    "width": "70px",
+                                    "backgroundColor": "transparent",
+                                    "opacity": 1,
+                                    "borderStyle": "solid",
+                                    "borderColor": "#1890ff",
+                                    "borderWidth": "1px",
+                                    "borderRadius": "2px",
+                                    "display": "",
+                                    "color": "#1890ff",
+                                    "fontFamily": "",
+                                    "fontSize": "14px",
+                                    "textAlign": "center",
+                                    "fontWeight": "normal",
+                                    "fontStyle": "normal",
+                                    "textDecoration": "none",
+                                    "margin": "",
+                                    "cursor": "pointer",
+                                    "borderTopWidth": "1px",
+                                    "borderRightWidth": "1px",
+                                    "borderBottomWidth": "1px",
+                                    "borderLeftWidth": "1px"
+                                }
+                            },
+                            "compName": "删除"
+                        },
+                        {
+                            "key": "FormButton4",
+                            "type": "FormButton",
+                            "props": {
+                                "labelText": "保存",
+                                "isShowTitle": false,
+                                "titleToolTipCustomText": "",
+                                "isShowBadge": false,
+                                "leftOffset": -5,
+                                "topOffset": -33,
+                                "action": "FormSaveAction1",
+                                "scriptsCode": {
+                                    "onClick": "",
+                                    "onDoubleClick": "",
+                                    "onMouseEnter": "",
+                                    "onMouseLeave": "",
+                                    "onMouseOver": ""
+                                },
+                                "style": {
+                                    "height": "28px",
+                                    "width": "70px",
+                                    "backgroundColor": "transparent",
+                                    "opacity": 1,
+                                    "borderStyle": "solid",
+                                    "borderColor": "#1890ff",
+                                    "borderWidth": "1px",
+                                    "borderRadius": "2px",
+                                    "display": "",
+                                    "color": "#1890ff",
+                                    "fontFamily": "",
+                                    "fontSize": "14px",
+                                    "textAlign": "center",
+                                    "fontWeight": "normal",
+                                    "fontStyle": "normal",
+                                    "textDecoration": "none",
+                                    "margin": "",
+                                    "cursor": "pointer",
+                                    "borderTopWidth": "1px",
+                                    "borderRightWidth": "1px",
+                                    "borderBottomWidth": "1px",
+                                    "borderLeftWidth": "1px"
+                                }
+                            },
+                            "compName": "保存"
+                        }
+                    ]
+                },
+                {
+                    "key": "AGGrid1",
+                    "type": "AGGrid",
+                    "props": {
+                        "columnModel": [],
+                        "gridCellEditorManager": [],
+                        "PopupMenuManager": [],
+                        "editable": true,
+                        "singleClickEdit": false,
+                        "sortable": false,
+                        "showRowNum": false,
+                        "showCheckBox": false,
+                        "multiRemainSelection": false,
+                        "selectFirstRow": true,
+                        "diabledCursorChanged": false,
+                        "columnsFit": false,
+                        "showColumnFooter": false,
+                        "treeLinkGrid": false,
+                        "headerHeight": 40,
+                        "headerFontColor": "#262626",
+                        "headerFontSize": "14px",
+                        "headerFontFamily": "Microsoft YaHei",
+                        "headFontWeight": 400,
+                        "headerBkgColor": "#fafafa",
+                        "bodyFontColor": "#262626",
+                        "bodyFontSize": "14px",
+                        "bodyFontFamily": "Microsoft YaHei",
+                        "rowHeight": 40,
+                        "showBorderRight": true,
+                        "rowBkgColor": "",
+                        "useOddRowBkgColor": true,
+                        "scriptsCode": {
+                            "onRowClicked": "",
+                            "onRowDoubleClicked": "",
+                            "onCellValueChanged": "",
+                            "onSelectionChanged": "",
+                            "onAfterRenderView": ""
+                        },
+                        "dataModel": "",
+                        "dataSetID": "",
+                        "style": {
+                            "height": "440px",
+                            "width": "100%",
+                            "display": "",
+                            "margin": ""
+                        }
+                    },
+                    "compName": "业务表格"
+                }
+            ]
+        }
+    ],
+    "dataModels": [
+        {
+            "key": "MDModel1",
+            "type": "MDModel",
+            "props": {
+                "providerService": "LargeDICTService",
+                "resolverService": "SYS_MDM_RESOLVER",
+                "DCT_ID": "",
+                "dataChecker": "",
+                "valueManager": "",
+                "dataBase": "",
+                "paramConverter": "",
+                "scriptsCode": {
+                    "setParamObject": "",
+                    "endLoad": "",
+                    "beforeSave": "",
+                    "dataSetUpdated": "",
+                    "onFail": "",
+                    "afterSave": ""
+                },
+                "MDL_ID": "",
+                "FKEY_ID": "",
+                "RLGL_ID": "",
+                "afterLoadStartEdit": false,
+                "showBusyWindow": true,
+                "useDictLimit": false,
+                "defaultValueAddBlank": false,
+                "maxBmIOMQuery": false,
+                "enableLoadMetaData": true,
+                "treeCardMaintain": false,
+                "isLoadFKey": "1",
+                "serverCors": false
+            },
+            "compName": "字典模型"
+        },
+        {
+            "key": "FormModel1",
+            "type": "FormModel",
+            "props": {
+                "providerService": "ESPBillProvider",
+                "resolverService": "ESPBillResolver",
+                "bizMDLID": "",
+                "billContentID": "",
+                "enableLoadMetaData": true,
+                "generGuidInCreate": true,
+                "dataChecker": "",
+                "valueManager": "",
+                "dataBase": "",
+                "paramConverter": "",
+                "serverCors": false,
+                "defaultFlowId": "",
+                "defaultNodeId": "",
+                "scriptsCode": {
+                    "setParamObject": "",
+                    "endLoad": "",
+                    "startSave": "",
+                    "endSave": "",
+                    "canReverse": "",
+                    "beforeReverse": "",
+                    "afterReverse": ""
+                }
+            },
+            "compName": "单据模型"
+        },
+        {
+            "key": "headColumnModel",
+            "type": "ColumnModel",
+            "props": {
+                "scriptsCode": {
+                    "beginEdit": ""
+                },
+                "formModel": "",
+                "CTN_ID": "",
+                "customDataSetID": ""
+            },
+            "compName": "单据头列模型"
+        },
+        {
+            "key": "ColumnModel1",
+            "type": "ColumnModel",
+            "props": {
+                "scriptsCode": {
+                    "beginEdit": ""
+                },
+                "formModel": "",
+                "CTN_ID": "",
+                "customDataSetID": ""
+            },
+            "compName": "单据分录列模型"
+        },
+        {
+            "key": "DynamicMDMCardBuilder",
+            "type": "DynamicMDMCardBuilder",
+            "props": {
+                "dynamicCardPanel": "DynamicCardPanel1",
+                "dataModel": "FormModel1",
+                "dataSetID": "",
+                "mdmColumnModelBuilder": "",
+                "mdModel": "",
+                "labelWidth": "80px",
+                "labelHeight": "30px",
+                "showColon": true,
+                "labelHAlign": "center",
+                "labelVAlign": "middle",
+                "labelFontSize": "14px",
+                "labelFontWeight": "normal",
+                "labelFontFamily": "Microsoft YaHei",
+                "labelFontColor": "#000",
+                "labelFontStyle": "normal",
+                "labelPadding": "0 0",
+                "compHeight": "30px",
+                "compWidth": "100%",
+                "compHAlign": "right",
+                "compFontSize": "14px",
+                "compFontWeight": "normal",
+                "compFontFamily": "Microsoft YaHei",
+                "compFontColor": "#000",
+                "compFontStyle": "normal",
+                "compBorderStyle": "solid",
+                "compBorderWidth": "1px",
+                "compBorderRadius": "0px",
+                "compBorderColor": "#d9d9d9",
+                "compBackgroundColor": "#fff",
+                "compShowToolTip": false,
+                "labelCompLayout": "horizontal",
+                "scriptsCode": {
+                    "beforeBuild": "",
+                    "beforeGetComponent": "",
+                    "endBuild": "",
+                    "endGetComponent": ""
+                }
+            },
+            "compName": "字典动态卡片构建器"
+        },
+        {
+            "key": "MdmColumnModelBuilder",
+            "type": "MdmColumnModelBuilder",
+            "props": {
+                "dctMetaDataModel": "",
+                "columnModel": "",
+                "cellEditorManager": "",
+                "dctKeySetModel": "",
+                "scriptsCode": {
+                    "beforeBuild": "DynamicMDMCardBuilder.build();",
+                    "endBuild": ""
+                }
+            },
+            "compName": "字典列模型构建器"
+        }
+    ],
+    "actionComps": [
+        {
+            "key": "FormCreateAction1",
+            "type": "FormCreateAction",
+            "props": {
+                "actionText": "单据新建",
+                "width": "70px",
+                "height": "30px",
+                "visible": true,
+                "icon": "",
+                "activeIcon": "",
+                "hoverIcon": "",
+                "visibleExpression": "",
+                "enableExpression": "",
+                "GNBH": "",
+                "isOperateLog": false,
+                "operateLog": "",
+                "isCopyRow": false,
+                "dataModel": "FormModel1",
+                "scriptsCode": {
+                    "afterCreateFunction": "",
+                    "doUpdate": "",
+                    "doAction": ""
+                },
+                "style": {}
+            },
+            "compName": "单据新建"
+        },
+        {
+            "key": "FormEditAction1",
+            "type": "FormEditAction",
+            "props": {
+                "actionText": "单据编辑",
+                "width": "70px",
+                "height": "30px",
+                "visible": true,
+                "icon": "",
+                "activeIcon": "",
+                "hoverIcon": "",
+                "visibleExpression": "",
+                "enableExpression": "",
+                "GNBH": "",
+                "isOperateLog": false,
+                "operateLog": "",
+                "dataModel": "FormModel1",
+                "scriptsCode": {
+                    "beforeEdit": "",
+                    "endStartEdit": "",
+                    "doUpdate": "",
+                    "doAction": ""
+                },
+                "style": {}
+            },
+            "compName": "单据编辑"
+        },
+        {
+            "key": "FormAddItemAction1",
+            "type": "FormAddItemAction",
+            "props": {
+                "actionText": "增加分录",
+                "width": "70px",
+                "height": "30px",
+                "visible": true,
+                "icon": "",
+                "activeIcon": "",
+                "hoverIcon": "",
+                "visibleExpression": "",
+                "enableExpression": "",
+                "GNBH": "",
+                "isOperateLog": false,
+                "operateLog": "",
+                "dataModel": "FormModel1",
+                "filterDataSet": "",
+                "CTN_ID": "",
+                "ctnType": "JIDS",
+                "isCopyRow": false,
+                "isAppend": false,
+                "scriptsCode": {
+                    "beforeAdd": "",
+                    "endAdd": "",
+                    "doUpdate": "",
+                    "doAction": ""
+                },
+                "style": {}
+            },
+            "compName": "增加分录"
+        },
+        {
+            "key": "FormRemoveItemAction1",
+            "type": "FormRemoveItemAction",
+            "props": {
+                "actionText": "删除分录",
+                "width": "70px",
+                "height": "30px",
+                "visible": true,
+                "icon": "",
+                "activeIcon": "",
+                "hoverIcon": "",
+                "visibleExpression": "",
+                "enableExpression": "",
+                "GNBH": "",
+                "isOperateLog": false,
+                "operateLog": "",
+                "dataModel": "FormModel1",
+                "filterDataSet": "",
+                "CTN_ID": "",
+                "ctnType": "JIDS",
+                "scriptsCode": {
+                    "beforeRemoveItem": "",
+                    "endRemoveItem": "",
+                    "doUpdate": "",
+                    "doAction": ""
+                },
+                "style": {}
+            },
+            "compName": "删除分录"
+        },
+        {
+            "key": "FormSaveAction1",
+            "type": "FormSaveAction",
+            "props": {
+                "actionText": "单据保存",
+                "width": "70px",
+                "height": "30px",
+                "visible": true,
+                "icon": "",
+                "activeIcon": "",
+                "hoverIcon": "",
+                "visibleExpression": "",
+                "enableExpression": "",
+                "GNBH": "",
+                "isOperateLog": false,
+                "operateLog": "",
+                "dataModel": "FormModel1",
+                "scriptsCode": {
+                    "beforeSaveAction": "",
+                    "doUpdate": "",
+                    "doAction": ""
+                },
+                "style": {}
+            },
+            "compName": "单据保存"
+        }
+    ],
+    "serverJsComps": [],
+    "tableSource": "[]"
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>视图</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link href="./css/stimulsoft.viewer.office2013.whiteblue.css" rel="stylesheet" />
+		<script src="./scripts/stimulsoft.reports.engine.pack.js" type="text/javascript"></script>
+		<script src="./scripts/stimulsoft.reports.chart.pack.js" type="text/javascript"></script>
+		<script src="./scripts/stimulsoft.reports.export.pack.js" type="text/javascript"></script>
+		<script src="./scripts/stimulsoft.viewer.pack.js" type="text/javascript"></script>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+
+			// 获取url参数
+			function getUrlParam(name) {
+				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+				var r = window.location.search.substr(1).match(reg); //匹配目标参数
+				if(r != null) return decodeURI(r[2]);
+				return null; //返回参数值
+			}
+			var lang = getUrlParam("lang") == null ? "zh_CN" : getUrlParam("lang");
+			var isShowPrint = getUrlParam("isShowPrint")+"";
+			var isShowReportBtn = getUrlParam("isShowReportBtn")+"";
+			Stimulsoft.Base.StiLicense.key = "6vJhGtLLLz2GNviWmUTrhSqnOItdDwjBylQzQcAOiHkeCyu4tQ/fHMz14+aX8heK5fPWPOh9GhOJWHXzBWfWkku5KP" +
+				"ChSipMnMVPpqTvfJS7sIxjF/cxhVrUvULFfcxcaCxjU9i6mZsEDM7BO+haAK3b38ycQVY0MQLANLSx5MZDk64iZY3P" +
+				"Tch8l8h+G4eHK2bcztaqjQsdfficwLSgadjyB/6byFWPUQGIUZIicm7hdluCKxvRMJ9LksBxlgcJSnXQYm5RJxoibg" +
+				"yH5H5tzHyms+PF3ePcgpoXlcRotDn6IyefrvWPGiKKcia/HRIsoXRM8lDeOueiFgQ29UyMwGQ2In/3iwD9vdZ9ag1A" +
+				"wsjwO/i95q9QMe5Vl8qh7DaGaICQUN41fCgSX2UcS9wNzX8pu1/YUfQ0Nr3ZrE2GTnLDWiBBMGxCbmTmny0xJRMmIJ" +
+				"zSO0o//fqTfSKvGTZqquNLg4+YrXxUWDMos04Xka1BO4DkZVnN33tUwINu44cuzUrRVXe/BvmphpnEEskGGbmtT86z" +
+				"GSdRjirhJWqtsV4PaPlsFATWMafoe3/+EA1a";
+
+			Stimulsoft.Base.Localization.StiLocalization.addLocalizationFile("./Localization/"+ lang +".xml", false, lang);
+			Stimulsoft.Base.Localization.StiLocalization.cultureName = lang;
+
+			var options = new Stimulsoft.Viewer.StiViewerOptions();
+			options.width = "100%";
+			options.height = "100%";
+			options.appearance.scrollbarsMode = true;//是否显示报表上的滚动条
+			options.appearance.showTooltips = false;
+			options.appearance.fullScreenMode = false;
+			options.appearance.pageAlignment = Stimulsoft.Viewer.StiContentAlignment.Center
+			options.appearance.bookmarksPrint = true;
+			options.appearance.parametersPanelColumnsCount = "2";
+			options.appearance.reportDisplayMode = "1";
+			options.toolbar.visible = true;
+			options.toolbar.showOpenButton = false;//设置打开按钮是否显示(文档里没有的)
+			options.toolbar.showFindButton = false;//设置查找按钮是否显示(文档中没有的)
+			options.toolbar.alignment = Stimulsoft.Viewer.StiContentAlignment.Center;
+			if(isShowReportBtn == "1"){
+				options.toolbar.showSaveButton = true;
+			}else{
+				options.toolbar.showSaveButton = false;
+			}
+			if(isShowPrint == "1"){
+				options.toolbar.showPrintButton = true;
+			}else{
+				options.toolbar.showPrintButton = false;
+			}
+			options.toolbar.showSendEmailButton = false;
+			options.toolbar.showBookmarksButton = false;
+			options.toolbar.showParametersButton = false;
+			options.toolbar.showResourcesButton = false;
+			options.toolbar.showEditorButton = false;
+			options.toolbar.showFullScreenButton = false;
+			options.toolbar.showZoomButton = false;
+			options.toolbar.showViewModeButton = true;
+			options.toolbar.showDesignButton = false;
+			options.toolbar.showAboutButton = false;
+			options.toolbar.printDestination = "2";  // 配置显示的打印菜单：1:打印为pdf;2:直接打印;3:打印预览
+
+			options.toolbar.showMenuMode = Stimulsoft.Viewer.StiShowMenuMode.Click;
+			options.toolbar.displayMode = Stimulsoft.Viewer.StiToolbarDisplayMode.Simple;
+
+			var viewer = new Stimulsoft.Viewer.StiViewer(options);
+			var report = new Stimulsoft.Report.StiReport();
+			report.NeedsCompiling = false;
+			report.IsRendered = true;
+			report.renderAsync(function () {
+				viewer.report = report;
+			});
+
+			var StimulsoftRenderNum = 0;
+			var DataSet = [],    //数据源数组
+				Template = [];  //模板数组
+			//    循环加载
+			window.openReport = function(fmtJson,dataJson) {
+				/**
+				 if(fmtJson != "" && fmtJson != undefined){
+		                    Template = JSON.parse(fmtJson);
+		                }
+				 if(dataJson != "" && dataJson != undefined){
+		                    DataSet = JSON.parse(dataJson);
+		                }
+				 if(Template.length < DataSet.length) {
+		                    loadSourcedataMore();
+		                } else {
+		                    loadTemplateMore();
+		                }
+				 */
+
+				StimulsoftRenderNum = 0;
+				if (fmtJson != "" && fmtJson != undefined) {
+					Template = JSON.parse(fmtJson);
+				} else {
+					console.log("Stimulsoft Template is null.");
+					return;
+				}
+				if (dataJson != "" && dataJson != undefined) {
+					DataSet = JSON.parse(dataJson);
+				} else {
+					DataSet = [];
+					loadTemplate();
+					return;
+				}
+
+				var templateLength = Template.length;
+				var dataLength = DataSet.length;
+				if (templateLength > dataLength) {
+					var diff = templateLength - dataLength;
+					var data = DataSet[dataLength-1];
+					for (var i=0;i<diff;i++) {
+						DataSet.push(data);
+					}
+				} else if (templateLength < dataLength) {
+					var diff = dataLength - templateLength;
+					var template = Template[templateLength-1];
+					for (var i=0;i<diff;i++) {
+						Template.push(template);
+					}
+				}
+
+				loadTemplate();
+			}
+
+			// 新版渲染方法是异步的，因此添加此方法
+			function loadTemplate() {
+				var length = Template.length;
+				if (StimulsoftRenderNum >= length) {
+					viewer.report = report;
+				} else {
+					var sourceReport_list = new window.Stimulsoft.Report.StiReport();
+					sourceReport_list.load(Template[StimulsoftRenderNum]);
+
+					var dataLength = DataSet.length;
+					if (dataLength > 0) {
+						var dataSet = new window.Stimulsoft.System.Data.DataSet("SourceData");
+						dataSet.readJson(DataSet[StimulsoftRenderNum]);
+						sourceReport_list.dictionary.databases.clear();
+						sourceReport_list.regData(dataSet.dataSetName, "SourceData", dataSet);
+					}
+
+					sourceReport_list.renderAsync(function () {
+						if (StimulsoftRenderNum == 0) {
+							report.renderedPages.clear();
+						}
+						report.renderedPages.addRange(sourceReport_list.renderedPages.list);
+
+						StimulsoftRenderNum++;
+						loadTemplate();
+					});
+				}
+			}
+
+			// 模板数量多于数据源数量时,剩余模板显示
+			function loadTemplateMore() {
+				report.renderedPages.clear();
+				var length = DataSet.length;
+				for(var i = 0; i < Template.length; i++) {
+					var sourceReport_list = new window.Stimulsoft.Report.StiReport();
+					sourceReport_list.load(Template[i]);
+					if(i < length) {
+						var dataSet = new window.Stimulsoft.System.Data.DataSet("SourceData");
+						dataSet.readJson(DataSet[i]);
+						sourceReport_list.dictionary.databases.clear();
+						sourceReport_list.regData(dataSet.dataSetName, "SourceData", dataSet);
+					}
+					sourceReport_list.render();
+					report.renderedPages.addRange(sourceReport_list.renderedPages.list);
+				}
+				viewer.report = report;
+			}
+			// 模板数量少于数据源数量时,多于的数据源按照最后一个模板展示
+			function loadSourcedataMore() {
+				report.renderedPages.clear();
+				var length = Template.length;
+				for(var i = 0; i < DataSet.length; i++) {
+					var sourceReport_list = new window.Stimulsoft.Report.StiReport();
+					if(i < length) {
+						sourceReport_list.load(Template[i]);
+					} else {
+						sourceReport_list.load(Template[length - 1]);
+					}
+					var dataSet = new window.Stimulsoft.System.Data.DataSet("SourceData");
+					dataSet.readJson(DataSet[i]);
+					sourceReport_list.dictionary.databases.clear();
+					sourceReport_list.regData(dataSet.dataSetName, "SourceData", dataSet);
+					sourceReport_list.render();
+					report.renderedPages.addRange(sourceReport_list.renderedPages.list);
+				}
+				viewer.report = report;
+			}
+		</script>
+	</body>
+</html>

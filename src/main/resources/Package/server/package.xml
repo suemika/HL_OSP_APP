@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<package id="" caption="装配清单"> 
+    <RESTfulOption>
+	    <!--
+	        demo的测试url 后面参数可不传 现在写上只是为了方便查看参数的传递格式
+	        http://127.0.0.1:8080/GWTServer/OpenAPIService/loadRestfulDome?RequestParam={"Product":"BusinessService","OBJ_GUID":"gDF1B107_24F1_4A71_B781_8EFF2FC60CC2","MDL_ID":"SAGZXCFFMODEL","ENUM_TYPE":1,"UserName":"7800033"} 
+	    -->
+        <item id="restfulDome" stubID="loadRestfulDome" name="restful接口测试" type="SVR" serviceKey="SvrDemo" Param="com.efounder.eai.data.JParamObject" ParamObjectCvt="DemoParamCvtManager" ProcessQueueManager="DemoQueueManager" ProcessLOGManager="DemoLOGManager"/>
+    </RESTfulOption>
+    <com.efounder.paas.service.ESPMircoParamCvt>
+        <item id="DemoParamCvtManager" caption="示例微服务参数转换插件" implement="com.pansoft.lcdp.server.restful.DemoMircoParamCvtManager" />
+    </com.efounder.paas.service.ESPMircoParamCvt>
+    
+    <com.efounder.paas.service.ESPMircoServLog>
+        <item id="DemoLOGManager" caption="示例微服务日志管理插件" implement="com.pansoft.lcdp.server.restful.DemoMicroServiceLogManager"/>
+    </com.efounder.paas.service.ESPMircoServLog>
+    
+    <com.efounder.paas.service.ESPMircoServQueueManager>
+        <item id="DemoQueueManager" caption="示例微服务队列管理插件" implement="com.pansoft.lcdp.server.restful.DemoMircoServQueueManager"/>
+    </com.efounder.paas.service.ESPMircoServQueueManager>
+    
+    
+    <!-- 
+    ParamObjectCvt="" ProcessQueueManager="" ProcessLOGManager=""
+            三个参数都可以配置为空，这样将采取平台的默认配置 下面三个标签是指为了方便 查找对应的实现类 不需要自己配置和实现
+    
+    <com.efounder.paas.service.ESPMircoParamCvt>
+        <item id="commonParamCvtManager" caption="通用微服务参数管理插件" implement="com.efounder.paas.microservice.ParamCvt.ESPMircoParamCvtManager"/>
+    </com.efounder.paas.service.ESPMircoParamCvt>
+    
+    <com.efounder.paas.service.ESPMircoServLog>
+        <item id="commonLOGManager" caption="通用微服务日志管理插件" implement="com.efounder.paas.microservice.log.ESPMicroServiceLogManager"/>
+    </com.efounder.paas.service.ESPMircoServLog>
+    
+    <com.efounder.paas.service.ESPMircoServQueueManager>
+        <item id="commonQueueManager" caption="通用微服务队列管理插件" implement="com.efounder.paas.microservice.queueService.CommonMircoServQueueManager"/>
+    </com.efounder.paas.service.ESPMircoServQueueManager>
+     -->
+    <AffixStoreType>
+        <item id="MINIO" caption="MINIO" clazz="com.efounder.minio.service.affix.ESPAffixToMinIO"/>
+    </AffixStoreType>
+    <ImageStoreType>
+        <item id="MINIO" caption="MINIO" clazz = "com.efounder.minio.service.image.ImageStorageToMinIO" />
+    </ImageStoreType>
+    <CLASSES id="" caption="minio上传服务">
+        <CLSID guid="FileToMinIOManager" id="FileToMinIOManager" name="minio文件上传" class="com.efounder.minio.service.file.FileToMinIOManager" ver="1.0.0" type="CLSID_AbstractDataActiveObjectCategory" />
+    </CLASSES>
+    
+</package>

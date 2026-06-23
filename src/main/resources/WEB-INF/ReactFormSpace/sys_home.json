@@ -1,0 +1,1239 @@
+{
+  "key" : "RootPage",
+  "formName" : "首页",
+  "formID" : "sys_home",
+  "lastAuthor" : "9999",
+  "lastChanged" : "2025-08-05 15:52:46",
+  "version" : "React",
+  "compName" : "表单画布",
+  "rootProps" : {
+    "scriptsCode" : {
+      "componentDidMount" : ""
+    },
+    "style" : {
+      "flexDirection" : "column",
+      "flexWrap" : "nowrap",
+      "justifyContent" : "flex-start",
+      "alignItems" : "flex-start",
+      "overflow" : "auto"
+    }
+  },
+  "components" : [ {
+    "key" : "FormBoxContainer1",
+    "type" : "FormBoxContainer",
+    "props" : {
+      "scriptsCode" : {
+        "onClickHandler" : "",
+        "afterCloseFullScreen" : ""
+      },
+      "style" : {
+        "height" : "100px",
+        "minHeight" : "100%",
+        "width" : "100%",
+        "minWidth" : "10px",
+        "flexDirection" : "row",
+        "flexWrap" : "nowrap",
+        "justifyContent" : "flex-start",
+        "alignItems" : "flex-start",
+        "overflow" : "hidden",
+        "opacity" : 1,
+        "backgroundRepeat" : "tensile",
+        "backgroundPosition" : "left top",
+        "borderStyle" : "solid",
+        "borderColor" : "#d9d9d9",
+        "borderRadius" : "0px",
+        "display" : "flex",
+        "gap" : "16px",
+        "cursor" : "default",
+        "borderTopWidth" : "0px",
+        "borderRightWidth" : "0px",
+        "borderBottomWidth" : "0px",
+        "borderLeftWidth" : "0px",
+        "paddingLeft" : "25px",
+        "paddingRight" : "25px"
+      },
+      "isFloat" : false,
+      "isDraggable" : false,
+      "floatPositionOrigin" : "rb",
+      "floatX" : "0",
+      "floatY" : "0",
+      "isResizable" : false,
+      "resizeDirection" : "both"
+    },
+    "compName" : "通用布局",
+    "children" : [ {
+      "key" : "FormBoxContainer7",
+      "type" : "FormBoxContainer",
+      "props" : {
+        "floatPositionOrigin" : "rb",
+        "floatX" : "0",
+        "floatY" : "0",
+        "resizeDirection" : "both",
+        "scriptsCode" : {
+          "onClickHandler" : "",
+          "afterCloseFullScreen" : "",
+          "onMouseEnter" : "",
+          "onMouseLeave" : "",
+          "onMouseWheel" : ""
+        },
+        "style" : {
+          "height" : "100%",
+          "width" : "20%",
+          "flexDirection" : "column",
+          "flexWrap" : "nowrap",
+          "justifyContent" : "flex-start",
+          "alignItems" : "flex-start",
+          "overflow" : "hidden",
+          "backgroundRepeat" : "tensile",
+          "backgroundPosition" : "left top",
+          "display" : "flex",
+          "gap" : "16px",
+          "cursor" : "default"
+        },
+        "isFloat" : false,
+        "isDraggable" : false,
+        "isResizable" : false
+      },
+      "compName" : "通用布局",
+      "children" : [ {
+        "key" : "FormBoxContainer2",
+        "type" : "FormBoxContainer",
+        "props" : {
+          "floatPositionOrigin" : "rb",
+          "floatX" : "0",
+          "floatY" : "0",
+          "resizeDirection" : "both",
+          "scriptsCode" : {
+            "onClickHandler" : "",
+            "afterCloseFullScreen" : "",
+            "onMouseEnter" : "",
+            "onMouseLeave" : "",
+            "onMouseWheel" : ""
+          },
+          "style" : {
+            "height" : "100%",
+            "width" : "100%",
+            "flexDirection" : "column",
+            "flexWrap" : "nowrap",
+            "justifyContent" : "flex-start",
+            "alignItems" : "flex-start",
+            "overflow" : "hidden",
+            "backgroundRepeat" : "tensile",
+            "backgroundPosition" : "left top",
+            "display" : "flex",
+            "gap" : "16px",
+            "cursor" : "default"
+          },
+          "isFloat" : false,
+          "isDraggable" : false,
+          "isResizable" : false
+        },
+        "compName" : "通用布局",
+        "children" : [ {
+          "key" : "FormBoxContainer11",
+          "type" : "FormBoxContainer",
+          "props" : {
+            "floatPositionOrigin" : "rb",
+            "floatX" : "0",
+            "floatY" : "0",
+            "resizeDirection" : "both",
+            "scriptsCode" : {
+              "onClickHandler" : "",
+              "afterCloseFullScreen" : "",
+              "onMouseEnter" : "",
+              "onMouseLeave" : "",
+              "onMouseWheel" : ""
+            },
+            "style" : {
+              "height" : "30px",
+              "flexDirection" : "column",
+              "flexWrap" : "nowrap",
+              "justifyContent" : "flex-start",
+              "alignItems" : "flex-start",
+              "overflow" : "hidden",
+              "backgroundRepeat" : "tensile",
+              "backgroundPosition" : "left top",
+              "display" : "flex",
+              "gap" : "16px",
+              "cursor" : "default"
+            },
+            "isFloat" : false,
+            "isDraggable" : false,
+            "isResizable" : false
+          },
+          "compName" : "通用布局",
+          "children" : [ ]
+        }, {
+          "key" : "FormBoxContainer3",
+          "type" : "FormBoxContainer",
+          "props" : {
+            "floatPositionOrigin" : "rb",
+            "floatX" : "0",
+            "floatY" : "0",
+            "resizeDirection" : "both",
+            "scriptsCode" : {
+              "onClickHandler" : "",
+              "afterCloseFullScreen" : "",
+              "onMouseEnter" : "",
+              "onMouseLeave" : "",
+              "onMouseWheel" : ""
+            },
+            "style" : {
+              "height" : "500px",
+              "flexDirection" : "column",
+              "flexWrap" : "nowrap",
+              "justifyContent" : "flex-start",
+              "alignItems" : "flex-start",
+              "overflow" : "hidden",
+              "backgroundRepeat" : "tensile",
+              "backgroundPosition" : "left top",
+              "borderStyle" : "solid",
+              "borderColor" : "rgba(0,0,0,0.11)",
+              "borderRadius" : "10px",
+              "display" : "flex",
+              "gap" : "16px",
+              "cursor" : "default",
+              "borderLeftWidth" : "0.2px",
+              "borderRightWidth" : "0.2px",
+              "borderTopWidth" : "0.2px",
+              "borderBottomWidth" : "0.2px"
+            },
+            "isFloat" : false,
+            "isDraggable" : false,
+            "isResizable" : false
+          },
+          "compName" : "通用布局",
+          "children" : [ {
+            "key" : "FormBoxContainer5",
+            "type" : "FormBoxContainer",
+            "props" : {
+              "floatPositionOrigin" : "rb",
+              "floatX" : "0",
+              "floatY" : "0",
+              "resizeDirection" : "both",
+              "scriptsCode" : {
+                "onClickHandler" : "",
+                "afterCloseFullScreen" : "",
+                "onMouseEnter" : "",
+                "onMouseLeave" : "",
+                "onMouseWheel" : ""
+              },
+              "style" : {
+                "height" : "40px",
+                "flexDirection" : "row",
+                "flexWrap" : "nowrap",
+                "justifyContent" : "flex-start",
+                "alignItems" : "flex-start",
+                "overflow" : "hidden",
+                "backgroundRepeat" : "tensile",
+                "backgroundPosition" : "left top",
+                "display" : "flex",
+                "gap" : "16px",
+                "cursor" : "default"
+              },
+              "isFloat" : false,
+              "isDraggable" : false,
+              "isResizable" : false
+            },
+            "compName" : "通用布局",
+            "children" : [ {
+              "key" : "FormLabel1",
+              "type" : "FormLabel",
+              "props" : {
+                "textVal" : "待办事项",
+                "titleToolTipLocation" : "top",
+                "editMask" : [ ],
+                "asteriskRed" : true,
+                "lineClampNumber" : 1,
+                "badgeShowZero" : true,
+                "topOffset" : -28,
+                "scriptsCode" : {
+                  "onClick" : "",
+                  "onMouseEnter" : "",
+                  "onMouseLeave" : ""
+                },
+                "style" : {
+                  "height" : "35px",
+                  "width" : "100%",
+                  "justifyContent" : "center",
+                  "alignItems" : "center",
+                  "color" : "#409EFF",
+                  "fontFamily" : "Microsoft YaHei",
+                  "fontSize" : "24px",
+                  "fontWeight" : "bold",
+                  "fontStyle" : "normal",
+                  "textDecoration" : "none",
+                  "cursor" : "default"
+                },
+                "isShowTitle" : false,
+                "titleToolTipCustomText" : "",
+                "titleToolTipFontColor" : "",
+                "titleToolTipBackgroundColor" : "",
+                "titleToolTipExceedingWord" : false,
+                "titleToolTipExceedingWordCount" : 0,
+                "showEllipsis" : false,
+                "isShowBadge" : false,
+                "leftOffset" : 0,
+                "dataModel" : "",
+                "dataSetID" : "",
+                "dataSetColID" : ""
+              },
+              "compName" : "简单文本",
+              "children" : [ ]
+            } ]
+          }, {
+            "key" : "FormLabel3",
+            "type" : "FormLabel",
+            "props" : {
+              "textVal" : ">>去办理",
+              "titleToolTipLocation" : "top",
+              "editMask" : [ ],
+              "asteriskRed" : true,
+              "lineClampNumber" : 1,
+              "badgeShowZero" : true,
+              "topOffset" : -28,
+              "scriptsCode" : {
+                "onClick" : "",
+                "onMouseEnter" : "",
+                "onMouseLeave" : ""
+              },
+              "style" : {
+                "width" : "100%",
+                "justifyContent" : "flex-end",
+                "alignItems" : "center",
+                "backgroundColor" : "rgba(247,247,247,0.9)",
+                "fontFamily" : "Microsoft YaHei",
+                "fontWeight" : "normal",
+                "fontStyle" : "normal",
+                "textDecoration" : "none",
+                "cursor" : "default"
+              },
+              "isShowTitle" : false,
+              "titleToolTipCustomText" : "",
+              "titleToolTipFontColor" : "",
+              "titleToolTipBackgroundColor" : "",
+              "titleToolTipExceedingWord" : false,
+              "titleToolTipExceedingWordCount" : 0,
+              "showEllipsis" : false,
+              "isShowBadge" : false,
+              "leftOffset" : 0,
+              "dataModel" : "",
+              "dataSetID" : "",
+              "dataSetColID" : ""
+            },
+            "compName" : "简单文本",
+            "children" : [ ]
+          }, {
+            "key" : "FormLabel4",
+            "type" : "FormLabel",
+            "props" : {
+              "textVal" : ">>去办理",
+              "titleToolTipLocation" : "top",
+              "editMask" : [ ],
+              "asteriskRed" : true,
+              "lineClampNumber" : 1,
+              "badgeShowZero" : true,
+              "topOffset" : -28,
+              "scriptsCode" : {
+                "onClick" : "",
+                "onMouseEnter" : "",
+                "onMouseLeave" : ""
+              },
+              "style" : {
+                "width" : "100%",
+                "justifyContent" : "flex-end",
+                "alignItems" : "center",
+                "backgroundColor" : "rgba(247,247,247,0.9)",
+                "fontFamily" : "Microsoft YaHei",
+                "fontWeight" : "normal",
+                "fontStyle" : "normal",
+                "textDecoration" : "none",
+                "cursor" : "default"
+              },
+              "isShowTitle" : false,
+              "titleToolTipCustomText" : "",
+              "titleToolTipFontColor" : "",
+              "titleToolTipBackgroundColor" : "",
+              "titleToolTipExceedingWord" : false,
+              "titleToolTipExceedingWordCount" : 0,
+              "showEllipsis" : false,
+              "isShowBadge" : false,
+              "leftOffset" : 0,
+              "dataModel" : "",
+              "dataSetID" : "",
+              "dataSetColID" : ""
+            },
+            "compName" : "简单文本",
+            "children" : [ ]
+          }, {
+            "key" : "FormLabel5",
+            "type" : "FormLabel",
+            "props" : {
+              "textVal" : ">>去办理",
+              "titleToolTipLocation" : "top",
+              "editMask" : [ ],
+              "asteriskRed" : true,
+              "lineClampNumber" : 1,
+              "badgeShowZero" : true,
+              "topOffset" : -28,
+              "scriptsCode" : {
+                "onClick" : "",
+                "onMouseEnter" : "",
+                "onMouseLeave" : ""
+              },
+              "style" : {
+                "width" : "100%",
+                "justifyContent" : "flex-end",
+                "alignItems" : "center",
+                "backgroundColor" : "rgba(247,247,247,0.9)",
+                "fontFamily" : "Microsoft YaHei",
+                "fontWeight" : "normal",
+                "fontStyle" : "normal",
+                "textDecoration" : "none",
+                "cursor" : "default"
+              },
+              "isShowTitle" : false,
+              "titleToolTipCustomText" : "",
+              "titleToolTipFontColor" : "",
+              "titleToolTipBackgroundColor" : "",
+              "titleToolTipExceedingWord" : false,
+              "titleToolTipExceedingWordCount" : 0,
+              "showEllipsis" : false,
+              "isShowBadge" : false,
+              "leftOffset" : 0,
+              "dataModel" : "",
+              "dataSetID" : "",
+              "dataSetColID" : ""
+            },
+            "compName" : "简单文本",
+            "children" : [ ]
+          } ]
+        }, {
+          "key" : "FormBoxContainer4",
+          "type" : "FormBoxContainer",
+          "props" : {
+            "floatPositionOrigin" : "rb",
+            "floatX" : "0",
+            "floatY" : "0",
+            "resizeDirection" : "both",
+            "scriptsCode" : {
+              "onClickHandler" : "",
+              "afterCloseFullScreen" : "",
+              "onMouseEnter" : "",
+              "onMouseLeave" : "",
+              "onMouseWheel" : ""
+            },
+            "style" : {
+              "height" : "500px",
+              "flexDirection" : "column",
+              "flexWrap" : "nowrap",
+              "justifyContent" : "flex-start",
+              "alignItems" : "flex-start",
+              "overflow" : "hidden",
+              "backgroundRepeat" : "tensile",
+              "backgroundPosition" : "left top",
+              "borderStyle" : "solid",
+              "borderColor" : "rgba(0,0,0,0.11)",
+              "borderRadius" : "10px",
+              "display" : "flex",
+              "gap" : "16px",
+              "cursor" : "default",
+              "borderLeftWidth" : "0.2px",
+              "borderRightWidth" : "0.2px",
+              "borderTopWidth" : "0.2px",
+              "borderBottomWidth" : "0.2px"
+            },
+            "isFloat" : false,
+            "isDraggable" : false,
+            "isResizable" : false
+          },
+          "compName" : "通用布局",
+          "children" : [ {
+            "key" : "FormBoxContainer6",
+            "type" : "FormBoxContainer",
+            "props" : {
+              "floatPositionOrigin" : "rb",
+              "floatX" : "0",
+              "floatY" : "0",
+              "resizeDirection" : "both",
+              "scriptsCode" : {
+                "onClickHandler" : "",
+                "afterCloseFullScreen" : "",
+                "onMouseEnter" : "",
+                "onMouseLeave" : "",
+                "onMouseWheel" : ""
+              },
+              "style" : {
+                "height" : "40px",
+                "flexDirection" : "row",
+                "flexWrap" : "nowrap",
+                "justifyContent" : "flex-start",
+                "alignItems" : "flex-start",
+                "overflow" : "hidden",
+                "backgroundRepeat" : "tensile",
+                "backgroundPosition" : "left top",
+                "display" : "flex",
+                "gap" : "16px",
+                "cursor" : "default"
+              },
+              "isFloat" : false,
+              "isDraggable" : false,
+              "isResizable" : false
+            },
+            "compName" : "通用布局",
+            "children" : [ {
+              "key" : "FormLabel2",
+              "type" : "FormLabel",
+              "props" : {
+                "textVal" : "通知公告",
+                "titleToolTipLocation" : "top",
+                "editMask" : [ ],
+                "asteriskRed" : true,
+                "lineClampNumber" : 1,
+                "badgeShowZero" : true,
+                "topOffset" : -28,
+                "scriptsCode" : {
+                  "onClick" : "",
+                  "onMouseEnter" : "",
+                  "onMouseLeave" : ""
+                },
+                "style" : {
+                  "height" : "35px",
+                  "width" : "100%",
+                  "justifyContent" : "center",
+                  "alignItems" : "center",
+                  "color" : "#409EFF",
+                  "fontFamily" : "Microsoft YaHei",
+                  "fontSize" : "24px",
+                  "fontWeight" : "bold",
+                  "fontStyle" : "normal",
+                  "textDecoration" : "none",
+                  "cursor" : "default"
+                },
+                "isShowTitle" : false,
+                "titleToolTipCustomText" : "",
+                "titleToolTipFontColor" : "",
+                "titleToolTipBackgroundColor" : "",
+                "titleToolTipExceedingWord" : false,
+                "titleToolTipExceedingWordCount" : 0,
+                "showEllipsis" : false,
+                "isShowBadge" : false,
+                "leftOffset" : 0,
+                "dataModel" : "",
+                "dataSetID" : "",
+                "dataSetColID" : ""
+              },
+              "compName" : "简单文本",
+              "children" : [ ]
+            } ]
+          }, {
+            "key" : "FormTextCarousel1",
+            "type" : "FormTextCarousel",
+            "props" : {
+              "content" : "欢迎使用-黄河特钢营销管理平台",
+              "duration" : 10,
+              "style" : {
+                "width" : "100%",
+                "backgroundColor" : "rgba(247,247,247,1)",
+                "borderStyle" : "none",
+                "fontSize" : "18px",
+                "fontWeight" : "normal",
+                "fontStyle" : "normal",
+                "textDecoration" : "none"
+              }
+            },
+            "compName" : "文字走马灯",
+            "children" : [ ]
+          } ]
+        } ]
+      } ]
+    }, {
+      "key" : "FormBoxContainer8",
+      "type" : "FormBoxContainer",
+      "props" : {
+        "floatPositionOrigin" : "rb",
+        "floatX" : "0",
+        "floatY" : "0",
+        "resizeDirection" : "both",
+        "scriptsCode" : {
+          "onClickHandler" : "",
+          "afterCloseFullScreen" : "",
+          "onMouseEnter" : "",
+          "onMouseLeave" : "",
+          "onMouseWheel" : ""
+        },
+        "style" : {
+          "height" : "100%",
+          "width" : "60%",
+          "flexDirection" : "column",
+          "flexWrap" : "nowrap",
+          "justifyContent" : "flex-start",
+          "alignItems" : "flex-start",
+          "overflow" : "hidden",
+          "backgroundRepeat" : "tensile",
+          "backgroundPosition" : "left top",
+          "display" : "flex",
+          "gap" : "16px",
+          "cursor" : "default"
+        },
+        "isFloat" : false,
+        "isDraggable" : false,
+        "isResizable" : false
+      },
+      "compName" : "通用布局",
+      "children" : [ {
+        "key" : "FormBoxContainer9",
+        "type" : "FormBoxContainer",
+        "props" : {
+          "floatPositionOrigin" : "rb",
+          "floatX" : "0",
+          "floatY" : "0",
+          "resizeDirection" : "both",
+          "scriptsCode" : {
+            "onClickHandler" : "",
+            "afterCloseFullScreen" : "",
+            "onMouseEnter" : "",
+            "onMouseLeave" : "",
+            "onMouseWheel" : ""
+          },
+          "style" : {
+            "height" : "30px",
+            "flexDirection" : "column",
+            "flexWrap" : "nowrap",
+            "justifyContent" : "flex-start",
+            "alignItems" : "flex-start",
+            "overflow" : "hidden",
+            "backgroundRepeat" : "tensile",
+            "backgroundPosition" : "left top",
+            "display" : "flex",
+            "gap" : "16px",
+            "cursor" : "default"
+          },
+          "isFloat" : false,
+          "isDraggable" : false,
+          "isResizable" : false
+        },
+        "compName" : "通用布局",
+        "children" : [ ]
+      }, {
+        "key" : "FormBoxContainer10",
+        "type" : "FormBoxContainer",
+        "props" : {
+          "floatPositionOrigin" : "rb",
+          "floatX" : "0",
+          "floatY" : "0",
+          "resizeDirection" : "both",
+          "scriptsCode" : {
+            "onClickHandler" : "",
+            "afterCloseFullScreen" : "",
+            "onMouseEnter" : "",
+            "onMouseLeave" : "",
+            "onMouseWheel" : ""
+          },
+          "style" : {
+            "height" : "100%",
+            "flexDirection" : "column",
+            "flexWrap" : "nowrap",
+            "justifyContent" : "flex-start",
+            "alignItems" : "flex-start",
+            "overflow" : "hidden",
+            "backgroundRepeat" : "tensile",
+            "backgroundPosition" : "left top",
+            "display" : "flex",
+            "gap" : "16px",
+            "cursor" : "default"
+          },
+          "isFloat" : false,
+          "isDraggable" : false,
+          "isResizable" : false
+        },
+        "compName" : "通用布局",
+        "children" : [ {
+          "key" : "FormLabel6",
+          "type" : "FormLabel",
+          "props" : {
+            "textVal" : "欢迎使用-黄河特钢营销管理平台",
+            "titleToolTipLocation" : "top",
+            "editMask" : [ ],
+            "asteriskRed" : true,
+            "lineClampNumber" : 1,
+            "badgeShowZero" : true,
+            "topOffset" : -28,
+            "scriptsCode" : {
+              "onClick" : "",
+              "onMouseEnter" : "",
+              "onMouseLeave" : ""
+            },
+            "style" : {
+              "height" : "37px",
+              "width" : "100%",
+              "justifyContent" : "center",
+              "alignItems" : "center",
+              "color" : "rgba(97,97,97,1)",
+              "fontFamily" : "Microsoft YaHei",
+              "fontSize" : "26px",
+              "fontWeight" : "bold",
+              "fontStyle" : "normal",
+              "textDecoration" : "none",
+              "cursor" : "default"
+            },
+            "isShowTitle" : false,
+            "titleToolTipCustomText" : "",
+            "titleToolTipFontColor" : "",
+            "titleToolTipBackgroundColor" : "",
+            "titleToolTipExceedingWord" : false,
+            "titleToolTipExceedingWordCount" : 0,
+            "showEllipsis" : false,
+            "isShowBadge" : false,
+            "leftOffset" : 0,
+            "dataModel" : "",
+            "dataSetID" : "",
+            "dataSetColID" : ""
+          },
+          "compName" : "简单文本",
+          "children" : [ ]
+        }, {
+          "key" : "FormBoxContainer18",
+          "type" : "FormBoxContainer",
+          "props" : {
+            "floatPositionOrigin" : "rb",
+            "floatX" : "0",
+            "floatY" : "0",
+            "resizeDirection" : "both",
+            "scriptsCode" : {
+              "onClickHandler" : "",
+              "afterCloseFullScreen" : "",
+              "onMouseEnter" : "",
+              "onMouseLeave" : "",
+              "onMouseWheel" : ""
+            },
+            "style" : {
+              "height" : "100%",
+              "width" : "100%",
+              "flexDirection" : "column",
+              "flexWrap" : "nowrap",
+              "justifyContent" : "center",
+              "alignItems" : "flex-start",
+              "overflow" : "hidden",
+              "backgroundRepeat" : "tensile",
+              "backgroundPosition" : "left top",
+              "display" : "flex",
+              "gap" : "16px",
+              "cursor" : "default"
+            },
+            "isFloat" : false,
+            "isDraggable" : false,
+            "isResizable" : false
+          },
+          "compName" : "通用布局",
+          "children" : [ {
+            "key" : "FormImage1",
+            "type" : "FormImage",
+            "props" : {
+              "objectFit" : "fill",
+              "titleToolTipLocation" : "top",
+              "scriptsCode" : {
+                "onClick" : ""
+              },
+              "style" : {
+                "height" : "600px",
+                "width" : "100%",
+                "borderStyle" : "none",
+                "cursor" : "pointer"
+              },
+              "imageUrl" : "./images/formimages/77e8ad78935b4f05b1899b1c93ea5e82_智能化.svg",
+              "defaultIcon" : "",
+              "preview" : false,
+              "isShowTitle" : false,
+              "titleToolTipCustomText" : "",
+              "titleToolTipFontColor" : "",
+              "titleToolTipBackgroundColor" : "",
+              "titleToolTipExceedingWord" : false,
+              "titleToolTipExceedingWordCount" : 0,
+              "dataModel" : "",
+              "dataSetID" : "",
+              "dataSetColID" : ""
+            },
+            "compName" : "图片",
+            "children" : [ ]
+          }, {
+            "key" : "FormBoxContainer19",
+            "type" : "FormBoxContainer",
+            "props" : {
+              "floatPositionOrigin" : "rb",
+              "floatX" : "0",
+              "floatY" : "0",
+              "resizeDirection" : "both",
+              "scriptsCode" : {
+                "onClickHandler" : "",
+                "afterCloseFullScreen" : "",
+                "onMouseEnter" : "",
+                "onMouseLeave" : "",
+                "onMouseWheel" : ""
+              },
+              "style" : {
+                "height" : "20%",
+                "flexDirection" : "column",
+                "flexWrap" : "nowrap",
+                "justifyContent" : "flex-start",
+                "alignItems" : "flex-start",
+                "overflow" : "hidden",
+                "backgroundRepeat" : "tensile",
+                "backgroundPosition" : "left top",
+                "display" : "flex",
+                "gap" : "16px",
+                "cursor" : "default"
+              },
+              "isFloat" : false,
+              "isDraggable" : false,
+              "isResizable" : false
+            },
+            "compName" : "通用布局",
+            "children" : [ ]
+          } ]
+        } ]
+      } ]
+    }, {
+      "key" : "FormBoxContainer12",
+      "type" : "FormBoxContainer",
+      "props" : {
+        "floatPositionOrigin" : "rb",
+        "floatX" : "0",
+        "floatY" : "0",
+        "resizeDirection" : "both",
+        "scriptsCode" : {
+          "onClickHandler" : "",
+          "afterCloseFullScreen" : "",
+          "onMouseEnter" : "",
+          "onMouseLeave" : "",
+          "onMouseWheel" : ""
+        },
+        "style" : {
+          "height" : "100%",
+          "width" : "20%",
+          "flexDirection" : "column",
+          "flexWrap" : "nowrap",
+          "justifyContent" : "flex-start",
+          "alignItems" : "flex-start",
+          "overflow" : "hidden",
+          "backgroundRepeat" : "tensile",
+          "backgroundPosition" : "left top",
+          "display" : "flex",
+          "gap" : "16px",
+          "cursor" : "default"
+        },
+        "isFloat" : false,
+        "isDraggable" : false,
+        "isResizable" : false
+      },
+      "compName" : "通用布局",
+      "children" : [ {
+        "key" : "FormBoxContainer13",
+        "type" : "FormBoxContainer",
+        "props" : {
+          "floatPositionOrigin" : "rb",
+          "floatX" : "0",
+          "floatY" : "0",
+          "resizeDirection" : "both",
+          "scriptsCode" : {
+            "onClickHandler" : "",
+            "afterCloseFullScreen" : "",
+            "onMouseEnter" : "",
+            "onMouseLeave" : "",
+            "onMouseWheel" : ""
+          },
+          "style" : {
+            "height" : "30px",
+            "flexDirection" : "column",
+            "flexWrap" : "nowrap",
+            "justifyContent" : "flex-start",
+            "alignItems" : "flex-start",
+            "overflow" : "hidden",
+            "backgroundRepeat" : "tensile",
+            "backgroundPosition" : "left top",
+            "display" : "flex",
+            "gap" : "16px",
+            "cursor" : "default"
+          },
+          "isFloat" : false,
+          "isDraggable" : false,
+          "isResizable" : false
+        },
+        "compName" : "通用布局",
+        "children" : [ ]
+      }, {
+        "key" : "FormBoxContainer14",
+        "type" : "FormBoxContainer",
+        "props" : {
+          "floatPositionOrigin" : "rb",
+          "floatX" : "0",
+          "floatY" : "0",
+          "resizeDirection" : "both",
+          "scriptsCode" : {
+            "onClickHandler" : "",
+            "afterCloseFullScreen" : "",
+            "onMouseEnter" : "",
+            "onMouseLeave" : "",
+            "onMouseWheel" : ""
+          },
+          "style" : {
+            "height" : "500px",
+            "flexDirection" : "column",
+            "flexWrap" : "nowrap",
+            "justifyContent" : "flex-start",
+            "alignItems" : "flex-start",
+            "overflow" : "hidden",
+            "backgroundRepeat" : "tensile",
+            "backgroundPosition" : "left top",
+            "display" : "flex",
+            "gap" : "16px",
+            "cursor" : "default"
+          },
+          "isFloat" : false,
+          "isDraggable" : false,
+          "isResizable" : false
+        },
+        "compName" : "通用布局",
+        "children" : [ {
+          "key" : "FormBoxContainer15",
+          "type" : "FormBoxContainer",
+          "props" : {
+            "floatPositionOrigin" : "rb",
+            "floatX" : "0",
+            "floatY" : "0",
+            "resizeDirection" : "both",
+            "scriptsCode" : {
+              "onClickHandler" : "",
+              "afterCloseFullScreen" : "",
+              "onMouseEnter" : "",
+              "onMouseLeave" : "",
+              "onMouseWheel" : ""
+            },
+            "style" : {
+              "height" : "40px",
+              "flexDirection" : "row",
+              "flexWrap" : "nowrap",
+              "justifyContent" : "flex-start",
+              "alignItems" : "flex-start",
+              "overflow" : "hidden",
+              "backgroundRepeat" : "tensile",
+              "backgroundPosition" : "left top",
+              "display" : "flex",
+              "gap" : "16px",
+              "cursor" : "default"
+            },
+            "isFloat" : false,
+            "isDraggable" : false,
+            "isResizable" : false
+          },
+          "compName" : "通用布局",
+          "children" : [ {
+            "key" : "FormLabel7",
+            "type" : "FormLabel",
+            "props" : {
+              "textVal" : "待办事项",
+              "titleToolTipLocation" : "top",
+              "editMask" : [ ],
+              "asteriskRed" : true,
+              "lineClampNumber" : 1,
+              "badgeShowZero" : true,
+              "topOffset" : -28,
+              "scriptsCode" : {
+                "onClick" : "",
+                "onMouseEnter" : "",
+                "onMouseLeave" : ""
+              },
+              "style" : {
+                "height" : "35px",
+                "width" : "100%",
+                "justifyContent" : "center",
+                "alignItems" : "center",
+                "color" : "#409EFF",
+                "fontFamily" : "Microsoft YaHei",
+                "fontSize" : "24px",
+                "fontWeight" : "bold",
+                "fontStyle" : "normal",
+                "textDecoration" : "none",
+                "cursor" : "default"
+              },
+              "isShowTitle" : false,
+              "titleToolTipCustomText" : "",
+              "titleToolTipFontColor" : "",
+              "titleToolTipBackgroundColor" : "",
+              "titleToolTipExceedingWord" : false,
+              "titleToolTipExceedingWordCount" : 0,
+              "showEllipsis" : false,
+              "isShowBadge" : false,
+              "leftOffset" : 0,
+              "dataModel" : "",
+              "dataSetID" : "",
+              "dataSetColID" : ""
+            },
+            "compName" : "简单文本",
+            "children" : [ ]
+          } ]
+        }, {
+          "key" : "FormLabel8",
+          "type" : "FormLabel",
+          "props" : {
+            "textVal" : ">>去办理",
+            "titleToolTipLocation" : "top",
+            "editMask" : [ ],
+            "asteriskRed" : true,
+            "lineClampNumber" : 1,
+            "badgeShowZero" : true,
+            "topOffset" : -28,
+            "scriptsCode" : {
+              "onClick" : "",
+              "onMouseEnter" : "",
+              "onMouseLeave" : ""
+            },
+            "style" : {
+              "width" : "100%",
+              "justifyContent" : "flex-end",
+              "alignItems" : "center",
+              "backgroundColor" : "rgba(247,247,247,0.9)",
+              "fontFamily" : "Microsoft YaHei",
+              "fontWeight" : "normal",
+              "fontStyle" : "normal",
+              "textDecoration" : "none",
+              "cursor" : "default"
+            },
+            "isShowTitle" : false,
+            "titleToolTipCustomText" : "",
+            "titleToolTipFontColor" : "",
+            "titleToolTipBackgroundColor" : "",
+            "titleToolTipExceedingWord" : false,
+            "titleToolTipExceedingWordCount" : 0,
+            "showEllipsis" : false,
+            "isShowBadge" : false,
+            "leftOffset" : 0,
+            "dataModel" : "",
+            "dataSetID" : "",
+            "dataSetColID" : ""
+          },
+          "compName" : "简单文本",
+          "children" : [ ]
+        }, {
+          "key" : "FormLabel9",
+          "type" : "FormLabel",
+          "props" : {
+            "textVal" : ">>去办理",
+            "titleToolTipLocation" : "top",
+            "editMask" : [ ],
+            "asteriskRed" : true,
+            "lineClampNumber" : 1,
+            "badgeShowZero" : true,
+            "topOffset" : -28,
+            "scriptsCode" : {
+              "onClick" : "",
+              "onMouseEnter" : "",
+              "onMouseLeave" : ""
+            },
+            "style" : {
+              "width" : "100%",
+              "justifyContent" : "flex-end",
+              "alignItems" : "center",
+              "backgroundColor" : "rgba(247,247,247,0.9)",
+              "fontFamily" : "Microsoft YaHei",
+              "fontWeight" : "normal",
+              "fontStyle" : "normal",
+              "textDecoration" : "none",
+              "cursor" : "default"
+            },
+            "isShowTitle" : false,
+            "titleToolTipCustomText" : "",
+            "titleToolTipFontColor" : "",
+            "titleToolTipBackgroundColor" : "",
+            "titleToolTipExceedingWord" : false,
+            "titleToolTipExceedingWordCount" : 0,
+            "showEllipsis" : false,
+            "isShowBadge" : false,
+            "leftOffset" : 0,
+            "dataModel" : "",
+            "dataSetID" : "",
+            "dataSetColID" : ""
+          },
+          "compName" : "简单文本",
+          "children" : [ ]
+        }, {
+          "key" : "FormLabel10",
+          "type" : "FormLabel",
+          "props" : {
+            "textVal" : ">>去办理",
+            "titleToolTipLocation" : "top",
+            "editMask" : [ ],
+            "asteriskRed" : true,
+            "lineClampNumber" : 1,
+            "badgeShowZero" : true,
+            "topOffset" : -28,
+            "scriptsCode" : {
+              "onClick" : "",
+              "onMouseEnter" : "",
+              "onMouseLeave" : ""
+            },
+            "style" : {
+              "width" : "100%",
+              "justifyContent" : "flex-end",
+              "alignItems" : "center",
+              "backgroundColor" : "rgba(247,247,247,0.9)",
+              "fontFamily" : "Microsoft YaHei",
+              "fontWeight" : "normal",
+              "fontStyle" : "normal",
+              "textDecoration" : "none",
+              "cursor" : "default"
+            },
+            "isShowTitle" : false,
+            "titleToolTipCustomText" : "",
+            "titleToolTipFontColor" : "",
+            "titleToolTipBackgroundColor" : "",
+            "titleToolTipExceedingWord" : false,
+            "titleToolTipExceedingWordCount" : 0,
+            "showEllipsis" : false,
+            "isShowBadge" : false,
+            "leftOffset" : 0,
+            "dataModel" : "",
+            "dataSetID" : "",
+            "dataSetColID" : ""
+          },
+          "compName" : "简单文本",
+          "children" : [ ]
+        } ]
+      }, {
+        "key" : "FormBoxContainer16",
+        "type" : "FormBoxContainer",
+        "props" : {
+          "floatPositionOrigin" : "rb",
+          "floatX" : "0",
+          "floatY" : "0",
+          "resizeDirection" : "both",
+          "scriptsCode" : {
+            "onClickHandler" : "",
+            "afterCloseFullScreen" : "",
+            "onMouseEnter" : "",
+            "onMouseLeave" : "",
+            "onMouseWheel" : ""
+          },
+          "style" : {
+            "height" : "500px",
+            "flexDirection" : "column",
+            "flexWrap" : "nowrap",
+            "justifyContent" : "flex-start",
+            "alignItems" : "flex-start",
+            "overflow" : "hidden",
+            "backgroundRepeat" : "tensile",
+            "backgroundPosition" : "left top",
+            "display" : "flex",
+            "gap" : "16px",
+            "cursor" : "default"
+          },
+          "isFloat" : false,
+          "isDraggable" : false,
+          "isResizable" : false
+        },
+        "compName" : "通用布局",
+        "children" : [ {
+          "key" : "FormBoxContainer17",
+          "type" : "FormBoxContainer",
+          "props" : {
+            "floatPositionOrigin" : "rb",
+            "floatX" : "0",
+            "floatY" : "0",
+            "resizeDirection" : "both",
+            "scriptsCode" : {
+              "onClickHandler" : "",
+              "afterCloseFullScreen" : "",
+              "onMouseEnter" : "",
+              "onMouseLeave" : "",
+              "onMouseWheel" : ""
+            },
+            "style" : {
+              "height" : "40px",
+              "flexDirection" : "row",
+              "flexWrap" : "nowrap",
+              "justifyContent" : "flex-start",
+              "alignItems" : "flex-start",
+              "overflow" : "hidden",
+              "backgroundRepeat" : "tensile",
+              "backgroundPosition" : "left top",
+              "display" : "flex",
+              "gap" : "16px",
+              "cursor" : "default"
+            },
+            "isFloat" : false,
+            "isDraggable" : false,
+            "isResizable" : false
+          },
+          "compName" : "通用布局",
+          "children" : [ {
+            "key" : "FormLabel11",
+            "type" : "FormLabel",
+            "props" : {
+              "textVal" : "通知公告",
+              "titleToolTipLocation" : "top",
+              "editMask" : [ ],
+              "asteriskRed" : true,
+              "lineClampNumber" : 1,
+              "badgeShowZero" : true,
+              "topOffset" : -28,
+              "scriptsCode" : {
+                "onClick" : "",
+                "onMouseEnter" : "",
+                "onMouseLeave" : ""
+              },
+              "style" : {
+                "height" : "35px",
+                "width" : "100%",
+                "justifyContent" : "center",
+                "alignItems" : "center",
+                "color" : "#409EFF",
+                "fontFamily" : "Microsoft YaHei",
+                "fontSize" : "24px",
+                "fontWeight" : "bold",
+                "fontStyle" : "normal",
+                "textDecoration" : "none",
+                "cursor" : "default"
+              },
+              "isShowTitle" : false,
+              "titleToolTipCustomText" : "",
+              "titleToolTipFontColor" : "",
+              "titleToolTipBackgroundColor" : "",
+              "titleToolTipExceedingWord" : false,
+              "titleToolTipExceedingWordCount" : 0,
+              "showEllipsis" : false,
+              "isShowBadge" : false,
+              "leftOffset" : 0,
+              "dataModel" : "",
+              "dataSetID" : "",
+              "dataSetColID" : ""
+            },
+            "compName" : "简单文本",
+            "children" : [ ]
+          } ]
+        }, {
+          "key" : "FormTextCarousel2",
+          "type" : "FormTextCarousel",
+          "props" : {
+            "content" : "欢迎使用-黄河特钢营销管理平台",
+            "duration" : 10,
+            "style" : {
+              "width" : "100%",
+              "backgroundColor" : "rgba(247,247,247,1)",
+              "borderStyle" : "none",
+              "fontSize" : "18px",
+              "fontWeight" : "normal",
+              "fontStyle" : "normal",
+              "textDecoration" : "none"
+            }
+          },
+          "compName" : "文字走马灯",
+          "children" : [ ]
+        } ]
+      } ]
+    } ]
+  } ],
+  "dataModels" : [ ],
+  "actionComps" : [ ],
+  "serverJsComps" : [ ],
+  "tableSource" : [ ]
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>OSP流程设计器</title>
+    <link rel="stylesheet" href="css/diagram-js.css"/>
+    <link rel="stylesheet" href="vendor/bpmn-font/css/bpmn-embedded.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="css/app_add.css"/>
+    <link rel="stylesheet" href="css/contextmenu.css"/>
+</head>
+<body id="all">
+
+<div style="height: 100%; padding-top:35px;" >
+    <div style="position: absolute;width: 100%;height:35px;top: 0px;">
+        <div id="head" class="head" style="height:35px;width:100%;white-space:nowrap">
+            <img id="new-icon" src="img/new.png" title="新建"/>
+            <img id="open-icon" src="img/import.png" title="本地导入">
+            <input id="fileInput" type="file" style="display: none"/>
+            <img id="open-icon-online" src="img/open.png" title="在线打开">
+            <img id="save-icon" src="img/save.png" title="保存到服务器" class="disable">
+            <img id="saveas-icon" src="img/saveas.png" title="另存为" class="disable">
+            <img id="save-bpmn-icon" src="img/save-t.png" title="导出bpmn文本" class="disable"/>
+            <a id="bpmn-download" style="display: none"></a>
+            <a id="bpmn-Server" style="display: none"></a><!--用来存放流程xml，在保存到服务器上时使用-->
+            <img id="save-svg-icon" src="img/save-p.png" title="导出svg图片" class="disable"/>
+            <a id="svg-download" style="display: none"></a>
+            <img class="split" src="img/split.png">
+            <img id="zoom-in-icon" src="img/zoom-in.png" title="放大">
+            <img id="reset-size-icon" src="img/1-1.png" title="重置大小">
+            <img id="zoom-out-icon" src="img/zoom-out.png" title="缩小">
+            <img id="reset-canvas-icon" src="img/reset.png" title="重置大小和位置">
+            <img class="split" src="img/split.png">
+            <img id="full-screen-icon" src="img/full.png" title="全屏" class="disable">
+            <img id="center-display-icon" src="img/resize.png" title="图像居中1:1显示" class="disable">
+            <img class="split" src="img/split.png">
+            <img id="cut-icon" src="img/cut.png" title="剪切">
+            <img id="copy-icon" src="img/copy.png" title="复制">
+            <img id="paste-icon" src="img/prase.png" title="粘贴">
+            <img id="delete-icon" src="img/delete.png" title="删除">
+            <img class="split" src="img/split.png">
+            <img id="undo-icon" src="img/goback.png" title="回退">
+            <img id="redo-icon" src="img/gofrout.png" title="前进">
+            <img class="split" src="img/split.png">
+            <img id="keyboard" src="img/keyboard.png" title="热键帮助">
+
+        </div>
+    </div>
+
+    <div class="content" id="js-drop-zone" style="height: 100%;">
+        <div class="message error">
+            <div class="note">
+                <p>Ooops, we could not display the BPMN 2.0 diagram.</p>
+
+                <div class="details">
+                    <span>cause of the problem</span>
+                    <pre></pre>
+                </div>
+            </div>
+        </div>
+        <div class="canvas" id="js-canvas" style="padding-right:260px;"></div>
+        <div id="js-properties-panel"></div>
+    </div>
+</div>
+<!--右键菜单-->
+<div id="contextmenu" class ="contextmenu" ></div>
+<div id="tooltip" class="angle-wrapper"></div>
+<script type="text/javascript">
+
+    window.FlowSys  = "0";
+    //流程设计器对象
+    window.designer = null;
+    //流程是否使用平台表单
+    window.isUsePlatform = true;
+    //是否是流程组件 默认false
+    window.isComponent = false;
+
+    //是否只做展示使用
+    window.isOnlyShow = false;
+    window.isHasTaskInfoShow = false;
+
+</script>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="index.js"  type="text/javascript" charset="utf-8"></script>
+
+
+</body>
+</html>

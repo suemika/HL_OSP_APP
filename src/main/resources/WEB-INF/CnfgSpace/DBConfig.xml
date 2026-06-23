@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databases>
+
+    <database>
+        <property name="id">OSP_DB01</property>
+        <property name="caption">osplcdpservice</property>
+        <property name="dbType">mysql</property>
+        <property name="host">192.168.30.193</property>
+        <property name="port">3306</property>
+        <property name="databaseName">HLZB_YX</property>
+        <property name="charset">UTF-8</property>
+        <property name="username">root</property>
+        <property name="password">Asdf@123.</property>
+        <property name="default">true</property>
+        <property name="datasource">Druid</property>
+    </database>
+    <!--<database>
+        <property name="id">OSP_DB01</property>
+        <property name="caption">osplcdpservice</property>
+        <property name="dbType">oracle</property>
+        <property name="host"></property>
+        <property name="port"></property>
+        <property name="databaseName"></property>
+        <property name="username"></property>
+        <property name="password"></property>
+        <property name="default">true</property>
+        <property name="datasource">Druid</property>
+    </database>-->
+
+
+</databases>

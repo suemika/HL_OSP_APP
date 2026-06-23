@@ -1,0 +1,2804 @@
+[
+    {
+        "oldKey": "",
+        "newKey": "CompWidth",
+        "value": []
+    },
+    {
+        "oldKey": "dimHeight",
+        "newKey": "CompHeight",
+        "value": []
+    },
+    {
+        "oldKey": "PCTWID",
+        "newKey": "CompPercentWidth",
+        "value": []
+    },
+    {
+        "oldKey": "textAlign",
+        "newKey": "CompHAlign",
+        "value": [
+            {
+                "oldValue": "left",
+                "newValue": "flex-start"
+            },
+            {
+                "oldValue": "center",
+                "newValue": "center"
+            },
+            {
+                "oldValue": "right",
+                "newValue": "flex-end"
+            },
+            {
+                "oldValue": "end",
+                "newValue": "flex-end"
+            }
+        ]
+    },
+    {
+        "oldKey": "TextAlign",
+        "newKey": "CompHAlign",
+        "value": [
+            {
+                "oldValue": "left",
+                "newValue": "flex-start"
+            },
+            {
+                "oldValue": "center",
+                "newValue": "center"
+            },
+            {
+                "oldValue": "right",
+                "newValue": "flex-end"
+            },
+            {
+                "oldValue": "end",
+                "newValue": "flex-end"
+            }
+        ]
+    },
+    {
+        "oldKey": "fontFamily",
+        "newKey": "CompFontFamily",
+        "value": []
+    },
+    {
+        "oldKey": "fontWeight",
+        "newKey": "CompFontWeight",
+        "value": []
+    },
+    {
+        "oldKey": "fontSize",
+        "newKey": "CompFontSize",
+        "value": []
+    },
+    {
+        "oldKey": "fontColor",
+        "newKey": "CompFontColor",
+        "value": []
+    },
+    {
+        "oldKey": "fontStyle",
+        "newKey": "CompFontStyle",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "normal"
+            },
+            {
+                "oldValue": "",
+                "newValue": "italic"
+            },
+            {
+                "oldValue": "",
+                "newValue": "oblique"
+            },
+            {
+                "oldValue": "",
+                "newValue": "inherit"
+            }
+        ]
+    },
+    {
+        "oldKey": "borderStyle",
+        "newKey": "CompBorderStyle",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "solid"
+            },
+            {
+                "oldValue": "",
+                "newValue": "none none solid none"
+            },
+            {
+                "oldValue": "",
+                "newValue": "none"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "CompBorderWidth",
+        "value": []
+    },
+    {
+        "oldKey": "borderColor",
+        "newKey": "CompBorderColor",
+        "value": []
+    },
+    {
+        "oldKey": "cornerRadius",
+        "newKey": "CompBorderRadius",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "CompBackgroundColor",
+        "value": []
+    },
+    {
+        "oldKey": "tooltip",
+        "newKey": "CompShowToolTip",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "PCTWID",
+        "newKey": "LabelWidth",
+        "value": []
+    },
+    {
+        "oldKey": "dimHeight",
+        "newKey": "LabelHeight",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "LabelShowColon",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "hAlign",
+        "newKey": "LabelHAlign",
+        "value": [
+            {
+                "oldValue": "left",
+                "newValue": "flex-start"
+            },
+            {
+                "oldValue": "center",
+                "newValue": "center"
+            },
+            {
+                "oldValue": "right",
+                "newValue": "flex-end"
+            }
+        ]
+    },
+    {
+        "oldKey": "vAlign",
+        "newKey": "LabelVAlign",
+        "value": [
+            {
+                "oldValue": "top",
+                "newValue": "flex-start"
+            },
+            {
+                "oldValue": "middle",
+                "newValue": "center"
+            },
+            {
+                "oldValue": "bottom",
+                "newValue": "flex-end"
+            }
+        ]
+    },
+    {
+        "oldKey": "fontSize",
+        "newKey": "LabelFontSize",
+        "value": []
+    },
+    {
+        "oldKey": "fontColor",
+        "newKey": "LabelFontColor",
+        "value": []
+    },
+    {
+        "oldKey": "fontFamily",
+        "newKey": "LabelFontFamily",
+        "value": []
+    },
+    {
+        "oldKey": "fontWeight",
+        "newKey": "LabelFontWeight",
+        "value": []
+    },
+    {
+        "oldKey": "fontStyle",
+        "newKey": "LabelFontStyle",
+        "value": [
+            {
+                "oldValue": "normal",
+                "newValue": "normal"
+            },
+            {
+                "oldValue": "",
+                "newValue": "italic"
+            },
+            {
+                "oldValue": "",
+                "newValue": "oblique"
+            },
+            {
+                "oldValue": "",
+                "newValue": "inherit"
+            }
+        ]
+    },
+    {
+        "oldKey": "textAlign",
+        "newKey": "LabelTextAlign",
+        "value": [
+            {
+                "oldValue": "left",
+                "newValue": "left"
+            },
+            {
+                "oldValue": "center",
+                "newValue": "center"
+            },
+            {
+                "oldValue": "right",
+                "newValue": "right"
+            }
+        ]
+    },
+    {
+        "oldKey": "borderStyle",
+        "newKey": "LabelBorderStyle",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "solid"
+            },
+            {
+                "oldValue": "",
+                "newValue": "none none solid none"
+            },
+            {
+                "oldValue": "",
+                "newValue": "none"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "LabelBorderWidth",
+        "value": []
+    },
+    {
+        "oldKey": "borderColor",
+        "newKey": "LabelBorderColor",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "LabelBorderRadius",
+        "value": []
+    },
+    {
+        "oldKey": "COLNAMES",
+        "newKey": "DataSetNameColID",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "DateShowType",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "date"
+            },
+            {
+                "oldValue": "",
+                "newValue": "dateTime"
+            },
+            {
+                "oldValue": "",
+                "newValue": "year"
+            },
+            {
+                "oldValue": "",
+                "newValue": "month"
+            },
+            {
+                "oldValue": "",
+                "newValue": "week"
+            },
+            {
+                "oldValue": "",
+                "newValue": "quarter"
+            }
+        ]
+    },
+    {
+        "oldKey": "NumberFormat",
+        "newKey": "NumberFormat",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "General"
+            },
+            {
+                "oldValue": "",
+                "newValue": "#,##0"
+            },
+            {
+                "oldValue": "",
+                "newValue": "#,##0%"
+            },
+            {
+                "oldValue": "",
+                "newValue": "#,##0‰"
+            },
+            {
+                "oldValue": "",
+                "newValue": "###0"
+            },
+            {
+                "oldValue": "",
+                "newValue": "###0%"
+            },
+            {
+                "oldValue": "",
+                "newValue": "###0‰"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "IsBigNumberMode",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "DefVal",
+        "newKey": "DefVal",
+        "value": []
+    },
+    {
+        "oldKey": "DefValName",
+        "newKey": "DefValName",
+        "value": []
+    },
+    {
+        "oldKey": "isInputPercentVal",
+        "newKey": "InputPercentVal",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "WordWrap",
+        "newKey": "WordWrap",
+        "noUse": 1,
+        "value": []
+    },
+    {
+        "oldKey": "viewDataSetSaveColID",
+        "newKey": "ViewDataSetSaveColID",
+        "noUse": 1,
+        "value": []
+    },
+    {
+        "oldKey": "colSpan",
+        "newKey": "ColSpan",
+        "value": []
+    },
+    {
+        "oldKey": "clickInputShowHelp",
+        "newKey": "ClickInputShowHelp",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ShowLabelInFocus",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "allowHandEnter",
+        "newKey": "AllowEnterCode",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "caseSensitive",
+        "newKey": "CaseSensitive",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "parentNodeGrade",
+        "newKey": "ParentNodeGrade",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "AllowNonMX",
+        "newKey": "AllowNonMX",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "ISLOADMX",
+        "newKey": "IsLoadMX",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "HELPCOL",
+        "newKey": "HelpCols",
+        "value": []
+    },
+    {
+        "oldKey": "parentNode",
+        "newKey": "ParentNodeName",
+        "value": []
+    },
+    {
+        "oldKey": "SHOWCHECKBOX",
+        "newKey": "CheckBox",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "FILTERDCTCOND",
+        "newKey": "FilterDCTCond",
+        "value": []
+    },
+    {
+        "oldKey": "ISPAGING",
+        "newKey": "Paging",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "PAGINGSHOWNUM",
+        "newKey": "PagingShowNum",
+        "value": []
+    },
+    {
+        "oldKey": "ISLEVEL",
+        "newKey": "IsLevel",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "SHOWCODE",
+        "newKey": "ShowCode",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "CHECKFKEY",
+        "newKey": "CheckFkey",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "WINHEIGHT",
+        "newKey": "WinHeight",
+        "value": []
+    },
+    {
+        "oldKey": "helpWinTitle",
+        "newKey": "WinTitle",
+        "value": []
+    },
+    {
+        "oldKey": "WINWIDTH",
+        "newKey": "WinWidth",
+        "value": []
+    },
+    {
+        "oldKey": "AutoSetCols",
+        "newKey": "AutoSetCols",
+        "value": []
+    },
+    {
+        "oldKey": "reloadData",
+        "newKey": "ReloadData",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "FormId",
+        "newKey": "FormID",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "OkBtnVisible",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "CancelBtnVisible",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "cancelFunction",
+        "newKey": "CancelFunction",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "OkFunction",
+        "value": []
+    },
+    {
+        "oldKey": "showCurrentDate",
+        "newKey": "ShowCurrentDate",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "CompID",
+        "newKey": "CompID",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "LabelShowTooltip",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "LabelTooltipCustomText",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "LabelToolTipLocation",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "top"
+            },
+            {
+                "oldValue": "",
+                "newValue": "topLeft"
+            },
+            {
+                "oldValue": "",
+                "newValue": "topRight"
+            },
+            {
+                "oldValue": "",
+                "newValue": "bottom"
+            },
+            {
+                "oldValue": "",
+                "newValue": "bottomLeft"
+            },
+            {
+                "oldValue": "",
+                "newValue": "bottomRight"
+            },
+            {
+                "oldValue": "",
+                "newValue": "left"
+            },
+            {
+                "oldValue": "",
+                "newValue": "leftTop"
+            },
+            {
+                "oldValue": "",
+                "newValue": "leftBottom"
+            },
+            {
+                "oldValue": "",
+                "newValue": "right"
+            },
+            {
+                "oldValue": "",
+                "newValue": "rightTop"
+            },
+            {
+                "oldValue": "",
+                "newValue": "rightBottom"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "LabelToolTipFontColor",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "LabelTooltipBackgroundColor",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "CompShowToolTip",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "CompTooltipCustomText",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "CompToolTipLocation",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "top"
+            },
+            {
+                "oldValue": "",
+                "newValue": "topLeft"
+            },
+            {
+                "oldValue": "",
+                "newValue": "topRight"
+            },
+            {
+                "oldValue": "",
+                "newValue": "bottom"
+            },
+            {
+                "oldValue": "",
+                "newValue": "bottomLeft"
+            },
+            {
+                "oldValue": "",
+                "newValue": "bottomRight"
+            },
+            {
+                "oldValue": "",
+                "newValue": "left"
+            },
+            {
+                "oldValue": "",
+                "newValue": "leftTop"
+            },
+            {
+                "oldValue": "",
+                "newValue": "leftBottom"
+            },
+            {
+                "oldValue": "",
+                "newValue": "right"
+            },
+            {
+                "oldValue": "",
+                "newValue": "rightTop"
+            },
+            {
+                "oldValue": "",
+                "newValue": "rightBottom"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "CompToolTipFontColor",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "CompTooltipBackgroundColor",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "CompNotNulToolTipToolTipLocation",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "top"
+            },
+            {
+                "oldValue": "",
+                "newValue": "topLeft"
+            },
+            {
+                "oldValue": "",
+                "newValue": "topRight"
+            },
+            {
+                "oldValue": "",
+                "newValue": "bottom"
+            },
+            {
+                "oldValue": "",
+                "newValue": "bottomLeft"
+            },
+            {
+                "oldValue": "",
+                "newValue": "bottomRight"
+            },
+            {
+                "oldValue": "",
+                "newValue": "left"
+            },
+            {
+                "oldValue": "",
+                "newValue": "leftTop"
+            },
+            {
+                "oldValue": "",
+                "newValue": "leftBottom"
+            },
+            {
+                "oldValue": "",
+                "newValue": "right"
+            },
+            {
+                "oldValue": "",
+                "newValue": "rightTop"
+            },
+            {
+                "oldValue": "",
+                "newValue": "rightBottom"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "CompNotNulToolTipToolTipFontColor",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "CompNotNulToolTipToolTipBackgroundColor",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "CompEditExpression",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "LabelRequiredRedStartExpression",
+        "value": []
+    },
+    {
+        "oldKey": "COL_DEFAULT",
+        "newKey": "RadioButtonGroupDefaultVal",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "CompPlaceholder",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "DisableShowIcon",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ValidatorList",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "{}"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "FormTreeComboBoxType",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "dmtree"
+            },
+            {
+                "oldValue": "",
+                "newValue": "dmpttree"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "FKProviderService",
+        "value": []
+    },
+    {
+        "oldKey": "isNotUseDictLimit",
+        "newKey": "UseDictLimit",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "DataSetNameColID",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "ShowSearchButton",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "StorageType",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "FILE"
+            },
+            {
+                "oldValue": "",
+                "newValue": "DB"
+            },
+            {
+                "oldValue": "",
+                "newValue": "FASTDFS"
+            },
+            {
+                "oldValue": "",
+                "newValue": "FILENET"
+            },
+            {
+                "oldValue": "",
+                "newValue": "ALIYUN"
+            },
+            {
+                "oldValue": "",
+                "newValue": "MIFDS"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixStoragePath",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "EnableBatchUpload",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ShowUploadBtn",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ShowDownloadBtn",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ShowDeleteBtn",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ShowDeleteBtn",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ShowPreviewBtn",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixFileSize",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixWindowTitle",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixWindowWidth",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixWindowHeight",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixPreviewWindowWidth",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixPreviewWindowHeight",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixUploadFileType",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixMaxNumber",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "BatchDownloadAffixName",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "UploadAffixAddWaterMark",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "DownloadAffixAddWaterMark",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "PreviewAffixAddWaterMark",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixYwlx",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "ChunkUpload",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ShowFullScreenBtn",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixExtraColumn",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "JointTimeValue",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "ShowZero",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "IsShowColumnMenu",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "LabelLineHeight",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "CompLineHeight",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "ShowEllipsis",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "DisableExpression",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "CheckBoxAccessType",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "custom"
+            },
+            {
+                "oldValue": "",
+                "newValue": "optionCode"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "CheckBoxCheckedValue",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "custom"
+            },
+            {
+                "oldValue": "",
+                "newValue": "optionCode"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "CheckBoxUnCheckedValue",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "custom"
+            },
+            {
+                "oldValue": "",
+                "newValue": "optionCode"
+            }
+        ]
+    },
+    {
+        "oldKey": "displayArea",
+        "newKey": "DisplayArea",
+        "description": "地址选择显示区域",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "china"
+            },
+            {
+                "oldValue": "",
+                "newValue": "foreign"
+            },
+            {
+                "oldValue": "",
+                "newValue": "all"
+            }
+        ]
+    },
+    {
+        "oldKey": "addCondition",
+        "newKey": "AddCondition",
+        "description": "地址选择附加条件",
+        "value": []
+    },
+    {
+        "oldKey": "showCounty",
+        "newKey": "ShowCounty",
+        "description": "地址选择是否显示县市",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "showCountyOnFilter",
+        "newKey": "ShowCountyOnFilter",
+        "description": "地址选择过滤时，是否查找县市级别",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ImageEditorType",
+        "description": "图片编辑方式是否显示为下拉",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ShowArrow",
+        "description": "图片编辑方式下拉是否显示箭头",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "SHOWTEXT",
+        "newKey": "OnlyShowImage",
+        "description": "图标加文本只显示图标",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ImageSize",
+        "description": "图标加文本和图片展示显示图片尺寸",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "ImageShowType",
+        "description": "图标加文本和图片展示编辑方式展示类型，1代表原图展示",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            }
+        ]
+    },
+    {
+        "oldKey": "SHOWNAME",
+        "newKey": "ShowLabelInFocus",
+        "description": "文本框类编辑放式获取焦点时显示名称",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "focusHelp",
+        "newKey": "ClickInputShowHelp",
+        "description": "字典帮助点击文本框显示帮助",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "CANEDIT",
+        "newKey": "AllowEnterCode",
+        "description": "字典帮助、表单帮助是否允许手动输入编码",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "checkLimitBzw",
+        "newKey": "BZW",
+        "description": "数据权限标志位，启用数据权限时生效",
+        "value": []
+    },
+    {
+        "oldKey": "isNotUseDictLimit",
+        "newKey": "UseDictLimit",
+        "description": "字典帮助是否启用数据权限",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "DisableExpression",
+        "description": "字典帮助外键数据禁用表达式",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "CaseSensitive",
+        "description": "帮助查询条件是否大小写敏感",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "parentNodeGrade",
+        "newKey": "ParentNodeGrade",
+        "description": "帮助是否父子分级",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "AllowNonMX",
+        "newKey": "AllowNonMX",
+        "description": "帮助是否允许选择非明细",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "ISLOADMX",
+        "newKey": "IsLoadMX",
+        "description": "帮助是否只加载明细",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "helpCols",
+        "newKey": "HelpCols",
+        "description": "帮助是否自定义显示列",
+        "value": []
+    },
+    {
+        "oldKey": "parentNode",
+        "newKey": "ParentNodeName",
+        "description": "帮助父子分级自定义根节点父级名称",
+        "value": []
+    },
+    {
+        "oldKey": "SHOWCHECKBOX",
+        "newKey": "CheckBox",
+        "description": "字典帮助是否多选",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "FILTERDCTCOND",
+        "newKey": "FilterDCTCond",
+        "description": "字典帮助、下拉多选帮助过滤条件",
+        "value": []
+    },
+    {
+        "oldKey": "ISPAGING",
+        "newKey": "Paging",
+        "description": "字典帮助是否分页",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "PAGINGSHOWNUM",
+        "newKey": "PagingShowNum",
+        "description": "字典帮助每页行数",
+        "value": []
+    },
+    {
+        "oldKey": "ISLEVEL",
+        "newKey": "IsLevel",
+        "description": "字典帮助是否分级",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "minimumJS",
+        "newKey": "MinimumJS",
+        "description": "字典帮助最小加载级数",
+        "value": []
+    },
+    {
+        "oldKey": "SHOWCODE",
+        "newKey": "ShowCode",
+        "description": "字典帮助是否只显示编码",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "CHECKFKEY",
+        "newKey": "CheckFkey",
+        "description": "字典帮助是否检查外键",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "SearchPlaceholder",
+        "description": "字典帮助窗口搜索框默认文本",
+        "value": []
+    },
+    {
+        "oldKey": "helpWinHeight",
+        "newKey": "WinHeight",
+        "description": "字典帮助窗口高度",
+        "value": []
+    },
+    {
+        "oldKey": "helpWinWidth",
+        "newKey": "WinWidth",
+        "description": "字典帮助窗口宽度",
+        "value": []
+    },
+    {
+        "oldKey": "AutoSetCols",
+        "newKey": "AutoSetCols",
+        "description": "字典帮助是否带出外键列",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "ReloadData",
+        "description": "字典帮助每次打开弹窗是否重新加载数据",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "formID",
+        "newKey": "FormID",
+        "description": "表单帮助弹出表单ID",
+        "value": []
+    },
+    {
+        "oldKey": "helpWinTitle",
+        "newKey": "WinTitle",
+        "description": "表单帮助弹出表单标题",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "ServerID",
+        "description": "表单帮助弹出表单serverID",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "OkBtnVisible",
+        "description": "表单帮助是否显示确定按钮,0代表不显示，默认显示",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "CancelBtnVisible",
+        "description": "表单帮助是否显示取消按钮,0代表不显示，默认显示",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "showClearBtn",
+        "newKey": "ClearBtnVisible",
+        "description": "字典帮助、表单帮助窗口是否显示清空按钮",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "CancelFunction",
+        "description": "表单帮助取消回调函数ID",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "OkFunction",
+        "description": "表单帮助确定回调函数ID",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "ClearFunction",
+        "description": "表单帮助清空回调函数ID",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "ShowCurrentDate",
+        "description": "日期是否显示当前日期",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "DateRangeSeparator",
+        "description": "日期范围渲染方式中两个日期之间的连接符",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "ActionRenderType",
+        "description": "动作渲染显示类型，1为按钮类型，默认为0",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "fontColor",
+        "newKey": "FontColor",
+        "description": "字体颜色",
+        "value": []
+    },
+    {
+        "oldKey": "fontSize",
+        "newKey": "FontSize",
+        "description": "字体大小",
+        "value": []
+    },
+    {
+        "oldKey": "fontStyle",
+        "newKey": "FontStyle",
+        "description": "字体风格",
+        "value": []
+    },
+    {
+        "oldKey": "fontFamily",
+        "newKey": "FontFamily",
+        "description": "字体",
+        "value": []
+    },
+    {
+        "oldKey": "fontWeight",
+        "newKey": "fontWeight",
+        "description": "字重",
+        "value": []
+    },
+    {
+        "oldKey": "textDecoration",
+        "newKey": "TextDecoration",
+        "description": "动作渲染文本修饰",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "ActionGroupShowArrow",
+        "description": "是否显示操作组的下拉箭头, 默认展示",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ActionGroupIcon",
+        "description": "自定义操作组右侧按钮，默认是下拉箭头",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "CheckBoxRenderType",
+        "description": "布尔渲染显示类型，1代表渲染为开关，默认0",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "AnchorValue",
+        "description": "超链接渲染显示文本",
+        "value": []
+    },
+    {
+        "oldKey": "isShowDecoration",
+        "newKey": "ShowUnderline",
+        "description": "超链接渲染是否显示下划线",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "AllowLinkEdit",
+        "description": "超链接渲染是否可以一直处于编辑状态",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "MaskRenderType",
+        "description": "多选掩码渲染显示类型，1代表渲染为标签，默认0",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ReloadFKeyData",
+        "description": "多选帮助渲染每次是否重新加载外键数据，1代表是，默认0",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "IconField",
+        "description": "多选帮助渲染存储图片地址的数据库字段名",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "HelpRenderType",
+        "description": "多选帮助渲染显示类型，1代表渲染为标签，默认0",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "TagClosable",
+        "description": "多选帮助渲染标签显示叉号",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "TagShowBhAndMc",
+        "description": "多选帮助渲染标签显示编号-名称",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "TagColor",
+        "description": "多选帮助渲染标签色",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "TagHeight",
+        "description": "多选帮助渲染标签高度",
+        "value": []
+    },
+    {
+        "oldKey": "EditorTypeColID",
+        "newKey": "ScriptEditorTypeColID",
+        "description": "脚本编辑器渲染对应的组件类型存储列的数据集列ID",
+        "value": []
+    },
+    {
+        "oldKey": "EditorType",
+        "newKey": "ScriptEditorType",
+        "description": "脚本编辑器渲染对应的组件类型",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "ShowInGeneralFilterWindow",
+        "description": "通用过滤弹窗中是否显示该字段，0代表不显示",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "connectMark",
+        "newKey": "ExtendPropertiesConnectMark",
+        "description": "扩展属性自定义连接符",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "ExtendWindowTitle",
+        "description": "扩展属性弹框标题",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "ExtendKeyTitle",
+        "description": "扩展属性列名称",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "HelpReloadFKeyData",
+        "description": "下拉帮助和下拉多选帮助每次下拉重新加载外键数据集",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "HelpScrollLoad",
+        "description": "下拉帮助开启滚动分页加载",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "HelpScrollLoadPageSize",
+        "description": "下拉帮助每次滚动加载条数",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "LinkDisableHref",
+        "description": "超链接不启用href跳转",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "dataSetMCColID",
+        "newKey": "DataSetNameColID",
+        "description": "字典帮助名称列标识",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "ProgressBarMaxValue",
+        "description": "进度条最大值",
+        "value": []
+    },
+    {
+        "oldKey": "ProgressColor",
+        "newKey": "ProgressColor",
+        "description": "进度条颜色区间",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "StorageType",
+        "description": "附件存储方式，默认FILE",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "FILE"
+            },
+            {
+                "oldValue": "",
+                "newValue": "DB"
+            },
+            {
+                "oldValue": "",
+                "newValue": "FASTDFS"
+            },
+            {
+                "oldValue": "",
+                "newValue": "FILENET"
+            },
+            {
+                "oldValue": "",
+                "newValue": "ALIYUN"
+            },
+            {
+                "oldValue": "",
+                "newValue": "MIFDS"
+            },
+            {
+                "oldValue": "",
+                "newValue": "OBS"
+            },
+            {
+                "oldValue": "",
+                "newValue": "MINIO"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixStoragePath",
+        "description": "附件存储路径，当存储方式为FILE时生效，默认为文件名",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "EnableBatchUpload",
+        "description": "附件启用批量上传，1代表启用，0代表不启用，默认0",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ShowUploadBtn",
+        "description": "附件展示上传按钮，1代表展示，0代表不展示，默认1",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ShowDownloadBtn",
+        "description": "附件展示下载按钮，1代表展示，0代表不展示，默认1",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ShowDeleteBtn",
+        "description": "附件展示删除按钮，1代表展示，0代表不展示，默认1",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ShowPreviewBtn",
+        "description": "附件展示预览按钮，1代表展示，0代表不展示，默认1",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixFileSize",
+        "description": "上传的附件体积最大值，默认102400",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixWindowTitle",
+        "description": "附件列表弹窗标题",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixWindowWidth",
+        "description": "附件列表弹窗宽度",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixWindowHeight",
+        "description": "附件列表弹窗高度",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixPreviewWindowWidth",
+        "description": "附件预览弹窗宽度",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixPreviewWindowHeight",
+        "description": "附件预览弹窗高度",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixUploadFileType",
+        "description": "附件上传类型，如jpg,png等，默认所有类型",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixMaxNumber",
+        "description": "附件单次上传的附件最大个数，默认4",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "BatchDownloadAffixName",
+        "description": "附件批量下载时的名称，默认affix",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "UploadAffixAddWaterMark",
+        "description": "附件上传添加水印",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "DownloadAffixAddWaterMark",
+        "description": "附件下载添加水印",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "PreviewAffixAddWaterMark",
+        "description": "附件预览添加水印",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ShowAffixUploadNumber",
+        "description": "显示附件上传数量",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixYwlx",
+        "description": "附件业务类型",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "ChunkUpload",
+        "description": "启用断点续传",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ShowFullScreenBtn",
+        "description": "显示预览窗口中的全屏按钮",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "AffixExtraColumn",
+        "description": "附件列表中的扩展列",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "ShowMobileCollaborativeBtn",
+        "description": "附件展示移动协同上传按钮，1代表启用，0代表不启用，默认0",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "HiddenOperationColumn",
+        "description": "附件列表弹窗隐藏操作列，1代表隐藏，0代表展示，默认0",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "JointTimeValue",
+        "description": "年月日拼接时分秒，默认值为当前时间",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "ToolTipColID",
+        "description": "自定义提示信息列ID,默认为当前列",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "ToolTipType",
+        "description": "自定义Tooltip类型，RichText: 自定义服务，Form：自定义表单",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "RichText"
+            },
+            {
+                "oldValue": "",
+                "newValue": "Form"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "CustomCellToolTipMaxHeight",
+        "description": "自定义Tooltip弹窗的最大高度",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "CustomCellToolTipServiceKey",
+        "description": "自定义Tooltip服务的key",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "TooltipFormID",
+        "description": "当Tooltip为自定义表单时的表单ID",
+        "value": []
+    },
+    {
+        "oldKey": "titleColID",
+        "newKey": "DoubleRowTitleDataSetColID",
+        "description": "双行文本单元格的标题列编号",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "DoubleRowTextTitle",
+        "description": "双行文本单元格的标题内容",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "TextSpace",
+        "description": "双行文本两行之间的间距或者数值和单位之间的间距",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "UnitText",
+        "description": "数值列单位的文本",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "PrefixText",
+        "description": "数值列前缀文本",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "UnitFontSize",
+        "description": "数值列单位文本的字号",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "UnitFontColor",
+        "description": "数值列单位文本的字体颜色",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "UnitFontStyle",
+        "description": "数值列单位文本的字体风格",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "UnitFontWeight",
+        "description": "数值列单位文本的字重",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "NumberEnableControls",
+        "description": "数值列是否显示增减按钮",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "AutoCompleteServiceKey",
+        "description": "自动补全后台服务编号",
+        "value": []
+    },
+    {
+        "oldKey": "",
+        "newKey": "FormatColumnFooter",
+        "description": "是否格式化列脚",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "SupportHtml",
+        "description": "支持Html标签",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ExcelTextAlign",
+        "description": "导出excel列对齐方式",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "left"
+            },
+            {
+                "oldValue": "",
+                "newValue": "center"
+            },
+            {
+                "oldValue": "",
+                "newValue": "right"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ExcelWordWrap",
+        "description": "导出excel自动换行",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+    {
+        "oldKey": "",
+        "newKey": "ScaleNumber",
+        "description": "转换系数，为10000时，输入1，显示1，数据库存储10000",
+        "value": ["任意正数"]
+    },
+    {
+        "oldKey": "",
+        "newKey": "HelpAddCommas",
+        "description": "多选显示的值是否用逗号分隔",
+        "value": [
+            {
+                "oldValue": "",
+                "newValue": "1"
+            },
+            {
+                "oldValue": "",
+                "newValue": "0"
+            }
+        ]
+    },
+	{
+        "oldKey": "CANEDIT",
+        "newKey": "COL_EDITABLE",
+        "description": "单元格上是否可编辑 ",
+        "value": []
+    },
+	{
+        "oldKey": "CANEDIT",
+        "newKey": "COL_EDITABLE",
+        "description": "单元格上是否可编辑",
+        "value": []
+    },
+	{
+        "oldKey": "dataSetMCColID",
+        "newKey": "DataSetNameColID",
+        "description": "数据集名称列标志",
+        "value": []
+    },
+	{
+        "oldKey": "expandChildrenOnDoubleClick",
+        "newKey": "ExpandChildrenOnDoubleClick",
+        "description": "双击展开下一级",
+        "value": []
+    },
+	{
+        "oldKey": "ISRELOAD",
+        "newKey": "IsReload",
+        "description": "打开下拉列表时是否重新加载数据",
+        "value": []
+    },
+	{
+        "oldKey": "ONLYBH",
+        "newKey": "OnlyBH",
+        "description": "只显示编号",
+        "value": []
+    },
+	{
+        "oldKey": "plusCondition",
+        "newKey": "FilterDCTCond",
+        "description": "附加过滤条件",
+        "value": []
+    },
+	{
+        "oldKey": "plusConditionName",
+        "newKey": "PlusConditionName",
+        "description": "附加过滤条件名称(如果在列扩展属性中配置此属性，则在字典帮助弹窗中渲染出一个对应的按钮，按钮上的文字就是PlusConditionName的值)",
+        "value": []
+    },
+	{
+        "oldKey": "showCellTooltip",
+        "newKey": "ShowCellTooltip",
+        "description": "此列是否显示tooltip",
+        "value": []
+    },
+	{
+        "oldKey": "addCondition",
+        "newKey": "AddCondition",
+        "description": "地址选择附加条件",
+        "value": []
+    },
+	{
+        "oldKey": "showCounty",
+        "newKey": "ShowCounty",
+        "description": "显示县市级别的地区",
+        "value": []
+    },
+	{
+        "oldKey": "showCountyOnFilter",
+        "newKey": "ShowCountyOnFilter ",
+        "description": "过滤时是否查找到县市级别",
+        "value": []
+    },
+	{
+        "oldKey": "customEAIServer",
+        "newKey": "FKProviderService",
+        "description": "自定义应用服务ke",
+        "value": []
+    },
+	{
+        "oldKey": "ISLEVELLOAD",
+        "newKey": "IsLevel",
+        "description": "分级加载 ",
+        "value": []
+    },
+	{
+        "oldKey": "SHOWNULL",
+        "newKey": "showNullDataLine",
+        "description": "显示 <空> 选项 ",
+        "value": []
+    },
+	{
+        "oldKey": "toolTipForBH",
+        "newKey": "ToolTipForBH",
+        "description": "以此外键列的编号作为tooltip",
+        "value": []
+    }
+]

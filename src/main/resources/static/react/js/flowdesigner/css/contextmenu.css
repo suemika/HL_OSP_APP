@@ -1,0 +1,26 @@
+.contextmenu {
+    background-color: white;
+    padding:3px;
+    position: fixed;
+    left:0;
+    top:0;
+    display: none;
+    border:1px solid #ccc;
+    border-radius:4px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+    -moz-box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+    box-shadow:inset 0 -1px 0 rgba(0,0,0,.25);
+}
+.menuitem {
+    width:100px;
+    height: 26px;
+    line-height:26px;
+    text-align: center;
+
+}
+.menuitem:hover {
+    cursor:pointer;
+    background-color:#D4D4D4;
+}

@@ -1,0 +1,14 @@
+/*!
+ * 
+ * SpreadJS Library 15.2.5
+ * 
+ * Copyright(c) GrapeCity, Inc.  All rights reserved.
+ * 
+ * Licensed under the SpreadJS Commercial License.
+ * us.sales@grapecity.com
+ * http://www.grapecity.com/en/licensing/grapecity/
+ * 
+ * 
+ */
+
+/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */

@@ -1,0 +1,54 @@
+body {
+    font-family: Microsoft YaHei, PingFang SC, Helvetica Neue, Helvetica, Hiragino Sans GB, Arial, sans-serif !important;
+    
+    /* 解决作为子应用时，antd冒泡系列的组件弹出的位置不正确问题 */
+    position: relative;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 10px; /*竖着的滚动条的宽度*/
+    height: 10px; /*横着的滚动条的宽度*/
+}
+::-webkit-scrollbar-track {
+    /*滚动条外层容器轨道*/
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+::-webkit-scrollbar-track:hover {
+    /*滚动条外层容器轨道*/
+    background-color: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #bfbfbf; /*滚动块的颜色*/
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background-clip: padding-box;
+    border: 2px dashed transparent;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #8c8c8c; /*鼠标滑过滚动块颜色*/
+}
+/*
+::-webkit-scrollbar 滚动条整体部分
+::-webkit-scrollbar-button 滚动条两端的按钮
+::-webkit-scrollbar-track 外层轨道
+::-webkit-scrollbar-track-piece 内层轨道，滚动条中间部分（除去）
+::-webkit-scrollbar-thumb （拖动条？滑块？滚动条里面可以拖动的那个）
+::-webkit-scrollbar-corner 边角
+::-webkit-resizer 定义右下角拖动块的样式
+*/
+
+/* 表格暂无数据提示 */
+.osp-grid-empty {
+    border: 1px solid #d9d9d9;
+    color: rgba(0, 0, 0, 0.55);
+    padding: 7px 12px;
+}

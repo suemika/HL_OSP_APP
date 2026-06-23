@@ -1,0 +1,479 @@
+.heads{
+    height:64px;
+    background-color:#426cc0;
+    padding-top:19px;
+    padding-left:18px;
+}
+.head{
+    border-bottom:solid 1px rgb(204,204,204);
+    height:40px;
+    background-color:#fafafa;
+    padding-top:6px;
+    padding-left:18px;
+}
+#heads p{
+    font-family:Microsoft YaHei;
+    font-size:30px;
+    font-weight:bold;
+    color:#fff;
+    height:60px;
+    margin:0 auto;
+    line-height:60px;
+}
+#head img:hover{
+    background-color:#d9d9d9;
+}
+#head img{
+    cursor:pointer;
+}
+
+#head img{
+    opacity: 1.0;
+}
+#head img.disable {
+    opacity: 0.3;
+}
+
+#head img.split {
+    margin-left:7px;
+    margin-right:7px;
+}
+
+/*-------------------------窗口的样式定义------------------------------*/
+
+/*热键窗口样式*/
+#hotkeys {
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    position: absolute;
+    height: 400px;
+    width: 640px;
+    box-shadow: 2px 2px 10px #909090;
+    display:none;
+    z-index: 1002;
+    background: #fff;
+    padding-left: 20px;
+}
+#hotkeys p{
+    font-family:Microsoft YaHei;
+    font-size: 20px;
+}
+#hotkeys td{
+    width: 200px;
+    height: 25px;
+    font-size: 12px;
+}
+
+/**新建窗口样式**/
+#newFlowWindow{
+    display: none;
+    position: absolute;
+    width: 300px;
+    height:250px;
+    top: 30%;
+    left: 30%;
+    z-index: 1002;
+    background: #fff;
+}
+
+/*保存到服务器窗口相关样式*/
+#saveToServer{
+    display: none;
+    position: absolute;
+    width: 300px;
+    height:150px;
+    top: 40%;
+    left: 30%;
+    z-index: 1002;
+    background: #fff;
+}
+#toServerMess{
+    /*margin-left: 90px*/
+    text-align: center;
+    line-height: 45px;
+}
+#toServerMess a{
+    margin-top: 20px;
+}
+#describe{
+    height: 80px;
+    line-height: 80px;
+    display: inline-block;
+}
+#toServerMess textarea{
+    position: relative;
+    float: left;
+    height:80px;
+    width: 173px;
+    resize: none;
+}
+/*帮助表格弹窗相关样式*/
+#tablePopWin{
+    display: none;
+    position: absolute;
+    width: 500px;
+    height:438px;
+    top: 15%;
+    left: 20%;
+    z-index: 1002;
+    background: #fff;
+    box-shadow: 2px 2px 10px #909090;
+}
+#helpWinMess{
+    height: 390px;
+    width:100%
+}
+#helpWinSelect{
+    width:100%;
+    white-space: nowrap;
+}
+.dataList{
+    border:1px solid #0058a3;
+    font-family:Arial;
+    border-collapse:collapse;
+    background-color:#eaf5ff;
+    font-size:14px;
+}
+.dataList th{
+    width:248px;
+    border:1px solid #0058a3;
+    background-color:#4bacff;
+    color:#FFFFFF;
+    font-weight:bold;
+    padding: 4px 12px 4px 12px;
+    text-align:center;
+}
+.dataList td{
+    height: 25px;
+    border:1px solid #0058a3;
+    text-align:left;
+    padding: 4px 10px 4px 10px;
+}
+.dataList tr:hover, .dataList tr.altrow{
+    background-color:#c4e4ff;
+}
+#helpWinFresh{
+    margin-right: 10px;
+}
+
+#helpWinSure{
+    margin-right: 10px;
+    float: right;
+}
+#helpWinCancel {
+    float: right;
+}
+
+/*在线打开的样式*/
+#openOnLine{
+    display: none;
+    position: absolute;
+    width: 300px;
+    height:150px;
+    top: 40%;
+    left: 30%;
+    z-index: 1002;
+    background: #fff;
+}
+
+
+/*以下共用部分定义*/
+/*弹窗 的 button样式 <lable>*/
+.winButton{
+    padding: 1px 1px 1px 1px;
+    width: 50px;
+    height: 22px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 22px;
+    background-color: #426cc0;
+    display: inline-block;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius:2px;
+    /*按钮字体*/
+    font-family: helvetica,arial,verdana,sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-align: center;
+    line-height:20px;
+
+}
+div.popWindow {
+    border: 4px solid #426cc0;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius:4px;
+    box-shadow: 2px 2px 10px #909090;
+}
+/*遮罩样式*/
+#fade {
+    display: none;
+    z-index: 1001;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #cccccc;
+    -moz-opacity: 0.8;
+    opacity: .40;
+    filter: alpha(opacity=80);
+}
+/*弹窗的头样式*/
+.WinTitle {
+    width: 100%;
+    height:25px;
+    margin-top:0;
+    background-color: #426cc0;
+    padding-bottom: 10px;
+    line-height: 25px;
+    font-family: Microsoft Yahei;
+    font-size: 15px;
+    font-weight:900;
+    color:#FFF;
+}
+/*弹窗关闭按钮*/
+.WinClose{
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image:url("../img/close.png");
+    background-position:50% 10%;
+    background-repeat:no-repeat;
+}
+
+.lableName {
+    font-family: helvetica,arial,verdana,sans-serif;
+    font-size: 13px;
+    color: #000000;
+}
+/*.read-only {*/
+     /*pointer-events : auto;*/
+ /*}*/
+.WaitingWindow{
+    display: none;
+    z-index: 1004;
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+.waitingText{
+    font-family: Microsoft Yahei;
+    font-size: 15px;
+    text-align: center;
+    color : #178c3b;
+}
+
+/*---------------------窗口的样式定义 -- 结束-------------------------*/
+
+/*去掉线的鼠标事件*/
+.djs-connection .djs-no-hit {
+    pointer-events: none;
+}
+
+
+.tooltip {
+    position: absolute;
+    pointer-events:none; /*let mouse events pass through*/
+    opacity:0;
+    transition: opacity 0.3s;
+    text-shadow:0px 0px 0px gray;
+    font-size: 13px;
+    background: #ffffcd;
+    border: 1px solid black;
+    position: absolute;
+    padding:2px;
+    max-width: 20em;
+    text-align:left;
+
+}
+
+
+.taskInfoTooltipStyle {
+    position: absolute;
+    pointer-events:none; /*let mouse events pass through*/
+    opacity:0;
+    display:none;
+    transition: opacity 0.3s;
+    font-family: Microsoft YaHei ;
+    border-radius:5px;
+    width: 245px;
+    margin: 20px auto;
+    border: 1px solid #aed5f4;
+    background:#c5e1f7;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+}
+
+.taskInfoTooltipStyle:before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 108px;
+    top: -15px;
+    margin-top: -15px;
+    border-top: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #aed5f4;
+    border-left: 15px solid transparent;
+}
+.taskInfoTooltipStyle:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 108px;
+    top: -14px;
+    margin-top: -15px;
+    border-top: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #c5e1f7;
+    border-left: 15px solid transparent;
+}
+
+.userInfoTooltipStyle {
+    position: absolute;
+    /*pointer-events:none; let mouse events pass through*/
+    opacity:0;
+    display:none;
+    transition: opacity 0.3s;
+    font-family: Microsoft YaHei ;
+    border-radius:5px;
+    width: 205px;
+    margin: 20px auto;
+    border: 1px solid #aed5f4;
+    background:#c5e1f7;
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+}
+
+.userInfoTooltipStyle:before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 90px;
+    top: -15px;
+    margin-top: -15px;
+    border-top: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #aed5f4;
+    border-left: 15px solid transparent;
+}
+.userInfoTooltipStyle:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 90px;
+    top: -14px;
+    margin-top: -15px;
+    border-top: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #c5e1f7;
+    border-left: 15px solid transparent;
+}
+
+
+.tooltipTitle {
+    font-weight:bold;
+    font-size:16px;
+    color:#006bc2;
+    height:42px;
+    line-height:42px;
+}
+
+.cutoff {
+    width:100%;
+    height:2px;
+    background:#aed5f4
+
+}
+
+.taskInfo {
+    height:auto!important;
+    /*height:200px;*/
+    min-height:20px;
+    font-size:14px;
+    color:#1786e0;
+    height:24px;
+    line-height:24px;
+}
+td.left {
+    width:33%;
+    text-align:left;
+    word-wrap:break-word;
+}
+td.right {
+    width:67%;
+    text-align:right;
+    word-wrap:break-word;
+}
+
+div.infocenter {
+    text-align:center;
+    word-wrap:break-word;
+    line-height:30px;
+    height:30px;
+}
+
+div.headportrait{
+    float:left;
+    width:16px;
+    height:30px;
+    background-image: url(../img/headportrait.png);
+    background-repeat:no-repeat;
+    background-position:left 35%;
+}
+div.imcoin{
+    float:right;
+    width:20px;
+    height:30px;
+    background-image: url(../img/imcoin.png);
+    background-repeat:no-repeat;
+    background-position:right 47%;
+    cursor:pointer;
+}
+
+
+/*任务节点样式*/
+.pendingTaskStyle:not(.djs-connection) .djs-visual > :nth-child(1) {
+    fill: #FFC870 !important;
+    stroke: #1787e0 !important;
+}
+
+/*
+.virtualTaskStyle:not(.djs-connection) .djs-visual > :nth-child(1) {
+    fill: #B7BDCF !important;
+    stroke: #1787e0;
+}
+*/
+
+.processedTaskStyle:not(.djs-connection) .djs-visual > :nth-child(1) {
+    fill: #B4C8E7 !important;
+}
+
+/*
+.hoverTaskStyle:not(.djs-connection) .djs-visual > :nth-child(1) {
+    fill: #41A62D !important;
+    stroke: #1787e0 ;
+}*/

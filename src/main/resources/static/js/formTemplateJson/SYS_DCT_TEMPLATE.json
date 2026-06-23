@@ -1,0 +1,476 @@
+{
+    "key": "root_page",
+    "compName": "表单画布",
+    "rootProps": {
+        "scriptsCode": {
+            "componentDidMount": "DCTPagingToolBar1.loadPage(1);"
+        },
+        "style": {
+            "flexDirection": "column",
+            "flexWrap": "nowrap",
+            "justifyContent": "flex-start",
+            "alignItems": "flex-start",
+            "overflow": "auto",
+            "backgroundColor": "",
+            "padding": ""
+        }
+    },
+    "components": [
+        {
+            "key": "FormBoxContainer1",
+            "type": "FormBoxContainer",
+            "props": {
+                "style": {
+                    "height": "100%",
+                    "minHeight": "10px",
+                    "width": "100%",
+                    "minWidth": "10px",
+                    "flexDirection": "column",
+                    "flexWrap": "nowrap",
+                    "justifyContent": "flex-start",
+                    "alignItems": "flex-start",
+                    "overflow": "hidden",
+                    "backgroundColor": "",
+                    "opacity": 1,
+                    "backgroundImage": "",
+                    "backgroundRepeat": "repeat",
+                    "backgroundPosition": "left top",
+                    "borderStyle": "solid",
+                    "borderColor": "#d9d9d9",
+                    "borderWidth": "0px",
+                    "borderRadius": "0px",
+                    "boxShadow": "",
+                    "display": "flex",
+                    "margin": "",
+                    "padding": "",
+                    "gap": "16px",
+                    "paddingTop": "16px",
+                    "paddingBottom": "16px",
+                    "paddingRight": "16px",
+                    "paddingLeft": "16px"
+                }
+            },
+            "compName": "通用布局",
+            "children": [
+                {
+                    "key": "FormBoxContainer2",
+                    "type": "FormBoxContainer",
+                    "props": {
+                        "style": {
+                            "height": "32px",
+                            "minHeight": "10px",
+                            "width": "100%",
+                            "minWidth": "10px",
+                            "flexDirection": "row",
+                            "flexWrap": "nowrap",
+                            "justifyContent": "flex-start",
+                            "alignItems": "flex-start",
+                            "overflow": "auto",
+                            "backgroundColor": "",
+                            "opacity": 1,
+                            "backgroundImage": "",
+                            "backgroundRepeat": "repeat",
+                            "backgroundPosition": "left top",
+                            "borderStyle": "solid",
+                            "borderColor": "#d9d9d9",
+                            "borderWidth": "0px",
+                            "borderRadius": "0px",
+                            "boxShadow": "",
+                            "display": "flex",
+                            "margin": "",
+                            "padding": "",
+                            "gap": "16px"
+                        }
+                    },
+                    "compName": "通用布局",
+                    "children": [
+                        {
+                            "key": "FormButton1",
+                            "type": "FormButton",
+                            "props": {
+                                "labelText": "编辑",
+                                "isShowTitle": false,
+                                "titleToolTipCustomText": "",
+                                "isShowBadge": false,
+                                "leftOffset": -5,
+                                "topOffset": -33,
+                                "action": "MDMEditAction1",
+                                "scriptsCode": {
+                                    "onClick": "",
+                                    "onDoubleClick": "",
+                                    "onMouseEnter": "",
+                                    "onMouseLeave": "",
+                                    "onMouseOver": ""
+                                },
+                                "style": {
+                                    "height": "28px",
+                                    "width": "70px",
+                                    "backgroundColor": "rgba(24, 144, 255, 1)",
+                                    "opacity": 1,
+                                    "borderStyle": "none",
+                                    "borderColor": "",
+                                    "borderWidth": "0px",
+                                    "borderRadius": "2px",
+                                    "display": "",
+                                    "color": "#FFFFFF",
+                                    "fontFamily": "",
+                                    "fontSize": "14px",
+                                    "textAlign": "center",
+                                    "fontWeight": "normal",
+                                    "fontStyle": "normal",
+                                    "textDecoration": "none",
+                                    "margin": "",
+                                    "cursor": "pointer"
+                                }
+                            },
+                            "compName": "按钮"
+                        },
+                        {
+                            "key": "FormButton2",
+                            "type": "FormButton",
+                            "props": {
+                                "labelText": "增加",
+                                "isShowTitle": false,
+                                "titleToolTipCustomText": "",
+                                "isShowBadge": false,
+                                "leftOffset": -5,
+                                "topOffset": -33,
+                                "action": "MDMAddItemAction1",
+                                "scriptsCode": {
+                                    "onClick": "",
+                                    "onDoubleClick": "",
+                                    "onMouseEnter": "",
+                                    "onMouseLeave": "",
+                                    "onMouseOver": ""
+                                },
+                                "style": {
+                                    "height": "28px",
+                                    "width": "70px",
+                                    "backgroundColor": "#FFFFFF",
+                                    "opacity": 1,
+                                    "borderStyle": "solid",
+                                    "borderColor": "rgba(24, 144, 255, 1)",
+                                    "borderWidth": "1px",
+                                    "borderRadius": "2px",
+                                    "display": "",
+                                    "color": "rgba(24, 144, 255, 1)",
+                                    "fontFamily": "",
+                                    "fontSize": "14px",
+                                    "textAlign": "center",
+                                    "fontWeight": "normal",
+                                    "fontStyle": "normal",
+                                    "textDecoration": "none",
+                                    "margin": "",
+                                    "cursor": "pointer"
+                                }
+                            },
+                            "compName": "按钮"
+                        },
+                        {
+                            "key": "FormButton3",
+                            "type": "FormButton",
+                            "props": {
+                                "labelText": "删除",
+                                "isShowTitle": false,
+                                "titleToolTipCustomText": "",
+                                "isShowBadge": false,
+                                "leftOffset": -5,
+                                "topOffset": -33,
+                                "action": "MDMRemoveItemAction1",
+                                "scriptsCode": {
+                                    "onClick": "",
+                                    "onDoubleClick": "",
+                                    "onMouseEnter": "",
+                                    "onMouseLeave": "",
+                                    "onMouseOver": ""
+                                },
+                                "style": {
+                                    "height": "28px",
+                                    "width": "70px",
+                                    "backgroundColor": "#FFFFFF",
+                                    "opacity": 1,
+                                    "borderStyle": "solid",
+                                    "borderColor": "rgba(24, 144, 255, 1)",
+                                    "borderWidth": "1px",
+                                    "borderRadius": "2px",
+                                    "display": "",
+                                    "color": "rgba(24, 144, 255, 1)",
+                                    "fontFamily": "",
+                                    "fontSize": "14px",
+                                    "textAlign": "center",
+                                    "fontWeight": "normal",
+                                    "fontStyle": "normal",
+                                    "textDecoration": "none",
+                                    "margin": "",
+                                    "cursor": "pointer"
+                                }
+                            },
+                            "compName": "按钮"
+                        },
+                        {
+                            "key": "FormButton4",
+                            "type": "FormButton",
+                            "props": {
+                                "labelText": "保存",
+                                "isShowTitle": false,
+                                "titleToolTipCustomText": "",
+                                "isShowBadge": false,
+                                "leftOffset": -5,
+                                "topOffset": -33,
+                                "action": "MDMSaveAction1",
+                                "scriptsCode": {
+                                    "onClick": "",
+                                    "onDoubleClick": "",
+                                    "onMouseEnter": "",
+                                    "onMouseLeave": "",
+                                    "onMouseOver": ""
+                                },
+                                "style": {
+                                    "height": "28px",
+                                    "width": "70px",
+                                    "backgroundColor": "#FFFFFF",
+                                    "opacity": 1,
+                                    "borderStyle": "solid",
+                                    "borderColor": "rgba(24, 144, 255, 1)",
+                                    "borderWidth": "1px",
+                                    "borderRadius": "2px",
+                                    "display": "",
+                                    "color": "rgba(24, 144, 255, 1)",
+                                    "fontFamily": "",
+                                    "fontSize": "14px",
+                                    "textAlign": "center",
+                                    "fontWeight": "normal",
+                                    "fontStyle": "normal",
+                                    "textDecoration": "none",
+                                    "margin": "",
+                                    "cursor": "pointer"
+                                }
+                            },
+                            "compName": "按钮"
+                        }
+                    ]
+                },
+                {
+                    "key": "AGGrid1",
+                    "type": "AGGrid",
+                    "props": {
+                        "columnModel": "",
+                        "gridCellEditorManager": [],
+                        "PopupMenuManager": [],
+                        "editable": true,
+                        "singleClickEdit": false,
+                        "sortable": false,
+                        "showRowNum": false,
+                        "showCheckBox": false,
+                        "columnsFit": false,
+                        "showColumnFooter": false,
+                        "treeLinkGrid": false,
+                        "headerHeight": 40,
+                        "headerFontColor": "#262626",
+                        "headerFontSize": "14px",
+                        "headerFontFamily": "Microsoft YaHei",
+                        "headFontWeight": 400,
+                        "headerBkgColor": "#fafafa",
+                        "bodyFontColor": "#262626",
+                        "bodyFontSize": "14px",
+                        "bodyFontFamily": "Microsoft YaHei",
+                        "rowHeight": 40,
+                        "showBorderRight": true,
+                        "rowBkgColor": "",
+                        "scriptsCode": {
+                            "onRowClicked": "",
+                            "onRowDoubleClicked": "",
+                            "onCellValueChanged": "",
+                            "onSelectionChanged": ""
+                        },
+                        "dataModel": "MDModel1",
+                        "dataSetID": "",
+                        "style": {
+                            "height": "100%",
+                            "width": "100%",
+                            "display": "",
+                            "margin": ""
+                        }
+                    },
+                    "compName": "业务表格"
+                },
+                {
+                    "key": "DCTPagingToolBar1",
+                    "type": "DCTPagingToolBar",
+                    "props": {
+                        "mdModel": "MDModel1",
+                        "everyPageRowNum": 10,
+                        "isShowEveryPageNumber": true,
+                        "isShowTZPage": true,
+                        "scriptsCode": {
+                            "onClickFirstButton": "",
+                            "onClickPreviousButton": "",
+                            "onClickNextButton": "",
+                            "onClickLastButton": ""
+                        },
+                        "style": {
+                            "height": "32px",
+                            "width": "100%",
+                            "justifyContent": "flex-end",
+                            "alignItems": "flex-end",
+                            "display": "",
+                            "margin": ""
+                        }
+                    },
+                    "compName": "字典分页"
+                }
+            ]
+        }
+    ],
+    "dataModels": [
+        {
+            "key": "MDModel1",
+            "type": "MDModel",
+            "props": {
+                "providerService": "LargeDICTService",
+                "resolverService": "SYS_MDM_RESOLVER",
+                "DCT_ID": "",
+                "dataChecker": "",
+                "valueManager": "",
+                "dataBase": "",
+                "paramConverter": "",
+                "scriptsCode": {
+                    "setParamObject": "",
+                    "endLoad": "",
+                    "beforeSave": "",
+                    "dataSetUpdated": "",
+                    "onFail": "",
+                    "afterSave": ""
+                },
+                "MDL_ID": "",
+                "FKEY_ID": "",
+                "RLGL_ID": "",
+                "afterLoadStartEdit": false,
+                "showBusyWindow": true,
+                "useDictLimit": false,
+                "defaultValueAddBlank": false,
+                "maxBmIOMQuery": false,
+                "enableLoadMetaData": true,
+                "isLoadFKey": "1",
+                "serverCors": false
+            },
+            "compName": "字典模型"
+        },
+        {
+            "key": "ColumnModel1",
+            "type": "ColumnModel",
+            "props": {
+                "scriptsCode": {
+                    "beginEdit": ""
+                },
+                "formModel": "",
+                "CTN_ID": "",
+                "customDataSetID": ""
+            },
+            "compName": "列模型",
+            "children": []
+        }
+    ],
+    "actionComps": [
+        {
+            "key": "MDMEditAction1",
+            "type": "MDMEditAction",
+            "props": {
+                "actionText": "编辑",
+                "width": "70px",
+                "height": "30px",
+                "visible": true,
+                "icon": "",
+                "activeIcon": "",
+                "hoverIcon": "",
+                "visibleExpression": "",
+                "enableExpression": "",
+                "GNBH": "",
+                "isOperateLog": false,
+                "operateLog": "",
+                "dataModel": "MDModel1",
+                "scriptsCode": {
+                    "endStartEdit": "",
+                    "doAction": ""
+                },
+                "style": {}
+            },
+            "compName": "主数据编辑"
+        },
+        {
+            "key": "MDMAddItemAction1",
+            "type": "MDMAddItemAction",
+            "props": {
+                "actionText": "增加",
+                "width": "70px",
+                "height": "30px",
+                "visible": true,
+                "icon": "",
+                "activeIcon": "",
+                "hoverIcon": "",
+                "visibleExpression": "",
+                "enableExpression": "",
+                "GNBH": "",
+                "isOperateLog": false,
+                "operateLog": "",
+                "dataModel": "MDModel1",
+                "scriptsCode": {
+                    "onClick": "",
+                    "beforeCreateMdmItem": "",
+                    "doAction": ""
+                },
+                "style": {}
+            },
+            "compName": "主数据增加"
+        },
+        {
+            "key": "MDMRemoveItemAction1",
+            "type": "MDMRemoveItemAction",
+            "props": {
+                "actionText": "删除",
+                "width": "70px",
+                "height": "30px",
+                "visible": true,
+                "icon": "",
+                "activeIcon": "",
+                "hoverIcon": "",
+                "visibleExpression": "",
+                "enableExpression": "",
+                "GNBH": "",
+                "isOperateLog": false,
+                "operateLog": "",
+                "dataModel": "MDModel1",
+                "scriptsCode": {
+                    "beforeRemove": "",
+                    "endRemove": "",
+                    "doAction": ""
+                },
+                "style": {}
+            },
+            "compName": "主数据删除"
+        },
+        {
+            "key": "MDMSaveAction1",
+            "type": "MDMSaveAction",
+            "props": {
+                "actionText": "保存",
+                "saveTip": "保存成功",
+                "width": "70px",
+                "height": "30px",
+                "visible": true,
+                "icon": "",
+                "activeIcon": "",
+                "hoverIcon": "",
+                "visibleExpression": "",
+                "enableExpression": "",
+                "GNBH": "",
+                "isOperateLog": false,
+                "operateLog": "",
+                "dataModel": "MDModel1",
+                "style": {}
+            },
+            "compName": "主数据保存"
+        }
+    ],
+    "serverJsComps": []
+}
